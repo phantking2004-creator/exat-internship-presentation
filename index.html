@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Presentation - ผลการฝึกงานวิศวกรรมสนาม EXAT & มหาวิทยาลัยมหิดล</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Header Bar -->
+    <header class="top-header">
+      <div class="brand-section">
+        <div class="logo-badge-group">
+          <span class="brand-badge exat">EXAT</span>
+          <span class="brand-badge mahidol">EG MAHIDOL</span>
+        </div>
+        <h1 class="header-title">รายงานผลการปฏิบัติงานฝึกงานวิศวกรรมโยธาและงานสนาม (Final)</h1>
+      </div>
+      <div class="header-controls">
+        <!-- Table of Contents Dropdown -->
+        <select id="toc-select" class="toc-select" title="เลือกสไลด์">
+          <option value="0">01. ปกการนำเสนอผลงานฝึกงาน</option>
+          <option value="1">02. ข้อมูลส่วนตัวผู้ฝึกงาน & ประวัติการศึกษา</option>
+          <option value="2">03. ภาพรวม EXAT & สรุปข้อมูลโครงการ</option>
+          <option value="3">04. ส่วนที่ 1: งานวิศวกรรมสนามและควบคุมการก่อสร้าง</option>
+          <option value="4">05. การศึกษาเทคนิคงานสนาม และการจัดเตรียมพื้นที่</option>
+          <option value="5">06. ขั้นตอนงานเสาเข็มเจาะระบบเปียก 10 ขั้นตอน</option>
+          <option value="6">07. เกณฑ์ควบคุม Drilling Slurry & คอนกรีต Grade 30</option>
+          <option value="7">08. การทดสอบ Koden Test & ท่อ Sonic Logging</option>
+          <option value="8">09. การเทคอนกรีตใต้น้ำ Tremie Pipe & ระยะจมท่อ</option>
+          <option value="9">10. การเกร้าท์อุดท่อ Sonic Logging Tube</option>
+          <option value="10">11. การทดสอบ Static Load Test</option>
+          <option value="11">12. ส่วนที่ 2: งานควบคุมคุณภาพวัสดุวิศวกรรมสนาม</option>
+          <option value="12">13. การตรวจสอบคุณภาพเหล็กเส้น SD40/SD50</option>
+          <option value="13">14. การตรวจสอบคุณภาพวัสดุหน้างาน (Material On Site)</option>
+          <option value="14">15. การตรวจรับและการจ่ายเงินคาน Precast I-Girder</option>
+          <option value="15">16. การตรวจสอบโรงงานผลิตคาน ITD Yard</option>
+          <option value="16">17. ส่วนที่ 3: งานสิ่งแวดล้อมและความปลอดภัยสนาม</option>
+          <option value="17">18. การควบคุมมลพิษอากาศ & งานสแลนดักฝุ่น</option>
+          <option value="18">19. งานถนนเข้าพื้นที่ (Access Road) & แผนจัดจราจร</option>
+          <option value="19">20. ความปลอดภัยบนพื้นที่สูง & อุปกรณ์ PPE สนาม</option>
+          <option value="20">21. การควบคุมมลพิษเสียง & แผงกันเสียง</option>
+          <option value="21">22. การตรวจวัดคุณภาพน้ำ & ถังดักตะกอนสนาม</option>
+          <option value="22">23. ส่วนที่ 4: งานตรวจสอบเอกสารสัญญาทางวิศวกรรม</option>
+          <option value="23">24. การคิดราคาเบิกจ่ายค่างวดคาน Girder (IPC)</option>
+          <option value="24">25. การตรวจสอบ Shop Drawings & สัญญาณจราจร</option>
+          <option value="25">26. ส่วนที่ 5: ปัญหาหน้างานและการประสานงานวิศวกรรม</option>
+          <option value="26">27. การประชุมความก้าวหน้าประจำสัปดาห์ & S-Curve</option>
+          <option value="27">28. การตรวจสอบเอกสารเบิกจ่าย & งบประมาณ</option>
+          <option value="28">29. เทคโนโลยีอุโมงค์ TBM & ระบบแจ้งเตือนเกาหลีใต้</option>
+          <option value="29">30. ทักษะวิศวกรรม ประสบการณ์สนาม & ระบบองค์กร</option>
+          <option value="30">31. บทสรุปการปฏิบัติงาน, Q&A และขอขอบพระคุณ</option>
+        </select>
+        <button id="fullscreen-btn" class="icon-btn" title="เต็มจอ (F)">⛶</button>
+      </div>
+    </header>
+
+    <!-- Presentation Viewport -->
+    <main id="presentation-viewport" class="presentation-viewport">
+      <div id="slides-wrapper" class="slides-wrapper">
+
+        <!-- SLIDE 01: Cover -->
+        <section class="slide title-slide" data-slide-index="0">
+          <div class="brand-section">
+            <div class="logo-badge-group">
+              <span class="brand-badge exat" style="font-size: 16px; padding: 6px 18px;">EXAT การทางพิเศษแห่งประเทศไทย</span>
+              <span class="brand-badge mahidol" style="font-size: 16px; padding: 6px 18px;">คณะวิศวกรรมศาสตร์ มหาวิทยาลัยมหิดล</span>
+            </div>
+          </div>
+          <div class="title-hero">
+            <div class="title-hero-sub">FINAL INTERNSHIP PRESENTATION</div>
+            <h1>รายงานผลการปฏิบัติงานฝึกงานวิศวกรรมโยธาและงานสนาม</h1>
+            <p style="font-size: 18px; color: #cbd5e1; margin-top: 14px;">
+              โครงการทางพิเศษสายพระราม 3 - ดาวคะนอง - วงแหวนรอบนอกกรุงเทพมหานครด้านตะวันตก (สัญญาที่ 1)<br>
+              และ โครงการทางพิเศษฉลองรัชส่วนต่อขยาย (ช่วงจตุโชติ - ถนนลำลูกกา)
+            </p>
+          </div>
+          <div class="title-meta-grid">
+            <div class="meta-item">
+              <label>ผู้เสนอผลงาน</label>
+              <span>นายฐิติพงศ์ วิโรจน์ธนกิจ</span>
+            </div>
+            <div class="meta-item">
+              <label>สถาบันการศึกษา</label>
+              <span>ภาควิชาวิศวกรรมโยธา มหาวิทยาลัยมหิดล</span>
+            </div>
+            <div class="meta-item">
+              <label>หน่วยงานฝึกงาน</label>
+              <span>ฝ่ายวิศวกรรมและควบคุมการก่อสร้าง EXAT</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 02: Intern Profile -->
+        <section class="slide" data-slide-index="1">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">บทนำ / ประวัติส่วนตัว</span>
+              <h2>ข้อมูลส่วนตัวผู้ฝึกงาน & ประวัติการศึกษา</h2>
+              <p class="slide-subtitle">ประวัติผู้ปฏิบัติงานฝึกงานและสังกัดหน่วยงานในโครงการก่อสร้างทางพิเศษ</p>
+            </div>
+            <span class="slide-badge-info">INTERN PROFILE</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card highlight">
+                <div class="card-title">
+                  <div class="card-icon">👤</div>
+                  <span>ข้อมูลส่วนตัวผู้ฝึกงาน</span>
+                </div>
+                <ul class="custom-list">
+                  <li><strong>ชื่อ-นามสกุล:</strong> นายฐิติพงศ์ วิโรจน์ธนกิจ (Mr. Thitipong Virojthanakit)</li>
+                  <li><strong>สถานศึกษา:</strong> คณะวิศวกรรมศาสตร์ ภาควิชาวิศวกรรมโยธาและสิ่งแวดล้อม มหาวิทยาลัยมหิดล</li>
+                  <li><strong>หลักสูตร:</strong> วิศวกรรมศาสตรบัณฑิต (สาขาวิศวกรรมโยธา)</li>
+                  <li><strong>ระยะเวลาปฏิบัติงาน:</strong> ภาคฤดูการศึกษา 2567 / 2568</li>
+                </ul>
+              </div>
+              <div class="card highlight">
+                <div class="card-title">
+                  <div class="card-icon">🏢</div>
+                  <span>สังกัดและสถานที่ฝึกงาน</span>
+                </div>
+                <ul class="custom-list">
+                  <li><strong>หน่วยงานรับรอง:</strong> การทางพิเศษแห่งประเทศไทย (EXAT)</li>
+                  <li><strong>ฝ่ายงาน:</strong> ฝ่ายวิศวกรรมและควบคุมการก่อสร้าง (Construction Control Department)</li>
+                  <li><strong>พื้นที่ปฏิบัติงานสนาม 1:</strong> สายพระราม 3 - ดาวคะนอง สัญญาที่ 1 (กม.13+000 ถนนพระราม 2)</li>
+                  <li><strong>พื้นที่ปฏิบัติงานสนาม 2:</strong> ทางพิเศษฉลองรัชส่วนต่อขยาย (ช่วงจตุโชติ - ถนนลำลูกกา)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card accent-navy">
+              <div class="card-title">🎯 วัตถุประสงค์ของการฝึกงานสนาม</div>
+              <p style="font-size: 14px; line-height: 1.6;">
+                เพื่อศึกษากระบวนการทางวิศวกรรมสนาม การควบคุมคุณภาพงานก่อสร้างโครงสร้างทางยกระดับขนาดใหญ่ (Elevated Expressway Construction), งานเสาเข็มเจาะระบบเปียก, การทดสอบคุณภาพวัสดุตามมาตรฐาน EXAT, การตรวจสอบเอกสารสัญญา ค่างวด (IPC) และการบริหารจัดการสิ่งแวดล้อมและความปลอดภัย (HSE) ในเขตก่อสร้างจริง
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 03: EXAT Overview & Project Profile -->
+        <section class="slide" data-slide-index="2">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">บทนำ / ข้อมูลโครงการ</span>
+              <h2>ภาพรวมหน่วยงาน EXAT & สรุปข้อมูลโครงการ</h2>
+              <p class="slide-subtitle">การทางพิเศษแห่งประเทศไทย (EXAT) และรายละเอียด 2 โครงการหลักทางยกระดับ</p>
+            </div>
+            <span class="slide-badge-info">PROJECT OVERVIEW</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card">
+                <div class="card-title">
+                  <div class="card-icon">🛣️</div>
+                  <span>พระราม 3 - ดาวคะนอง (สัญญาที่ 1)</span>
+                </div>
+                <ul class="custom-list spec-list">
+                  <li><strong>ระยะทาง:</strong> 6.4 กิโลเมตร</li>
+                  <li><strong>วัตถุประสงค์:</strong> บรรเทาการจราจรติดขัดบนถนนพระราม 2 และสะพานพระราม 9 มุ่งสู่ภาคใต้</li>
+                  <li><strong>ขอบเขตงาน:</strong> ทางยกระดับ 6 ช่องจราจร เกาะกลางถนนพระราม 2 (กม.13+000 ถึง รพ.นครธน) พร้อมด่าน 2 จุด (บางขุนเทียน, บางกระดี)</li>
+                  <li><strong>มูลค่าสัญญา:</strong> 7,359 ล้านบาท</li>
+                  <li><strong>ผู้รับจ้าง:</strong> กิจการร่วมค้า ยูเอ็น-ซีซี (UN-CC Joint Venture)</li>
+                  <li><strong>วันลงนามสัญญา:</strong> 11 ตุลาคม 2564</li>
+                </ul>
+              </div>
+              <div class="card">
+                <div class="card-title">
+                  <div class="card-icon">🌉</div>
+                  <span>ฉลองรัชส่วนต่อขยาย (จตุโชติ - ลำลูกกา)</span>
+                </div>
+                <ul class="custom-list spec-list">
+                  <li><strong>ระยะทาง:</strong> 16.21 กิโลเมตร</li>
+                  <li><strong>วัตถุประสงค์:</strong> ลดการจราจรสะสมบนมอเตอร์เวย์ M9 รองรับการขยายตัวย่านลำลูกกาและปทุมธานี</li>
+                  <li><strong>ขอบเขตงาน:</strong> ต่อขยายจากด่านจตุโชติ ผ่านถนนหทัยราษฎร์ ถนนนิมิตใหม่ สิ้นสุดที่ถนนลำลูกกา</li>
+                  <li><strong>มูลค่าสัญญา:</strong> 18,699.93 ล้านบาท</li>
+                  <li><strong>ผู้รับจ้าง:</strong> บมจ. อิตาเลียนไทย ดีเวล๊อปเมนต์ (ITD)</li>
+                  <li><strong>วันลงนามสัญญา:</strong> 22 สิงหาคม 2567</li>
+                  <li><strong>ยอดออกแบบเสาเข็มรวม:</strong> 5,357 ต้น (สะสม W46: 1,575 ต้น)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 04: Section 1 Divider -->
+        <section class="slide section-divider" data-slide-index="3">
+          <div class="section-divider-content">
+            <span class="section-num-badge">SECTION 01</span>
+            <h2 class="section-divider-title">ส่วนที่ 1: งานวิศวกรรมสนามและควบคุมการก่อสร้าง</h2>
+            <p class="section-divider-desc">การศึกษาเทคนิคงานสนาม ขั้นตอนการเจาะเสาเข็มระบบเปียก การทดสอบความสมบูรณ์ และการเทคอนกรีตใต้น้ำ</p>
+          </div>
+        </section>
+
+        <!-- SLIDE 05: Site Prep -->
+        <section class="slide" data-slide-index="4">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
+              <h2>การศึกษาเทคนิคงานสนาม และการจัดเตรียมพื้นที่ก่อสร้าง</h2>
+              <p class="slide-subtitle">ขั้นตอนการสำรวจ พิกัดฉาก และการรื้อย้ายระบบสาธารณูปโภคก่อนการขุดเจาะ</p>
+            </div>
+            <span class="slide-badge-info">SITE PREPARATION</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-3">
+              <div class="card">
+                <div class="card-title">📍 1. งานสำรวจและจัดตั้งพิกัด</div>
+                <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 10px;">การกำหนดตำแหน่งศูนย์กลางเสาเข็ม (Pile Center) ด้วยเครื่อง Total Station</p>
+                <ul class="custom-list">
+                  <li>ตรวจสอบค่าพิกัด N, E ตามแบบ Shop Drawings</li>
+                  <li>ทำหมุดอ้างอิง Offset (Offset Stakes) 4 ทิศทาง</li>
+                  <li>ตรวจสอบระดับค่าความสูงมาตรฐาน (BM - Bench Mark)</li>
+                </ul>
+              </div>
+              <div class="card">
+                <div class="card-title">⚠️ 2. การรื้อย้ายสาธารณูปโภค</div>
+                <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 10px;">การประสานงานรื้อย้ายแนวท่อและสายไฟใต้ดินก่อนขุดเจาะ</p>
+                <ul class="custom-list">
+                  <li>ร่องขุดสำรวจสิ่งกีดขวาง (Trial Trenching)</li>
+                  <li>ย้ายแนวท่อประปา MEA / MWA และสายสื่อสาร</li>
+                  <li>ป้องกันแนวเสาไฟฟ้าและท่อแก๊สธรรมชาติใกล้เคียง</li>
+                </ul>
+              </div>
+              <div class="card">
+                <div class="card-title">🏗️ 3. การเตรียมแท่นเครื่องจักร</div>
+                <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 10px;">การเตรียมความพร้อมพื้นที่สำหรับปั่นจั่นปั้นเสาเข็มเจาะ (Drilling Rig)</p>
+                <ul class="custom-list">
+                  <li>ปูแผ่นเหล็ก (Steel Platform Mat) รองรับน้ำหนักปั้นจั่น</li>
+                  <li>จัดเตรียมบ่อพักสารพยุงหลุมเจาะ (Bentonite/Polymer Pit)</li>
+                  <li>ติดตั้งระบบไฟฟ้าและเครื่องปั๊มสูบสารพยุงหลุม</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 06: 10-Step Wet Process Bored Pile Workflow -->
+        <section class="slide" data-slide-index="5">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
+              <h2>ขั้นตอนงานเสาเข็มเจาะระบบเปียก 10 ขั้นตอน (Bored Pile Workflow)</h2>
+              <p class="slide-subtitle">ลำดับขั้นตอนการปฏิบัติงานสนามจริงตามมาตรฐานวิศวกรรม EXAT</p>
+            </div>
+            <span class="slide-badge-info">BORED PILE WORKFLOW</span>
+          </div>
+          <div class="slide-content">
+            <div class="workflow-grid">
+              <div class="step-card">
+                <div class="step-num">1</div>
+                <div class="step-title">วางพิกัดตำแหน่ง</div>
+                <div class="step-desc">กำหนดจุดศูนย์กลางเสาเข็มด้วย Total Station และตอกหมุด Offset 4 ทิศ</div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">2</div>
+                <div class="step-title">กดท่อ Casing</div>
+                <div class="step-desc">กดท่อเหล็กชั่วคราว (Temporary Casing) ความยาว 12-15 ม. ป้องกันดินพัง</div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">3</div>
+                <div class="step-title">ขุดเจาะหลุม</div>
+                <div class="step-desc">ใช้หัวเจาะ Auger ขุดดินชั้นบน และ Bucket ขุดดินชั้นลึกถึงระดับออกแบบ</div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">4</div>
+                <div class="step-title">เติม Drilling Slurry</div>
+                <div class="step-desc">เติมสารพยุงหลุมเจาะรักษาแรงดันน้ำและเสถียรภาพผนังหลุม</div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">5</div>
+                <div class="step-title">ทำความสะอาดก้นหลุม</div>
+                <div class="step-desc">ใช้ Cleaning Bucket และหมุนเวียนสาร Slurry ลดปริมาณทรายปนเปื้อน</div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">6</div>
+                <div class="step-title">ทดสอบ Koden Test</div>
+                <div class="step-desc">ตรวจวัดความดิ่ง รูปทรง และความสมบูรณ์ของผนังหลุมเจาะด้วยคลื่นเสียง</div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">7</div>
+                <div class="step-title">หย่อนกรงเหล็กเสริม</div>
+                <div class="step-desc">ติดตั้งกรงเหล็ก (Rebar Cage) พร้อมท่อ Sonic Logging และลูกปูนรองระยะ</div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">8</div>
+                <div class="step-title">ติดตั้งท่อ Tremie</div>
+                <div class="step-desc">ต่อท่อ Tremie Pipe เหล็กท่อนละ 1-3 ม. ลงถึงก้นหลุมเจาะ</div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">9</div>
+                <div class="step-title">เทคอนกรีตใต้น้ำ</div>
+                <div class="step-desc">เทคอนกรีต Grade 30 Slump 18-23 ซม. ควบคุมปลายท่อจมในเนื้อปูน >= 2.0 ม.</div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">10</div>
+                <div class="step-title">ถอนท่อ Casing</div>
+                <div class="step-desc">ถอน Casing ออกขณะปูนยังไม่เซ็ตตัว และเติมทราย/ดินกลบหลังหัวเข็ม</div>
+              </div>
+            </div>
+            <div class="info-callout">
+              📌 <strong>ระยะเวลามาตรฐาน EXAT:</strong> ขั้นตอนการทำความสะอาดก้นหลุม + ติดตั้งเหล็กเสริม ต้องดำเนินการให้เสร็จสิ้นภายใน <strong>&le; 24 ชั่วโมง</strong> ก่อนเริ่มการเทคอนกรีต
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 07: Drilling Slurry & Concrete Grade 30 QA Criteria -->
+        <section class="slide" data-slide-index="6">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
+              <h2>เกณฑ์ควบคุมคุณภาพสารพยุงหลุมเจาะ & คอนกรีต Grade 30</h2>
+              <p class="slide-subtitle">ข้อกำหนดทางวิศวกรรมสนามตามมาตรฐาน EXAT สำหรับเสาเข็มเจาะระบบเปียก</p>
+            </div>
+            <span class="slide-badge-info">QUALITY CONTROL CRITERIA</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card">
+                <div class="card-title">🧪 1. ข้อกำหนดสารพยุงหลุมเจาะ (Drilling Slurry)</div>
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th>รายการทดสอบ</th>
+                      <th>เกณฑ์ควบคุม EXAT</th>
+                      <th>เครื่องมือทดสอบมาตรฐาน</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>ความหนาแน่น (Density)</strong></td>
+                      <td>&lt; 1.02 g/ml</td>
+                      <td>Mud Balance (ASTM D4380)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>ความหนืด (Viscosity)</strong></td>
+                      <td>45 - 90 วินาที</td>
+                      <td>Marsh Funnel (API-RP13B-S2)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>ปริมาณทราย (Sand Content)</strong></td>
+                      <td>&le; 1%</td>
+                      <td>Sand Screen (ASTM D4381)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>ค่าความเป็นกรด-ด่าง (pH)</strong></td>
+                      <td>8 - 12</td>
+                      <td>pH Paper / Meter (ASTM D4972)</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="warning-callout">
+                  ⚠️ <strong>ข้อห้ามเด็ดขาด:</strong> หากค่า pH ของสารพยุงหลุมเจาะ <strong>&lt; 8 เด็ดขาด</strong> ห้ามใช้อนุญาตให้เทคอนกรีตโดยเด็ดขาด เนื่องจากจะทำให้สารตกตะกอนและหลุมพังทลาย
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🧱 2. ข้อกำหนดคอนกรีตเสาเข็มเจาะ (RC. Pile Concrete)</div>
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th>รายการวิศวกรรม</th>
+                      <th>เกณฑ์ข้อกำหนดสนาม</th>
+                      <th>อ้างอิงมาตรฐาน</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>กำลังอัดออกแบบ (Strength)</strong></td>
+                      <td>Grade 30 (Cylinder 28 วัน &ge; 30 MPa / 300 ksc)</td>
+                      <td>ASTM C39</td>
+                    </tr>
+                    <tr>
+                      <td><strong>ค่ายุบตัว (Slump Test)</strong></td>
+                      <td>18 - 23 ซม.</td>
+                      <td>AASHTO T 119</td>
+                    </tr>
+                    <tr>
+                      <td><strong>ระยะเวลาเริ่มแข็งตัว</strong></td>
+                      <td>&ge; 4 ชั่วโมง (Setting Time)</td>
+                      <td>ASTM C494 Type D</td>
+                    </tr>
+                    <tr>
+                      <td><strong>การเก็บตัวอย่างปูน</strong></td>
+                      <td>9 แท่ง/ต้น (ทรงกระบอก 15x30 ซม. 3 ชุด ชุดละ 3 แท่ง)</td>
+                      <td>EXAT Spec Section 501</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 08: Koden Test & Sonic Logging Tube -->
+        <section class="slide" data-slide-index="7">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
+              <h2>การทดสอบความสมบูรณ์หลุมเจาะด้วย Koden Test & ท่อ Sonic Logging Tube</h2>
+              <p class="slide-subtitle">การตรวจสอบความดิ่ง รูปทรงหลุมเจาะ และการติดตั้งท่อตรวจสอบคลื่นเสียง</p>
+            </div>
+            <span class="slide-badge-info">KODEN & SONIC TUBES</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card">
+                <div class="card-title">📡 1. การทดสอบ Koden Ultrasonic Test</div>
+                <ul class="custom-list">
+                  <li><strong>วัตถุประสงค์:</strong> ตรวจวัดรูปทรงกระบอก ความเอียงเท (Inclination) และขนาดเส้นผ่านศูนย์กลางจริงของหลุมเจาะก่อนเทคอนกรีต</li>
+                  <li><strong>เกณฑ์การยอมรับ:</strong> ค่าความเอียงเทของหลุมเจาะต้องไม่เกิน <strong>1:100 (1%)</strong> ของความลึก</li>
+                  <li><strong>การวิเคราะห์ผล:</strong> ผลลัพธ์แสดงผ่าน Real-time Graphic Profile ระบุตำแหน่งบวม (Bulging) หรือตำแหน่งคอด (Cave-in) ของผนังหลุม</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🔊 2. ท่อตรวจสอบความสมบูรณ์ (Sonic Logging Tube)</div>
+                <ul class="custom-list spec-list">
+                  <li><strong>เงื่อนไขการติดตั้ง:</strong> ต้องติดตั้งท่อ Sonic ในเสาเข็มเจาะขนาดเส้นผ่านศูนย์กลาง <strong>&ge; 0.80 ม. ทุกต้น</strong></li>
+                  <li><strong>ข้อกำหนดวัสดุ:</strong> ท่อเหล็กดำ ขนาด ศก.ใน 50 มม. หนาไม่น้อยกว่า <strong>1.60 มม.</strong> (ASTM D6760) ปลายท่อด้านล่างงอ 90 องศา</li>
+                  <li><strong>การจัดจำนวนท่อตามขนาดเสาเข็ม:</strong>
+                    <table class="custom-table" style="margin-top: 8px;">
+                      <tr><th>ขนาดเส้นผ่านศูนย์กลาง ($\varnothing$)</th><th>จำนวนท่อ Sonic (ท่อ)</th></tr>
+                      <tr><td>$\varnothing$ 1.00 - 1.20 เมตร</td><td><strong>4 ท่อ</strong></td></tr>
+                      <tr><td>$\varnothing$ 1.50 - 1.80 เมตร</td><td><strong>6 ท่อ</strong></td></tr>
+                      <tr><td>$\varnothing$ 2.00 เมตร</td><td><strong>8 ท่อ</strong></td></tr>
+                    </table>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 09: Tremie Concrete Pouring -->
+        <section class="slide" data-slide-index="8">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
+              <h2>การเทคอนกรีตใต้น้ำด้วยท่อ Tremie Pipe & การควบคุมระยะจมท่อ</h2>
+              <p class="slide-subtitle">ข้อบังคับทางวิศวกรรมสำหรับการเทคอนกรีตระบบ Tremie ในหลุมเสาเข็มเจาะระบบเปียก</p>
+            </div>
+            <span class="slide-badge-info">TREMIE PIPE CONCRETING</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card highlight">
+                <div class="card-title">🚫 1. ข้อกำหนดวัสดุท่อ Tremie Pipe</div>
+                <ul class="custom-list">
+                  <li>ต้องทำด้วย <strong>เหล็กกล้า (Steel Tremie Pipe) เท่านั้น</strong></li>
+                  <li style="color: var(--rose-accent); font-weight: bold;">⚠️ ห้ามใช้อลูมิเนียมเด็ดขาด! เนื่องจากอลูมิเนียมจะทำปฏิกิริยากับปูนเกิดก๊าซไฮโดรเจนโพรงอากาศในเนื้อปูน</li>
+                  <li>รอยต่อท่อต้องมีซีลยางกันน้ำ (O-ring rubber seal) เพื่อป้องกันน้ำและสาร Slurry รั่วซึมเข้าในท่อ</li>
+                </ul>
+              </div>
+
+              <div class="card highlight">
+                <div class="card-title">📏 2. การควบคุมระยะจมปลายท่อ (Embedment Depth)</div>
+                <ul class="custom-list spec-list">
+                  <li>ระหว่างการเทคอนกรีต ปลายท่อ Tremie ต้องจมอยู่ในเนื้อคอนกรีตสด <strong>&ge; 2.0 เมตร</strong> ตลอดเวลา</li>
+                  <li>การควบคุมปกติสนาม: ควบคุมระยะจมปลายท่อที่ <strong>3.0 เมตร</strong></li>
+                  <li>ขณะทำการตัดต่อถอนท่อน Tremie: ควบคุมระยะจมปลายท่อให้อยู่ในช่วง <strong>3.0 - 5.0 เมตร</strong></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="stat-box">
+                <div class="stat-num">&le; 24 ชม.</div>
+                <div class="stat-label">เวลารวมล้างก้นหลุม + หย่อนเหล็กเสริมก่อนเทปูน</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">&ge; 24 ชม. หรือ &ge; 6D</div>
+                <div class="stat-label">เงื่อนไขเวลาเว้นระยะห่างการเจาะเสาเข็มข้างเคียง</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 10: Grouting Sonic Logging Tube -->
+        <section class="slide" data-slide-index="9">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
+              <h2>การเกร้าท์อุดท่อ Sonic Logging Tube ด้วยวัสดุกำลังอัดสูง</h2>
+              <p class="slide-subtitle">ขั้นตอนการอุดปิดท่อ Sonic Logging หลังจากตรวจวัดความสมบูรณ์ด้วยคลื่นเสียง (Crosshole Sonic Logging)</p>
+            </div>
+            <span class="slide-badge-info">SONIC TUBE GROUTING</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-60-40">
+              <div class="card">
+                <div class="card-title">🛠️ ขั้นตอนและเกณฑ์ควบคุมงานเกร้าท์ปิดท่อ</div>
+                <ul class="custom-list spec-list">
+                  <li><strong>เกณฑ์กำลังอัดวัสดุเกร้าท์ (Grout Strength):</strong> หลังจากตรวจวัดคลื่นเสียง CSL เรียบร้อยแล้ว ต้องอุดปิดท่อด้วยวัสดุกำลังอัดไม่ต่ำกว่าคอนกรีตเสาเข็ม (<strong>Grade 30 / 30 MPa / 300 ksc</strong>)</li>
+                  <li><strong>การเตรียมพื้นที่ก่อนเกร้าท์:</strong> ดูดน้ำและสิ่งสปรกออกจากท่อ Sonic ด้วยปั๊มแรงดันสูง</li>
+                  <li><strong>วิธีการฉีดเกร้าท์:</strong> สอดท่อฉีดวัสดุเกร้าท์ (Grout Pipe) ลงไปถึงก้นท่อ Sonic แล้วอัด Non-shrink Grout จากล่างขึ้นบนดันน้ำออกจนเต็มท่อ</li>
+                  <li><strong>การตรวจสอบความสมบูรณ์:</strong> สังเกตปูนเกร้าท์ล้นออกจากปากท่อ และทำการสวมฝาแคปปิด (Cap End) หุ้มปลายท่อ</li>
+                </ul>
+              </div>
+              <div class="card accent-navy">
+                <div class="card-title">💡 เหตุผลทางวิศวกรรม</div>
+                <p style="font-size: 14px; line-height: 1.6;">
+                  ท่อ Sonic Logging ที่ไม่ได้ทำการเกร้าท์อุดด้วยวัสดุกำลังอัดเทียบเท่า จะกลายเป็นช่องว่าง (Void) ส่งผลลดพื้นที่รับแรงกดของเสาเข็ม และอาจเป็นช่องทางให้น้ำใต้ดินกัดกร่อนโครงเหล็กเสริมภายในเนื้อเข็ม
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 11: Static Load Test -->
+        <section class="slide" data-slide-index="10">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
+              <h2>การทดสอบ Static Load Test</h2>
+              <p class="slide-subtitle">การทดสอบกำลังรับน้ำหนักบรรทุกของเสาเข็มเจาะโดยวิธีน้ำหนักกดจริง (Static Load Test)</p>
+            </div>
+            <span class="slide-badge-info">STATIC LOAD TEST</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-3">
+              <div class="card">
+                <div class="card-title">⚓ เสาเข็มสมอ (Anchor Pile)</div>
+                <p style="font-size: 13px; color: var(--text-muted);">เสาเข็มสำหรับยึดรั้งโครงเหล็กรับแรงดึงระหว่างการทดสอบกดเสาเข็มใช้งาน</p>
+                <div class="stat-box" style="margin-top: 10px;">
+                  <div class="stat-num">20 ต้น</div>
+                  <div class="stat-label">จำนวนเสาเข็มสมอในโครงการฉลองรัช</div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-title">⚖️ ขั้นตอนการเพิ่มน้ำหนักกด</div>
+                <ul class="custom-list">
+                  <li>ทดสอบโดยวิธี Maintained Load Method (ASTM D1143)</li>
+                  <li>เพิ่มน้ำหนักเป็นขั้นๆ ละ 25% จนถึง <strong>200% ของ Design Load</strong></li>
+                  <li>คงน้ำหนักกดไว้นาน 24 ชั่วโมงเพื่อวัดค่าการทรุดตัวคงค้าง</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">📊 เครื่องมือวัดและการประเมิน</div>
+                <ul class="custom-list">
+                  <li><strong>แม่แรงไฮดรอลิก (Hydraulic Jack):</strong> เทียบวัดแรงดันด้วย Calibrated Pressure Gauge</li>
+                  <li><strong>Dial Gauges:</strong> ติดตั้ง 4 จุด ตรวจวัดค่าการทรุดตัว (Settlement) ระดับทศนิยม 0.01 มม.</li>
+                  <li><strong>เกณฑ์ผ่าน:</strong> การทรุดตัวรวมและคงค้างไม่เกินค่าที่ออกแบบไว้</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 12: Section 2 Divider -->
+        <section class="slide section-divider" data-slide-index="11">
+          <div class="section-divider-content">
+            <span class="section-num-badge">SECTION 02</span>
+            <h2 class="section-divider-title">ส่วนที่ 2: งานควบคุมคุณภาพวัสดุวิศวกรรมสนาม</h2>
+            <p class="section-divider-desc">การตรวจสอบคุณภาพเหล็กเสริม SD40/SD50, วัสดุหน้างาน (Material On Site) และการตรวจรับคาน Precast I-Girder</p>
+          </div>
+        </section>
+
+        <!-- SLIDE 13: Rebar Quality Inspection (SD40/SD50) -->
+        <section class="slide" data-slide-index="12">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 2: งานควบคุมคุณภาพวัสดุ</span>
+              <h2>การตรวจสอบคุณภาพเหล็กเส้นเสริม (SD40/SD50 พระราม 3 สัญญา 1)</h2>
+              <p class="slide-subtitle">การสุ่มเก็บตัวอย่างทดสอบแรงดึง การดัดเย็น และรูปเล่มมอก. สำหรับงานโครงสร้างยกระดับ</p>
+            </div>
+            <span class="slide-badge-info">REBAR INSPECTION</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card">
+                <div class="card-title">🔬 1. รายการทดสอบคุณภาพเหล็กเส้น</div>
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th>เกรดเหล็ก (Grade)</th>
+                      <th>กำลังคายประจุ (Yield Strength)</th>
+                      <th>กำลังดึงต้านทาน (Tensile Strength)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>SD40 (มอก. 24-2559)</strong></td>
+                      <td>&ge; 3,900 ksc (390 MPa)</td>
+                      <td>&ge; 5,600 ksc (560 MPa)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>SD50 (มอก. 24-2559)</strong></td>
+                      <td>&ge; 4,900 ksc (490 MPa)</td>
+                      <td>&ge; 6,200 ksc (620 MPa)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="card">
+                <div class="card-title">📐 2. การตรวจสอบมิติและโครงเหล็กในสนาม</div>
+                <ul class="custom-list spec-list">
+                  <li><strong>การดัดเย็น (Cold Bending Test):</strong> ทดสอบดัดโค้ง 180 องศาโดยไม่เกิดรอยแตกร้าวที่ผิวเหล็ก</li>
+                  <li><strong>ระยะทาบดัด (Lap Splice Length):</strong> ตรวจสอบความยาวทาบตามแบบมาตรฐานวิศวกรรม (&ge; 40D)</li>
+                  <li><strong>การติดตั้ง Spacer Block:</strong> ติดตั้งลูกปูนรองระยะห่างกรงเหล็กกับผนังหลุม เพื่อรักษาระยะ Concrete Covering 75 มม.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 14: Material On Site Inspection -->
+        <section class="slide" data-slide-index="13">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 2: งานควบคุมคุณภาพวัสดุ</span>
+              <h2>การตรวจสอบคุณภาพวัสดุหน้างาน (Material On Site) ตามมาตรฐาน EXAT</h2>
+              <p class="slide-subtitle">กระบวนการตรวจรับ มวลรวม หิน ทราย ซีเมนต์ และน้ำยาผสมคอนกรีตก่อนอนุญาตใช้งาน</p>
+            </div>
+            <span class="slide-badge-info">MATERIAL ON SITE</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-3">
+              <div class="card">
+                <div class="card-title">🪨 มวลรวมหินและทราย</div>
+                <ul class="custom-list">
+                  <li><strong>Sieve Analysis:</strong> ตรวจสอบขนาดคัดเกรดมวลรวม (Grading Curve)</li>
+                  <li><strong>Los Angeles Abrasion:</strong> ตรวจวัดค่าความสึกหรอของหิน (&lt; 40%)</li>
+                  <li><strong>Soundness Test:</strong> ทดสอบความคงทนต่อสภาวะอากาศด้วย Na2SO4</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🧴 ซีเมนต์และน้ำยาผสม</div>
+                <ul class="custom-list">
+                  <li><strong>Portland Cement Type I:</strong> ตรวจสอบใบรับรอง Mill Test Certificate ทุกล็อต</li>
+                  <li><strong>Admixture Type D:</strong> น้ำยาหน่วงเวลาและลดปริมาณน้ำ (Water Reducing & Retarding)</li>
+                  <li><strong>Water Testing:</strong> ตรวจสอบคุณภาพน้ำผสมปูนไม่มีสารคลอไรด์หรือสิ่งปนเปื้อน</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">📝 อนุมัติวัสดุ EXAT</div>
+                <ul class="custom-list">
+                  <li>จัดทำเอกสาร Request for Approval (RFA) ส่งวิศวกรควบคุมงาน</li>
+                  <li>สุ่มเก็บตัวอย่างร่วมกัน 3 ฝ่าย (EXAT, Consultant, Contractor)</li>
+                  <li>ติดป้าย Status วัสดุ (Approved / Rejected) ในกองเก็บ</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 15: Precast I-Girder Acceptance & Payment -->
+        <section class="slide" data-slide-index="14">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 2: งานควบคุมคุณภาพวัสดุ</span>
+              <h2>การตรวจรับและการจ่ายเงินค่าจ้างคาน Precast I-Girder</h2>
+              <p class="slide-subtitle">เกณฑ์การตรวจวัดมิติคาน การดึงลวดอัดแรง Post-tensioning และขั้นตอนเบิกจ่ายค่างวด</p>
+            </div>
+            <span class="slide-badge-info">PRECAST I-GIRDER</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card">
+                <div class="card-title">📏 1. การตรวจรับมิติคานและกำลังอัด</div>
+                <ul class="custom-list spec-list">
+                  <li><strong>มิติความยาวและระดับ Camber:</strong> ตรวจวัดค่าความโก่งตัว (Camber) ตามอายุคาน</li>
+                  <li><strong>กำลังอัดคอนกรีตถอดแบบ:</strong> Compressive strength &ge; 25 MPa ก่อนถ่ายแรงอัด</li>
+                  <li><strong>กำลังอัด 28 วัน:</strong> High-Strength Concrete Grade 45 / 50 MPa</li>
+                  <li><strong>งานเกร้าท์ท่อลวด (Duct Grouting):</strong> อัดฉีด Non-shrink grout เต็มท่อลวดอัดแรง</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">💰 2. เกณฑ์การเบิกจ่ายค่างวดคาน (IPC Milestone)</div>
+                <ul class="custom-list">
+                  <li><strong>งวดที่ 1 (Casting Yard):</strong> เบิกจ่าย 70% เมื่อหล่อคาน ดึงลวดอัดแรง และเกร้าท์ท่อลวดเสร็จสมบูรณ์ใน Yard</li>
+                  <li><strong>งวดที่ 2 (Site Erection):</strong> เบิกจ่าย 30% ที่เหลือเมื่อขนส่งติดตั้งบนตัวพาย (Pier Head) และเชื่อม Diaphragm เสร็จสิ้น</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 16: Factory Audit ITD Yard -->
+        <section class="slide" data-slide-index="15">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 2: งานควบคุมคุณภาพวัสดุ</span>
+              <h2>การตรวจสอบโรงงานผลิตคานสำเร็จรูป ITD Yard (ฉลองรัช)</h2>
+              <p class="slide-subtitle">การตรวจรับรองคุณภาพการผลิตคานคอนกรีตสำเร็จรูป ณ ลานหล่อ ITD Casting Yard</p>
+            </div>
+            <span class="slide-badge-info">ITD YARD FACTORY AUDIT</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-3">
+              <div class="card">
+                <div class="card-title">🏗️ 1. แบบหล่อเหล็ก (Steel Mold)</div>
+                <p style="font-size: 13px; color: var(--text-muted);">ตรวจสอบความเที่ยงตรงของแบบหล่อเหล็ก ทาบน้ำยาถอดแบบ (Form Oil) สม่ำเสมอ และไม่มีรอยรั่วซึม</p>
+              </div>
+
+              <div class="card">
+                <div class="card-title">♨️ 2. การบ่มด้วยไอน้ำ (Steam Curing)</div>
+                <p style="font-size: 13px; color: var(--text-muted);">ควบคุมอุณหภูมิการบ่มด้วยไอน้ำ 60-70 °C เพื่อเร่งกำลังอัดคอนกรีตเปิดแบบหล่อภายใน 18-24 ชั่วโมง</p>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🚛 3. กองเก็บและการขนส่ง</div>
+                <p style="font-size: 13px; color: var(--text-muted);">จัดวางหมอนรองคาน (Bearing Pad) ตรงตำแหน่งจุดยก วางแผนขนส่งช่วงกลางคืนเพื่อลดผลกระทบการจราจร</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 17: Section 3 Divider -->
+        <section class="slide section-divider" data-slide-index="16">
+          <div class="section-divider-content">
+            <span class="section-num-badge">SECTION 03</span>
+            <h2 class="section-divider-title">ส่วนที่ 3: งานสิ่งแวดล้อมและความปลอดภัยสนาม</h2>
+            <p class="section-divider-desc">การควบคุมมลพิษ แผนจัดจราจร ความปลอดภัยบนพื้นที่สูง และการจัดการนิเวศวิทยาทางน้ำ</p>
+          </div>
+        </section>
+
+        <!-- SLIDE 18: Air Pollution Control -->
+        <section class="slide" data-slide-index="17">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 3: สิ่งแวดล้อมและความปลอดภัย</span>
+              <h2>การควบคุมมลพิษอากาศ งานตะแกรงดักฝุ่น</h2>
+              <p class="slide-subtitle">มาตรการป้องกันฝุ่นฟุ้งกระจาย PM2.5 และ PM10 บริเวณเขตก่อสร้างทางยกระดับ</p>
+            </div>
+            <span class="slide-badge-info">AIR POLLUTION CONTROL</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card">
+                <div class="card-title">🕸️ 1. การติดตั้งตะแกรงดักฝุ่น (Dust Nets)</div>
+                <ul class="custom-list spec-list">
+                  <li>ติดตั้งสแลน/ผ้าใบดักฝุ่นความสูง &ge; 3.0 เมตร ล้อมรอบแนวรั้วก่อสร้างชั่วคราว</li>
+                  <li>ติดตั้งสแลนคลุมโครงสร้างยกระดับและนั่งร้านระหว่างงานเทคอนกรีต/ขัดผิว</li>
+                  <li>ตรวจสอบรอยฉีกขาดของผ้าใบดักฝุ่นประจำสัปดาห์</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🚚 2. มาตรการฉีดพ่นน้ำและการล้างล้อ</div>
+                <ul class="custom-list spec-list">
+                  <li>จัดรถน้ำฉีดพ่นละอองน้ำบนถนน Access Road อย่างน้อย 4 ครั้ง/วัน</li>
+                  <li>จัดตั้งอ่างล้างล้อรถบรรทุก (Wheel Washing Pit) ก่อนออกจากพื้นที่ก่อสร้างลงสู่ถนนสาธารณะ</li>
+                  <li>คลุมผ้าใบปิดมิดชิดบนรถบรรทุกขนส่งดินและทรายทุกคัน</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 19: Access Road & Traffic Plan -->
+        <section class="slide" data-slide-index="18">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 3: สิ่งแวดล้อมและความปลอดภัย</span>
+              <h2>การตรวจสอบงานถนนเข้าพื้นที่ก่อสร้าง (Access Road) & แผนจัดจราจร</h2>
+              <p class="slide-subtitle">การบริหารจัดการจราจรชั่วคราวบนถนนพระราม 2 และถนนจตุโชติเพื่อความปลอดภัยสาธารณะ</p>
+            </div>
+            <span class="slide-badge-info">TRAFFIC MANAGEMENT</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-3">
+              <div class="card">
+                <div class="card-title">🚧 1. แผงกั้นและป้ายเตือน</div>
+                <p style="font-size: 13px; color: var(--text-muted);">ติดตั้งแผงคอนกรีต Jersey Barrier พร้อมป้ายสะท้อนแสงเตือนเขตก่อสร้างล่วงหน้า 500 เมตร</p>
+              </div>
+
+              <div class="card">
+                <div class="card-title">💡 2. ไฟสัญญาณกลางคืน</div>
+                <p style="font-size: 13px; color: var(--text-muted);">ติดตั้งไฟกะพริบสีส้ม ไฟวอบแวบ และป้ายสัญญาณ Arrow Board แสงสว่างชัดเจนตลอดช่วงเวลากลางคืน</p>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🚩 3. เจ้าหน้าที่โบกรถ (Flagmen)</div>
+                <p style="font-size: 13px; color: var(--text-muted);">จัดเจ้าหน้าที่จราจรประจำจุดเข้า-ออกเขตก่อสร้างตลอด 24 ชั่วโมง เพื่ออำนวยความสะดวกให้ผู้ใช้ทาง</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 20: Working at Height & PPE -->
+        <section class="slide" data-slide-index="19">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 3: สิ่งแวดล้อมและความปลอดภัย</span>
+              <h2>งานความปลอดภัยบนพื้นที่สูง (Working at Height) & อุปกรณ์ PPE สนาม</h2>
+              <p class="slide-subtitle">มาตรฐานความปลอดภัยในการทำงานบนโครงสร้างยกระดับ และอุปกรณ์ป้องกันอันตรายส่วนบุคคล</p>
+            </div>
+            <span class="slide-badge-info">SAFETY & PPE</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card highlight">
+                <div class="card-title">🪜 1. มาตรการทำงานบนพื้นที่สูง (&gt; 2.0 เมตร)</div>
+                <ul class="custom-list spec-list">
+                  <li>ต้องสวมใส่ชุดพยุงร่างกายแบบเต็มตัว <strong>(Full Body Harness)</strong> พร้อมสายช่วยชีวิตคู่ (Double Lanyards) และ Shock Absorber</li>
+                  <li>ติดตั้งเส้นลวดช่วยชีวิต <strong>(Lifeline)</strong> ขนาด ศก. &ge; 8 มม. ยึดแน่นกับโครงสร้างแข็งแรง</li>
+                  <li>ติดตั้งตาข่ายรองรับการตก <strong>(Safety Net)</strong> ใต้ราวทำงานยกระดับ</li>
+                </ul>
+              </div>
+
+              <div class="card highlight">
+                <div class="card-title">🥾 2. อุปกรณ์ PPE มาตรฐานสนาม EXAT</div>
+                <ul class="custom-list">
+                  <li><strong>หมวกนิรภัย (Hard Hat):</strong> ได้รับมาตรฐาน มอก. สายรัดคางแน่นหนา</li>
+                  <li><strong>เสื้อสะท้อนแสง (High-Visibility Vest):</strong> สีส้ม/เหลืองจราจร แถบสะท้อนแสงมาตรฐาน</li>
+                  <li><strong>รองเท้านิรภัย (Safety Boots):</strong> หัวเหล็กกันกระแทก และพื้นเสริมแผ่นเหล็กกันตะปูแทง</li>
+                  <li><strong>แว่นตานิรภัยและถุงมือ:</strong> สำหรับงานตัดเชื่อมเหล็กและงานเทคอนกรีต</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 21: Noise Barrier -->
+        <section class="slide" data-slide-index="20">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 3: สิ่งแวดล้อมและความปลอดภัย</span>
+              <h2>การควบคุมมลพิษเสียง แผงกันเสียง (Noise Barrier)</h2>
+              <p class="slide-subtitle">การติดตั้งแผงกันเสียงชั่วคราวและถาวร ลดผลกระทบเสียงรบกวนชุมชนและโรงพยาบาล</p>
+            </div>
+            <span class="slide-badge-info">NOISE CONTROL</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card">
+                <div class="card-title">🔇 1. การติดตั้งแผงซับเสียง (Acoustic Panels)</div>
+                <ul class="custom-list">
+                  <li>ติดตั้งแผงกั้นเสียงความสูง 3.0 - 5.0 เมตร บริเวณใกล้เคียงโรงพยาบาลนครธนและชุมชนพักอาศัย</li>
+                  <li>ใช้แผงอะคูสติกชนิดดูดซับเสียง (Sound Absorption Panels) ลดระดับเสียงลงได้อย่างน้อย 10-15 dB(A)</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">📉 2. การตรวจวัดระดับเสียงสนาม</div>
+                <ul class="custom-list">
+                  <li>ตั้งเครื่องตรวจวัดระดับเสียงต่อเนื่อง 24 ชั่วโมง (Sound Level Meter)</li>
+                  <li>ควบคุมระดับเสียงเฉลี่ย 24 ชั่วโมง (Leq 24 hr) ต้องไม่เกิน <strong>70 dB(A)</strong> ตามมาตรฐาน EIA</li>
+                  <li>จำกัดเวลาทำงานเสียงดัง (งานเจาะ/งานยกคาน) ให้ทำเฉพาะช่วงเวลาที่ได้รับอนุมัติ</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 22: Water Quality & Sediment Trap -->
+        <section class="slide" data-slide-index="21">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 3: สิ่งแวดล้อมและความปลอดภัย</span>
+              <h2>การตรวจวัดคุณภาพน้ำ นิเวศวิทยาทางน้ำ และถังดักตะกอนสนาม</h2>
+              <p class="slide-subtitle">การจัดการน้ำเสียจากการเจาะเสาเข็ม บ่อดักตะกอน และการปกป้องลำคลองสาธารณะ</p>
+            </div>
+            <span class="slide-badge-info">WATER QUALITY & ECOLOGY</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-3">
+              <div class="card">
+                <div class="card-title">🥣 1. บ่อดักตะกอน 3 บ่อ</div>
+                <p style="font-size: 13px; color: var(--text-muted);">จัดทำบ่อตกตะกอนชั่วคราว (Sedimentation Pits) แบบ 3 ขั้นตอน เพื่อให้ตะกอนดินตกตกก่อนระบายน้ำ</p>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🧪 2. ตรวจวัดคุณภาพน้ำ</div>
+                <p style="font-size: 13px; color: var(--text-muted);">สุ่มเก็บตัวอย่างน้ำทดสอบค่า pH, ค่าความขุ่น (Turbidity - NTU) และปริมาณสารแขวนลอย (TSS) ประจำเดือน</p>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🐟 3. นิเวศวิทยาทางน้ำ</div>
+                <p style="font-size: 13px; color: var(--text-muted);">ติดตั้งม่านดักตะกอน (Silt Curtain) ในลำคลองหทัยราษฎร์และคลองนิมิตใหม่ ป้องกันผลกระทบต่อสิ่งมีชีวิตในน้ำ</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 23: Section 4 Divider -->
+        <section class="slide section-divider" data-slide-index="22">
+          <div class="section-divider-content">
+            <span class="section-num-badge">SECTION 04</span>
+            <h2 class="section-divider-title">ส่วนที่ 4: งานตรวจสอบเอกสารสัญญาทางวิศวกรรม</h2>
+            <p class="section-divider-desc">การคิดราคาค่างวด (IPC) การตรวจสอบแบบ Shop Drawings และสัญญาจราจรสนาม</p>
+          </div>
+        </section>
+
+        <!-- SLIDE 24: IPC Girder Payment -->
+        <section class="slide" data-slide-index="23">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 4: เอกสารสัญญาทางวิศวกรรม</span>
+              <h2>การคิดราคาและการเบิกจ่ายค่างวดคาน Girder (Interim Payment Certificate - IPC)</h2>
+              <p class="slide-subtitle">ขั้นตอนการจัดทำเอกสารเบิกจ่ายค่างวดงานก่อสร้างตามปริมาณงานจริงที่ทำได้ (Bill of Quantities)</p>
+            </div>
+            <span class="slide-badge-info">IPC PAYMENT</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card">
+                <div class="card-title">📑 1. โครงสร้างเอกสาร IPC</div>
+                <ul class="custom-list">
+                  <li><strong>Joint Measurement Sheet:</strong> แผ่นคำนวณปริมาณงานร่วมกันระหว่างผู้รับจ้างและที่ปรึกษา</li>
+                  <li><strong>Summary Bill of Quantities (BOQ):</strong> สรุปยอดเงินตามรายการสัญญา</li>
+                  <li><strong>Quality Certificate Attachment:</strong> ผลทดสอบกำลังอัดปูนและผลดึงลวดอัดแรงแนบประกอบ</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🔄 2. ขั้นตอนการอนุมัติจ่ายเงิน</div>
+                <ul class="custom-list spec-list">
+                  <li>ผู้รับจ้างเสนอหนังสือขอเบิกจ่ายค่างวด IPC ประจำเดือน</li>
+                  <li>วิศวกรที่ปรึกษา (Consultant Engineer) ตรวจสอบความถูกต้องและลงนามรับรอง</li>
+                  <li>คณะกรรมการตรวจรับ EXAT ตรวจสอบเอกสารอนุมัติอนุมัติโอนเงินงวด</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 25: Shop Drawings & Traffic Signs Verification -->
+        <section class="slide" data-slide-index="24">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 4: เอกสารสัญญาทางวิศวกรรม</span>
+              <h2>การตรวจสอบแบบ Shop Drawings และสัญญาณจราจรสนาม</h2>
+              <p class="slide-subtitle">กระบวนการรีวิวแบบก่อสร้างรายละเอียด และแผนผังการติดตั้งสัญญาณจราจรชั่วคราว</p>
+            </div>
+            <span class="slide-badge-info">SHOP DRAWINGS & TRAFFIC SIGNS</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card">
+                <div class="card-title">✏️ 1. การรีวิวแบบ Shop Drawings</div>
+                <ul class="custom-list">
+                  <li>ตรวจสอบรายละเอียดเสริมเหล็ก (Rebar Bending Schedule) ในเสา พาย และคาน</li>
+                  <li>ตรวจสอบตำแหน่งช่องเปิด (Sleeve) สำหรับท่อระบายน้ำและท่อร้อยสายไฟ</li>
+                  <li>ความสอดคล้องระหว่างแบบโครงสร้าง (Structural) และแบบสถาปัตยกรรม (Architectural)</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🚦 2. แบบสัญญาณจราจรสนาม</div>
+                <ul class="custom-list">
+                  <li>ตรวจสอบแบบการเบี่ยงการจราจร (Detour Plan) ตามคู่มือมาตรฐาน EXAT</li>
+                  <li>ตรวจสอบขนาด ตัวอักษร และสีแผ่นสะท้อนแสงของป้ายเตือนทางข้าม/ทางเบี่ยง</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 26: Section 5 Divider -->
+        <section class="slide section-divider" data-slide-index="25">
+          <div class="section-divider-content">
+            <span class="section-num-badge">SECTION 05</span>
+            <h2 class="section-divider-title">ส่วนที่ 5: ปัญหาหน้างานและการประสานงานวิศวกรรม</h2>
+            <p class="section-divider-desc">การประชุมติดตามแผน S-Curve งบประมาณ เทคโนโลยีอุโมงค์ TBM และทักษะวิศวกรรมที่ได้รับ</p>
+          </div>
+        </section>
+
+        <!-- SLIDE 27: Weekly S-Curve Progress -->
+        <section class="slide" data-slide-index="26">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 5: ปัญหาและการประสานงาน</span>
+              <h2>การประชุมความก้าวหน้าประจำสัปดาห์และการติดตามแผนงาน S-Curve</h2>
+              <p class="slide-subtitle">การเปรียบเทียบผลงานจริง (Actual Progress) กับแผนงาน (Planned S-Curve) และแผนแก้ไขงานล่าช้า</p>
+            </div>
+            <span class="slide-badge-info">S-CURVE PROGRESS</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card">
+                <div class="card-title">📈 1. การติดตามแผนงาน S-Curve</div>
+                <ul class="custom-list">
+                  <li><strong>Planned Value (PV):</strong> แผนงานสะสมตามสัญญาทางวิศวกรรม</li>
+                  <li><strong>Actual Progress (AV):</strong> ผลงานที่ทำได้จริงในสนามสะสม</li>
+                  <li><strong>Variance Analysis:</strong> วิเคราะห์ผลต่างเบี่ยงเบน (+ Ahead / - Behind) เพื่อหาแนวทางแก้ไข</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🤝 2. การประชุม weekly Meeting</div>
+                <ul class="custom-list spec-list">
+                  <li>ประชุมร่วม 3 ฝ่าย (EXAT, Consultant, UN-CC JV / ITD) ทุกวันพุธ</li>
+                  <li>ระบุอุปสรรคหน้างาน เช่น การย้ายท่อประปาล่าช้า สภาพอากาศฝนตกหนัก</li>
+                  <li>กำหนดแผนเร่งรัดงาน (Acceleration Plan) เพิ่มกะทำงานกลางคืนและเครื่องจักร</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 28: Construction Budget & VO Inspection -->
+        <section class="slide" data-slide-index="27">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 5: ปัญหาและการประสานงาน</span>
+              <h2>การตรวจสอบเอกสารเบิกจ่ายค่างวดสัญญาก่อสร้างและงบประมาณ</h2>
+              <p class="slide-subtitle">การควบคุมงบประมาณโครงการ งานเปลี่ยนแปลงสัญญา (Variation Order - VO) และการขยายเวลาสัญญา</p>
+            </div>
+            <span class="slide-badge-info">BUDGET & CONTRACTS</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card">
+                <div class="card-title">💵 1. การควบคุมงบประมาณ (Cost Control)</div>
+                <ul class="custom-list">
+                  <li>ตรวจสอบรายการเปลี่ยนแปลงปริมาณงาน (Variation Orders) ที่เกิดจากการปรับแบบหน้างาน</li>
+                  <li>ตรวจสอบการอนุมัติราคาต่อหน่วย (Unit Price Approval) สำหรับงานนอกสัญญา</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">⏳ 2. การขอขยายระยะเวลาสัญญา (Extension of Time)</div>
+                <ul class="custom-list">
+                  <li>ตรวจสอบเอกสารอ้างอิงเหตุสุดวิสัย (Force Majeure) และการส่งมอบพื้นที่ล่าช้า</li>
+                  <li>การคำนวณวันขยายสัญญาตามหลักเกณฑ์กระทรวงการคลังและข้อกำหนด EXAT</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 29: TBM Tunneling & South Korea Emergency Warning System -->
+        <section class="slide" data-slide-index="28">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 5: ปัญหาและการประสานงาน</span>
+              <h2>องค์ความรู้เทคโนโลยีอุโมงค์ TBM & ระบบแจ้งเตือนฉุกเฉินประเทศเกาหลีใต้</h2>
+              <p class="slide-subtitle">การศึกษาเทคโนโลยีหัวเจาะอุโมงค์ (Tunnel Boring Machine) และระบบแจ้งเตือนภัยพิบัติฉุกเฉิน</p>
+            </div>
+            <span class="slide-badge-info">TBM & K-ALERT SYSTEM</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-2">
+              <div class="card">
+                <div class="card-title">🚇 1. เทคโนโลยีหัวเจาะอุโมงค์ TBM</div>
+                <ul class="custom-list spec-list">
+                  <li><strong>Mechanized Shield Excavation:</strong> ขุดเจาะชั้นดินอ่อนพร้อมขุดและประกอบชิ้นส่วนคอนกรีตสำเร็จรูป (Precast Concrete Segment)</li>
+                  <li><strong>Slurry / EPB Shield:</strong> ควบคุมแรงดันหน้าหัวเจาะป้องกันการทรุดตัวของชั้นดินด้านบน</li>
+                  <li><strong>การเปรียบเทียบกับงานทางยกระดับ:</strong> เป็นทางเลือกการขุดเจาะใต้ดินในพื้นที่ที่มีข้อจำกัดด้านเวนคืนดิน</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🚨 2. ระบบแจ้งเตือนฉุกเฉินประเทศเกาหลีใต้ (K-ALERT)</div>
+                <ul class="custom-list">
+                  <li>ศึกษาระบบ Cell Broadcast Emergency Alert System สำหรับแจ้งเตือนภัยอุบัติเหตุในอุโมงค์และเขตก่อสร้าง</li>
+                  <li>ข้อเสนอแนะการประยุกต์ใช้ระบบแจ้งเตือนฉุกเฉินในโครงการทางพิเศษของ EXAT เพื่อความปลอดภัยสูงสุด</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 30: Skills & Field Experience Summary -->
+        <section class="slide" data-slide-index="29">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">สรุปผลการปฏิบัติงาน</span>
+              <h2>ทักษะทางวิศวกรรม ประสบการณ์สนาม และการเรียนรู้ระบบองค์กร</h2>
+              <p class="slide-subtitle">การประมวลองค์ความรู้ ทักษะวิศวกรรมโยธา และทักษะการทำงานร่วมกับองค์กรชั้นนำ</p>
+            </div>
+            <span class="slide-badge-info">SKILLS & EXPERIENCE</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-3">
+              <div class="card">
+                <div class="card-title">🛠️ 1. ทักษะวิศวกรรมสนาม</div>
+                <ul class="custom-list">
+                  <li>เข้าใจกระบวนการเจาะเสาเข็มระบบเปียกและงานเทคอนกรีตใต้น้ำอย่างลึกซึ้ง</li>
+                  <li>สามารถตรวจสอบคุณภาพวัสดุเหล็ก คอนกรีต และเกณฑ์ Slurry ได้ตามมาตรฐานจริง</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">📄 2. ทักษะการจัดการสัญญา</div>
+                <ul class="custom-list">
+                  <li>เข้าใจระบบการตรวจรับงานและคำนวณเบิกจ่ายค่างวด IPC</li>
+                  <li>เรียนรู้กระบวนการรีวิวแบบ Shop Drawings และการควบคุมงบประมาณ</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card-title">🏛️ 3. ประสบการณ์ระบบองค์กร</div>
+                <ul class="custom-list">
+                  <li>เรียนรู้การทำงานร่วมกันระหว่างรัฐวิสาหกิจ (EXAT) ที่ปรึกษา และผู้รับจ้าง</li>
+                  <li>พัฒนาทักษะการสื่อสาร การแก้ปัญหาเฉพาะหน้า และภาวะผู้นำสนาม</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 31: Conclusion, Q&A & Acknowledgments -->
+        <section class="slide title-slide" data-slide-index="30" style="justify-content: center; text-align: center; padding: 40px;">
+          <div style="max-width: 850px; margin: 0 auto;">
+            <span class="brand-badge exat" style="font-size: 16px; padding: 6px 20px; margin-bottom: 20px;">EXAT & MAHIDOL UNIVERSITY</span>
+            <h1 style="font-size: 42px; margin-bottom: 20px; color: #ffffff;">บทสรุปการปฏิบัติงาน & การตอบข้อซักถาม (Q&A)</h1>
+            <p style="font-size: 18px; color: #93c5fd; line-height: 1.6; margin-bottom: 30px;">
+              ขอขอบพระคุณคณะกรรมการ ผู้บริหารการทางพิเศษแห่งประเทศไทย (EXAT) วิศวกรพี่เลี้ยง และอาจารย์ประจำภาควิชาวิศวกรรมโยธา มหาวิทยาลัยมหิดล ทุกท่านที่ให้โอกาสและคำแนะนำอันมีค่ายิ่งตลอดระยะเวลาการฝึกงาน
+            </p>
+            <div style="display: flex; justify-content: center; gap: 20px;">
+              <div style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 16px 30px; border-radius: 12px; font-size: 18px; font-weight: bold; color: #ffffff;">
+                ❓ ช่วงถาม-ตอบ (Q&A Session)
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Bottom Footer Bar -->
+    <footer class="bottom-footer">
+      <div class="footer-nav">
+        <button id="prev-btn" class="nav-btn">
+          <span>◀</span> ก่อนหน้า
+        </button>
+        <button id="next-btn" class="nav-btn">
+          ถัดไป <span>▶</span>
+        </button>
+        <span class="slide-counter">สไลด์ที่ <span id="current-slide-num">1</span> จากทั้งหมด 31</span>
+      </div>
+
+      <div class="progress-bar-container">
+        <div id="progress-bar-fill" class="progress-bar-fill"></div>
+      </div>
+
+      <div class="keyboard-hint">
+        <span>ควบคุมด้วยคีย์บอร์ด:</span>
+        <span class="kbd">◀</span>
+        <span class="kbd">▶</span>
+        <span class="kbd">Space</span>
+        <span class="sound-toggle" id="sound-toggle-btn">🔊 เสียง</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
