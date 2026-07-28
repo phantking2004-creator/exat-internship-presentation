@@ -127,6 +127,52 @@ html, body {
   gap: 12px;
 }
 
+/* Live Sync Button in Header */
+.live-btn {
+  background: rgba(225, 29, 72, 0.2);
+  border: 1px solid rgba(225, 29, 72, 0.5);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.live-btn:hover {
+  background: var(--rose-accent);
+  box-shadow: 0 0 12px rgba(225, 29, 72, 0.5);
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #f43f5e;
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(244, 63, 94, 0.7);
+  animation: pulse 1.6s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(244, 63, 94, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(244, 63, 94, 0);
+  }
+}
+
 .toc-select {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -726,4 +772,191 @@ html, body {
   font-size: 13px;
   color: #b45309;
   margin-top: 8px;
+}
+
+/* Live Sync Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(11, 29, 58, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  width: 90%;
+  max-width: 620px;
+  padding: 24px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.25s ease;
+}
+
+.modal-overlay.active .modal-card {
+  transform: translateY(0);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 12px;
+}
+
+.modal-header h3 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--navy-primary);
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.live-roles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.role-box {
+  background: var(--bg-card-alt);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.role-box h4 {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  color: var(--navy-primary);
+}
+
+.role-box p {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.action-btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.primary-btn {
+  background: var(--rose-accent);
+  color: #ffffff;
+}
+
+.primary-btn:hover {
+  background: #be123c;
+}
+
+.secondary-btn {
+  background: var(--blue-accent);
+  color: #ffffff;
+}
+
+.secondary-btn:hover {
+  background: var(--blue-hover);
+}
+
+.join-group {
+  display: flex;
+  gap: 8px;
+}
+
+.join-group input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  outline: none;
+}
+
+.code-copy-group {
+  display: flex;
+  gap: 8px;
+
+}
+
+.code-copy-group input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: bold;
+  font-family: monospace;
+  background: #ffffff;
+  color: var(--navy-primary);
+  text-align: center;
+}
+
+.sync-info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+}
+
+.sync-info-panel.hidden {
+  display: none;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--emerald-accent);
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-dot.green {
+  background-color: #10b981;
 }

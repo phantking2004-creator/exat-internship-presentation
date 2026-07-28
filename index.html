@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- PeerJS for Real-time Peer-to-Peer Sync -->
+  <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -23,6 +25,11 @@
         <h1 class="header-title">รายงานผลการปฏิบัติงานฝึกงานวิศวกรรมโยธาและงานสนาม (Final)</h1>
       </div>
       <div class="header-controls">
+        <!-- Live Real-time Sync Button -->
+        <button id="live-sync-btn" class="live-btn" title="ควบคุมสไลด์เรียลไทม์ (Live Sync)">
+          <span class="pulse-dot"></span> <span id="live-btn-text">🔴 Live Sync</span>
+        </button>
+
         <!-- Table of Contents Dropdown -->
         <select id="toc-select" class="toc-select" title="เลือกสไลด์">
           <option value="0">01. ปกการนำเสนอผลงานฝึกงาน</option>
@@ -1146,6 +1153,55 @@
         <span class="sound-toggle" id="sound-toggle-btn">🔊 เสียง</span>
       </div>
     </footer>
+  </div>
+
+  <!-- Real-time Live Sync Modal -->
+  <div id="live-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>🔴 ระบบควบคุมสไลด์เรียลไทม์ (Live Sync)</h3>
+        <button id="close-modal-btn" class="close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 16px;">
+          เชื่อมต่อหลายอุปกรณ์ผ่าน WebRTC เมื่อคุณเปลี่ยนสไลด์ในเครื่องนี้ หน้าจอของผู้ชมทุกคนจะเปลี่ยนสไลด์ตามทันทีเรียลไทม์
+        </p>
+
+        <div class="live-roles-grid">
+          <!-- Presenter Role -->
+          <div class="role-box presenter-box">
+            <h4>🎙️ เป็นผู้นำเสนอ (Presenter)</h4>
+            <p>สร้างห้องเพื่อนำเสนอสไลด์และคุมการเปลี่ยนหน้า</p>
+            <button id="create-room-btn" class="action-btn primary-btn">สร้างห้องนำเสนอ (Create Room)</button>
+            <div id="presenter-info" class="sync-info-panel hidden">
+              <label>รหัสห้องนำเสนอของคุณ:</label>
+              <div class="code-copy-group">
+                <input type="text" id="room-code-display" readonly>
+                <button id="copy-link-btn" class="action-btn">📋 คัดลอกลิงก์</button>
+              </div>
+              <div class="status-indicator">
+                <span class="status-dot green"></span> <span id="connected-count">ยังไม่มีผู้รับชมเข้าห้อง</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Viewer Role -->
+          <div class="role-box viewer-box">
+            <h4>📺 เป็นผู้รับชม (Viewer)</h4>
+            <p>กรอกรหัสห้องเพื่อรับชมสไลด์ตามผู้นำเสนอ</p>
+            <div class="join-group">
+              <input type="text" id="join-room-input" placeholder="กรอกรหัสห้อง เช่น EXAT-8888">
+              <button id="join-room-btn" class="action-btn secondary-btn">เข้าร่วมห้อง</button>
+            </div>
+            <div id="viewer-info" class="sync-info-panel hidden">
+              <div class="status-indicator">
+                <span class="status-dot green"></span> <span id="viewer-status-text">เชื่อมต่อกับผู้นำเสนอแล้ว</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- JavaScript -->
