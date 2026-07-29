@@ -396,7 +396,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "9. เทคอนกรีต",
       icon: "🚚",
       subtitle: "ขั้นตอนการเทคอนกรีตใต้น้ำและการถอนท่อ Casing",
-      photos: ["Photo/step9_tremie_pouring.jpg"],
+      photos: ["Photo/step9_tremie_pouring_v2.jpg"],
       details: [
         "ใส่ลูกบอลโฟมแยกปูน",
         "เทต่อเนื่องไม่หยุดชะงัก",
@@ -407,7 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "10. เกร้าท์ปิดท่อ Sonic",
       icon: "🔒",
       subtitle: "การปิดผนึกท่อ Sonic Logging หลังเสร็จสิ้นการตรวจวัด",
-      photos: ["Photo/step10_casing_extraction.jpg"],
+      photos: ["Photo/step10_sonic_grouting_v2.jpg"],
       details: [
         "หลังเสร็จสิ้นการทดสอบคลื่นเสียง เกร้าท์ปิดท่อด้วยวัสดุกำลังอัดไม่ต่ำกว่าคอนกรีตเสาเข็ม"
       ]
