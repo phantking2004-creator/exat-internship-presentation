@@ -407,7 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "10. เกร้าท์ปิดท่อ Sonic",
       icon: "🔒",
       subtitle: "การปิดผนึกท่อ Sonic Logging หลังเสร็จสิ้นการตรวจวัด",
-      photos: ["Photo/step10_sonic_grouting_v2.jpg"],
+      photos: ["Photo/3cd01039-69aa-4a93-b6d2-0bdd0133b823.png"],
       details: [
         "หลังเสร็จสิ้นการทดสอบคลื่นเสียง เกร้าท์ปิดท่อด้วยวัสดุกำลังอัดไม่ต่ำกว่าคอนกรีตเสาเข็ม"
       ]
