@@ -55,7 +55,7 @@
           <option value="20">21. การควบคุมมลพิษเสียง & แผงกันเสียง</option>
           <option value="21">22. การตรวจวัดคุณภาพน้ำ & ถังดักตะกอนสนาม</option>
           <option value="22">23. ส่วนที่ 4: งานตรวจสอบเอกสารสัญญาทางวิศวกรรม</option>
-          <option value="23">24. การคิดราคาเบิกจ่ายค่างวดคาน Girder (IPC)</option>
+          <option value="23">24. ตารางรวมจำนวนและสัดส่วนคาน Girder (Main Line, Ramp 01, 03, ORR, SR1)</option>
           <option value="24">25. การตรวจสอบ Shop Drawings & สัญญาณจราจร</option>
           <option value="25">26. ส่วนที่ 5: ปัญหาหน้างานและการประสานงานวิศวกรรม</option>
           <option value="26">27. การประชุมความก้าวหน้าประจำสัปดาห์ & S-Curve</option>
@@ -1002,33 +1002,99 @@
           </div>
         </section>
 
-        <!-- SLIDE 24: Girder Interim Payment Certificate (IPC) -->
+        <!-- SLIDE 24: Girder Interim Payment Certificate & Quantity Breakdown Table -->
         <section class="slide" data-slide-index="23">
           <div class="slide-header">
             <div class="slide-title-group">
               <span class="category-tag">ส่วนที่ 4: เอกสารสัญญาทางวิศวกรรม</span>
-              <h2>การคิดราคาและการเบิกจ่ายค่างวดคาน Girder (Interim Payment Certificate - IPC)</h2>
-              <p class="slide-subtitle">ขั้นตอนการจัดทำเอกสารเบิกจ่ายค่างวดงานก่อสร้างตามปริมาณงานจริงที่ทำได้ (Bill of Quantities)</p>
+              <h2>ตารางสรุปจำนวนชิ้นงานคาน Girder แยกตามสัดส่วนการผลิต (75%, 100%, 125%, 150%)</h2>
+              <p class="slide-subtitle">สรุปการตรวจสอบจำนวนชิ้นงานคาน Precast Girder รายช่วงสายทาง Main Line, Ramp 01, Ramp 03, Ramp ORR และ SR1 (อ้างอิง จำนวน Girder.xlsx)</p>
             </div>
-            <span class="slide-badge-info">IPC PAYMENT</span>
+            <span class="slide-badge-info">GIRDER QUANTITY TABLE</span>
           </div>
           <div class="slide-content">
+            <div class="card" style="margin-bottom: 12px; padding: 14px;">
+              <div class="card-title" style="margin-bottom: 8px;">📊 ตารางสรุปจำนวนคาน Girder แต่ละช่วงสายทาง (75%, 100%, 125%, 150%)</div>
+              <table class="custom-table" style="font-size: 13px; text-align: center;">
+                <thead>
+                  <tr style="background: var(--navy-primary); color: #ffffff;">
+                    <th style="text-align: left; padding: 8px 12px;">ช่วงสายทาง / โครงสร้าง (Section)</th>
+                    <th style="padding: 8px 10px; background: rgba(239, 68, 68, 0.15); color: #dc2626;">สัดส่วน 75% (ชิ้น)</th>
+                    <th style="padding: 8px 10px; background: rgba(37, 99, 235, 0.15); color: #2563eb;">สัดส่วน 100% (ชิ้น)</th>
+                    <th style="padding: 8px 10px; background: rgba(245, 158, 11, 0.15); color: #d97706;">สัดส่วน 125% (ชิ้น)</th>
+                    <th style="padding: 8px 10px; background: rgba(16, 185, 129, 0.15); color: #059669;">สัดส่วน 150% (ชิ้น)</th>
+                    <th style="padding: 8px 12px; background: var(--navy-dark); color: #ffffff;">ยอดรวมทั้งสิ้น (Total Units)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left; font-weight: bold;">Main Line (สายหลัก)</td>
+                    <td>-</td>
+                    <td style="font-weight: bold; color: #2563eb;">6,721</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td style="font-weight: bold;">6,721 ชิ้น</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left; font-weight: bold;">Ramp 01 (ทางเชื่อม 01)</td>
+                    <td>-</td>
+                    <td style="font-weight: bold; color: #2563eb;">95</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td style="font-weight: bold;">95 ชิ้น</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left; font-weight: bold;">Ramp 03 (ทางเชื่อม 03)</td>
+                    <td>-</td>
+                    <td style="font-weight: bold; color: #2563eb;">658</td>
+                    <td style="font-weight: bold; color: #d97706;">30</td>
+                    <td style="font-weight: bold; color: #059669;">14</td>
+                    <td style="font-weight: bold;">702 ชิ้น</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left; font-weight: bold;">Ramp ORR (ทางเชื่อม วงแหวนรอบนอก)</td>
+                    <td style="font-weight: bold; color: #dc2626;">12</td>
+                    <td style="font-weight: bold; color: #2563eb;">1,020</td>
+                    <td style="font-weight: bold; color: #d97706;">13</td>
+                    <td style="font-weight: bold; color: #059669;">5</td>
+                    <td style="font-weight: bold;">1,050 ชิ้น</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left; font-weight: bold;">SR1 (ทางบริการ 1)</td>
+                    <td>-</td>
+                    <td style="font-weight: bold; color: #2563eb;">182</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td style="font-weight: bold;">182 ชิ้น</td>
+                  </tr>
+                  <tr style="background: rgba(15, 23, 42, 0.05); font-weight: bold;">
+                    <td style="text-align: left;">รวมทั้งสิ้น (Grand Total)</td>
+                    <td style="color: #dc2626;">12 ชิ้น</td>
+                    <td style="color: #2563eb;">8,676 ชิ้น</td>
+                    <td style="color: #d97706;">43 ชิ้น</td>
+                    <td style="color: #059669;">19 ชิ้น</td>
+                    <td style="color: var(--navy-primary); font-size: 14px;">8,750 ชิ้น</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <div class="grid-2">
-              <div class="card">
-                <div class="card-title">📑 1. โครงสร้างเอกสาร IPC</div>
-                <ul class="custom-list">
-                  <li><strong>Joint Measurement Sheet:</strong> แผ่นคำนวณปริมาณงานร่วมกันระหว่างผู้รับจ้างและที่ปรึกษา</li>
-                  <li><strong>Summary Bill of Quantities (BOQ):</strong> สรุปยอดเงินตามรายการสัญญา</li>
-                  <li><strong>Quality Certificate Attachment:</strong> ผลทดสอบกำลังอัดปูนและผลดึงลวดอัดแรงแนบประกอบ</li>
+              <div class="card" style="padding: 10px 14px;">
+                <div class="card-title" style="font-size: 12px; margin-bottom: 4px;">📈 สรุปสัดส่วนการผลิต (Percentage Breakdown)</div>
+                <ul class="custom-list spec-list" style="font-size: 11px;">
+                  <li><strong>สัดส่วน 100% (มาตรฐาน):</strong> <strong>8,676 ชิ้น</strong> (คิดเป็น <strong>99.15%</strong> ของงานทั้งหมด)</li>
+                  <li><strong>สัดส่วน 125% (เพิ่มพิเศษ):</strong> <strong>43 ชิ้น</strong> (คิดเป็น <strong>0.49%</strong> ใน Ramp 03 และ Ramp ORR)</li>
+                  <li><strong>สัดส่วน 150% (เพิ่มพิเศษ):</strong> <strong>19 ชิ้น</strong> (คิดเป็น <strong>0.22%</strong> ใน Ramp 03 และ Ramp ORR)</li>
+                  <li><strong>สัดส่วน 75% (ลดสัดส่วน):</strong> <strong>12 ชิ้น</strong> (คิดเป็น <strong>0.14%</strong> เฉพาะช่วง Ramp ORR)</li>
                 </ul>
               </div>
 
-              <div class="card">
-                <div class="card-title">🔄 2. ขั้นตอนการอนุมัติจ่ายเงิน</div>
-                <ul class="custom-list spec-list">
-                  <li>ผู้รับจ้างเสนอหนังสือขอเบิกจ่ายค่างวด IPC ประจำเดือน</li>
-                  <li>วิศวกรที่ปรึกษา (Consultant Engineer) ตรวจสอบความถูกต้องและลงนามรับรอง</li>
-                  <li>คณะกรรมการตรวจรับ EXAT ตรวจสอบเอกสารอนุมัติอนุมัติโอนเงินงวด</li>
+              <div class="card" style="padding: 10px 14px;">
+                <div class="card-title" style="font-size: 12px; margin-bottom: 4px;">⚙️ รายละเอียดประเภทคานที่มีสัดส่วนพิเศษ (Special Girder Types)</div>
+                <ul class="custom-list spec-list" style="font-size: 11px;">
+                  <li><strong>Ramp 03:</strong> `IFV234` (125%: 10), `IFV235` (125%: 2, 150%: 3), `IPT231` (125%: 3), `CFV232` (125%: 2, 150%: 7), `CFV234` (125%: 5), `CFV235` (125%: 2, 150%: 4), `CPT231` (125%: 6)</li>
+                  <li><strong>Ramp ORR:</strong> `IPT233` (75%: 6), `CPT233` (75%: 6), `IFV231` (125%: 2), `CFV231` (125%: 1), `CFV233` (125%: 10, 150%: 5)</li>
                 </ul>
               </div>
             </div>
