@@ -346,8 +346,8 @@ document.addEventListener('DOMContentLoaded', () => {
       icon: "📡",
       subtitle: "การตรวจวัดความดิ่งและรูปทรงหลุมเจาะด้วยคลื่นเสียง Koden Test",
       photos: [
-        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260729_3.jpg",
-        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260729_1.jpg"
+        "Photo/LINE_ALBUM_296 safety audit จตุโชติ_260727_4.jpg",
+        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260729_2.jpg"
       ],
       details: [
         "สแกนรูเจาะด้วย Koden Test ทุกต้น ที่ระยะ 30 ม. และหลังเจาะเสร็จสิ้น"
@@ -372,8 +372,8 @@ document.addEventListener('DOMContentLoaded', () => {
       icon: "🔩",
       subtitle: "ข้อกำหนดท่อตรวจสอบความสมบูรณ์เสาเข็มด้วยคลื่นเสียง",
       photos: [
-        "Photo/LINE_ALBUM_296 safety audit จตุโชติ_260727_4.jpg",
-        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260729_2.jpg"
+        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260729_3.jpg",
+        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260729_1.jpg"
       ],
       details: [
         "เข็ม ∅ ≥ 0.80 ม. ทุกต้น",
