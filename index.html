@@ -39,9 +39,9 @@
           <option value="4">05. ส่วนที่ 1: งานวิศวกรรมสนามและควบคุมการก่อสร้าง</option>
           <option value="5">06. ขั้นตอนงานเสาเข็มเจาะระบบเปียก 10 ขั้นตอน</option>
           <option value="6">07. เกณฑ์ควบคุม Drilling Slurry & คอนกรีต Grade 30</option>
-          <option value="7">08. การก่อสร้างคานขวางยกระดับ (Crossbeam Construction)</option>
-          <option value="8">09. การจัดทำบ้านพักคนงาน (Worker Camp Management)</option>
-          <option value="9">10. ผังแบบแปลนขั้นตอนเสาเข็มเจาะระบบเปียก (Wet-Pile Diagram)</option>
+          <option value="7">08. ผังแบบแปลนขั้นตอนเสาเข็มเจาะระบบเปียก (Wet-Pile Diagram)</option>
+          <option value="8">09. การก่อสร้างคานขวางยกระดับ (Crossbeam Construction)</option>
+          <option value="9">10. การจัดทำบ้านพักคนงาน (Worker Camp Management)</option>
           <option value="10">11. การทดสอบ Static Load Test</option>
           <option value="11">12. ส่วนที่ 2: งานควบคุมคุณภาพวัสดุวิศวกรรมสนาม</option>
           <option value="12">13. การตรวจสอบคุณภาพเหล็กเส้น SD40/SD50</option>
@@ -411,8 +411,40 @@
           </div>
         </section>
 
-        <!-- SLIDE 08: Crossbeam Construction -->
+        <!-- SLIDE 08: Wet Process Bored Pile Diagram -->
         <section class="slide" data-slide-index="7">
+          <div class="slide-header">
+            <div class="slide-title-group">
+              <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
+              <h2>ผังแบบแปลนและขั้นตอนงานเสาเข็มเจาะระบบเปียก (Wet Process Bored Pile Diagram)</h2>
+              <p class="slide-subtitle">ผังแบบแปลนมาตรฐานทางวิศวกรรมและขั้นตอนปฏิบัติงานเสาเข็มเจาะระบบเปียกสนาม (อ้างอิงเอกสาร Wet-Pile.pdf)</p>
+            </div>
+            <span class="slide-badge-info">WET PILE DIAGRAM</span>
+          </div>
+          <div class="slide-content">
+            <div class="grid-60-40">
+              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div style="width: 100%; height: 380px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
+                  <img src="Photo/Wet-Pile_diagram.jpg" alt="ผังแบบแปลนเสาเข็มเจาะระบบเปียก Wet-Pile Diagram" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+                </div>
+                <span style="font-size: 12px; color: var(--text-muted); margin-top: 8px;">📷 ผังแปลนขั้นตอนงานเสาเข็มเจาะระบบเปียก (ถอดความจากไฟล์ Wet-Pile.pdf)</span>
+              </div>
+
+              <div class="card">
+                <div class="card-title">📋 สรุปขั้นตอนจากแบบแปลน Wet-Pile</div>
+                <ul class="custom-list spec-list">
+                  <li><strong>1. งานเตรียมพื้นที่ & Casing:</strong> กำหนดพิกัดเสาเข็ม และลงปลอกเหล็กชั่วคราว (Temporary Casing) ป้องกันปากหลุมพัง</li>
+                  <li><strong>2. การเจาะ & เติม Slurry:</strong> ขุดเจาะหลุมด้วยหัวเจาะ พร้อมเติมสารพยุงหลุมเจาะ (Bentonite Slurry) ควบคุมความหนาแน่นและค่า pH</li>
+                  <li><strong>3. การลงโครงเหล็ก & ท่อ Sonic:</strong> หย่อนกรงเหล็กเสริม (Rebar Cage) ติดตั้งท่อ Sonic Logging และลูกปูนหนุน (Spacer Block)</li>
+                  <li><strong>4. การเทคอนกรีตระบบ Tremie:</strong> สอดท่อเหล็ก Tremie ลงก้นหลุม เทคอนกรีตสดไล่ Slurry ขึ้นปากหลุม คุมระยะจมท่อ 3.0-5.0 ม.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 09: Crossbeam Construction -->
+        <section class="slide" data-slide-index="8">
           <div class="slide-header">
             <div class="slide-title-group">
               <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
@@ -471,8 +503,8 @@
           </div>
         </section>
 
-        <!-- SLIDE 09: Worker Camp Management -->
-        <section class="slide" data-slide-index="8">
+        <!-- SLIDE 10: Worker Camp Management -->
+        <section class="slide" data-slide-index="9">
           <div class="slide-header">
             <div class="slide-title-group">
               <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม / สวัสดิการสนาม</span>
@@ -525,38 +557,6 @@
                   <li><strong>การจัดการขยะ:</strong> จัดตั้งจุดคัดแยกขยะมูลฝอย มีฝาปิดมิดชิด ป้องกันสัตว์พาหะนำโรค</li>
                   <li><strong>ความปลอดภัย:</strong> ติดตั้งอุปกรณ์ดับเพลิง ป้ายแจ้งเตือนความปลอดภัย และไฟส่องสว่างตอนกลางคืน</li>
                   <li><strong>ตรวจสุขอนามัย:</strong> รณรงค์ความสะอาด ป้องกันโรคติดต่อ และตรวจตราสุขอนามัยสม่ำเสมอ</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- SLIDE 10: Wet Process Bored Pile Diagram -->
-        <section class="slide" data-slide-index="9">
-          <div class="slide-header">
-            <div class="slide-title-group">
-              <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
-              <h2>ผังแบบแปลนและขั้นตอนงานเสาเข็มเจาะระบบเปียก (Wet Process Bored Pile Diagram)</h2>
-              <p class="slide-subtitle">ผังแบบแปลนมาตรฐานทางวิศวกรรมและขั้นตอนปฏิบัติงานเสาเข็มเจาะระบบเปียกสนาม (อ้างอิงเอกสาร Wet-Pile.pdf)</p>
-            </div>
-            <span class="slide-badge-info">WET PILE DIAGRAM</span>
-          </div>
-          <div class="slide-content">
-            <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="width: 100%; height: 380px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
-                  <img src="Photo/Wet-Pile_diagram.jpg" alt="ผังแบบแปลนเสาเข็มเจาะระบบเปียก Wet-Pile Diagram" style="width: 100%; height: 100%; object-fit: contain; display: block;">
-                </div>
-                <span style="font-size: 12px; color: var(--text-muted); margin-top: 8px;">📷 ผังแปลนขั้นตอนงานเสาเข็มเจาะระบบเปียก (ถอดความจากไฟล์ Wet-Pile.pdf)</span>
-              </div>
-
-              <div class="card">
-                <div class="card-title">📋 สรุปขั้นตอนจากแบบแปลน Wet-Pile</div>
-                <ul class="custom-list spec-list">
-                  <li><strong>1. งานเตรียมพื้นที่ & Casing:</strong> กำหนดพิกัดเสาเข็ม และลงปลอกเหล็กชั่วคราว (Temporary Casing) ป้องกันปากหลุมพัง</li>
-                  <li><strong>2. การเจาะ & เติม Slurry:</strong> ขุดเจาะหลุมด้วยหัวเจาะ พร้อมเติมสารพยุงหลุมเจาะ (Bentonite Slurry) ควบคุมความหนาแน่นและค่า pH</li>
-                  <li><strong>3. การลงโครงเหล็ก & ท่อ Sonic:</strong> หย่อนกรงเหล็กเสริม (Rebar Cage) ติดตั้งท่อ Sonic Logging และลูกปูนหนุน (Spacer Block)</li>
-                  <li><strong>4. การเทคอนกรีตระบบ Tremie:</strong> สอดท่อเหล็ก Tremie ลงก้นหลุม เทคอนกรีตสดไล่ Slurry ขึ้นปากหลุม คุมระยะจมท่อ 3.0-5.0 ม.</li>
                 </ul>
               </div>
             </div>
