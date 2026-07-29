@@ -41,7 +41,7 @@
           <option value="6">07. เกณฑ์ควบคุม Drilling Slurry & คอนกรีต Grade 30</option>
           <option value="7">08. การก่อสร้างคานขวางยกระดับ (Crossbeam Construction)</option>
           <option value="8">09. การจัดทำบ้านพักคนงาน (Worker Camp Management)</option>
-          <option value="9">10. การเกร้าท์อุดท่อ Sonic Logging Tube</option>
+          <option value="9">10. ผังแบบแปลนขั้นตอนเสาเข็มเจาะระบบเปียก (Wet-Pile Diagram)</option>
           <option value="10">11. การทดสอบ Static Load Test</option>
           <option value="11">12. ส่วนที่ 2: งานควบคุมคุณภาพวัสดุวิศวกรรมสนาม</option>
           <option value="12">13. การตรวจสอบคุณภาพเหล็กเส้น SD40/SD50</option>
@@ -531,32 +531,33 @@
           </div>
         </section>
 
-        <!-- SLIDE 10: Sonic Logging Tube Grouting -->
+        <!-- SLIDE 10: Wet Process Bored Pile Diagram -->
         <section class="slide" data-slide-index="9">
           <div class="slide-header">
             <div class="slide-title-group">
               <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
-              <h2>การเกร้าท์อุดท่อ Sonic Logging Tube ด้วยวัสดุกำลังอัดสูง</h2>
-              <p class="slide-subtitle">ขั้นตอนการอุดปิดท่อ Sonic Logging หลังจากตรวจวัดความสมบูรณ์ด้วยคลื่นเสียง (Crosshole Sonic Logging)</p>
+              <h2>ผังแบบแปลนและขั้นตอนงานเสาเข็มเจาะระบบเปียก (Wet Process Bored Pile Diagram)</h2>
+              <p class="slide-subtitle">ผังแบบแปลนมาตรฐานทางวิศวกรรมและขั้นตอนปฏิบัติงานเสาเข็มเจาะระบบเปียกสนาม (อ้างอิงเอกสาร Wet-Pile.pdf)</p>
             </div>
-            <span class="slide-badge-info">SONIC TUBE GROUTING</span>
+            <span class="slide-badge-info">WET PILE DIAGRAM</span>
           </div>
           <div class="slide-content">
             <div class="grid-60-40">
-              <div class="card">
-                <div class="card-title">🛠️ ขั้นตอนและเกณฑ์ควบคุมงานเกร้าท์ปิดท่อ</div>
-                <ul class="custom-list spec-list">
-                  <li><strong>เกณฑ์กำลังอัดวัสดุเกร้าท์ (Grout Strength):</strong> หลังจากตรวจวัดคลื่นเสียง CSL เรียบร้อยแล้ว ต้องอุดปิดท่อด้วยวัสดุกำลังอัดไม่ต่ำกว่าคอนกรีตเสาเข็ม (<strong>Grade 30 / 30 MPa / 300 ksc</strong>)</li>
-                  <li><strong>การเตรียมพื้นที่ก่อนเกร้าท์:</strong> ดูดน้ำและสิ่งสปรกออกจากท่อ Sonic ด้วยปั๊มแรงดันสูง</li>
-                  <li><strong>วิธีการฉีดเกร้าท์:</strong> สอดท่อฉีดวัสดุเกร้าท์ (Grout Pipe) ลงไปถึงก้นท่อ Sonic แล้วอัด Non-shrink Grout จากล่างขึ้นบนดันน้ำออกจนเต็มท่อ</li>
-                  <li><strong>การตรวจสอบความสมบูรณ์:</strong> สังเกตปูนเกร้าท์ล้นออกจากปากท่อ และทำการสวมฝาแคปปิด (Cap End) หุ้มปลายท่อ</li>
-                </ul>
+              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div style="width: 100%; height: 380px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
+                  <img src="Photo/Wet-Pile_diagram.jpg" alt="ผังแบบแปลนเสาเข็มเจาะระบบเปียก Wet-Pile Diagram" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+                </div>
+                <span style="font-size: 12px; color: var(--text-muted); margin-top: 8px;">📷 ผังแปลนขั้นตอนงานเสาเข็มเจาะระบบเปียก (ถอดความจากไฟล์ Wet-Pile.pdf)</span>
               </div>
-              <div class="card accent-navy">
-                <div class="card-title">💡 เหตุผลทางวิศวกรรม</div>
-                <p style="font-size: 14px; line-height: 1.6;">
-                  ท่อ Sonic Logging ที่ไม่ได้ทำการเกร้าท์อุดด้วยวัสดุกำลังอัดเทียบเท่า จะกลายเป็นช่องว่าง (Void) ส่งผลลดพื้นที่รับแรงกดของเสาเข็ม และอาจเป็นช่องทางให้น้ำใต้ดินกัดกร่อนโครงเหล็กเสริมภายในเนื้อเข็ม
-                </p>
+
+              <div class="card">
+                <div class="card-title">📋 สรุปขั้นตอนจากแบบแปลน Wet-Pile</div>
+                <ul class="custom-list spec-list">
+                  <li><strong>1. งานเตรียมพื้นที่ & Casing:</strong> กำหนดพิกัดเสาเข็ม และลงปลอกเหล็กชั่วคราว (Temporary Casing) ป้องกันปากหลุมพัง</li>
+                  <li><strong>2. การเจาะ & เติม Slurry:</strong> ขุดเจาะหลุมด้วยหัวเจาะ พร้อมเติมสารพยุงหลุมเจาะ (Bentonite Slurry) ควบคุมความหนาแน่นและค่า pH</li>
+                  <li><strong>3. การลงโครงเหล็ก & ท่อ Sonic:</strong> หย่อนกรงเหล็กเสริม (Rebar Cage) ติดตั้งท่อ Sonic Logging และลูกปูนหนุน (Spacer Block)</li>
+                  <li><strong>4. การเทคอนกรีตระบบ Tremie:</strong> สอดท่อเหล็ก Tremie ลงก้นหลุม เทคอนกรีตสดไล่ Slurry ขึ้นปากหลุม คุมระยะจมท่อ 3.0-5.0 ม.</li>
+                </ul>
               </div>
             </div>
           </div>
