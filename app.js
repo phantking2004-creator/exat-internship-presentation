@@ -358,8 +358,8 @@ document.addEventListener('DOMContentLoaded', () => {
       icon: "⛓️",
       subtitle: "การประกอบ ยกรอย และเกณฑ์เวลาติดตั้งโครงเหล็กก้นหลุม",
       photos: [
-        "Photo/LINE_ALBUM_22072569_260727_1.jpg",
-        "Photo/LINE_ALBUM_จตุโชติตอน3-120626_260727_6.jpg"
+        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260729_3.jpg",
+        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260729_1.jpg"
       ],
       details: [
         "ตรวจสอบระยะห่างเหล็กแกน/ปลอก ระยะหุ้ม และระยะทาบ",
@@ -372,8 +372,8 @@ document.addEventListener('DOMContentLoaded', () => {
       icon: "🔩",
       subtitle: "ข้อกำหนดท่อตรวจสอบความสมบูรณ์เสาเข็มด้วยคลื่นเสียง",
       photos: [
-        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260729_3.jpg",
-        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260729_1.jpg"
+        "Photo/LINE_ALBUM_22072569_260727_1.jpg",
+        "Photo/LINE_ALBUM_จตุโชติตอน3-120626_260727_6.jpg"
       ],
       details: [
         "เข็ม ∅ ≥ 0.80 ม. ทุกต้น",
