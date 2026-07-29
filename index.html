@@ -42,7 +42,7 @@
           <option value="7">08. ผังแบบแปลนขั้นตอนเสาเข็มเจาะระบบเปียก (Wet-Pile Diagram)</option>
           <option value="8">09. การก่อสร้างคานขวางยกระดับ (Crossbeam Construction)</option>
           <option value="9">10. การจัดทำบ้านพักคนงาน (Worker Camp Management)</option>
-          <option value="10">11. การทดสอบ Static Load Test</option>
+          <option value="10">11. ขั้นตอนทดสอบรับน้ำหนักเสาเข็ม Static Load Test (Loading Step)</option>
           <option value="11">12. ส่วนที่ 2: งานควบคุมคุณภาพวัสดุวิศวกรรมสนาม</option>
           <option value="12">13. การตรวจสอบคุณภาพเหล็กเส้น SD40/SD50</option>
           <option value="13">14. การตรวจสอบคุณภาพวัสดุหน้างาน (Material On Site)</option>
@@ -563,42 +563,38 @@
           </div>
         </section>
 
-        <!-- SLIDE 11: Static Load Test -->
+        <!-- SLIDE 11: Static Load Test (Loading Step) -->
         <section class="slide" data-slide-index="10">
           <div class="slide-header">
             <div class="slide-title-group">
               <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
-              <h2>การทดสอบ Static Load Test</h2>
-              <p class="slide-subtitle">การทดสอบกำลังรับน้ำหนักบรรทุกของเสาเข็มเจาะโดยวิธีน้ำหนักกดจริง (Static Load Test)</p>
+              <h2>ขั้นตอนการทดสอบรับน้ำหนักเสาเข็ม (Static Load Test - Loading Step)</h2>
+              <p class="slide-subtitle">ข้อกำหนดขั้นตอนการเพิ่ม-ลดน้ำหนักบรรทุก เกณฑ์การคงน้ำหนัก และการบันทึกค่าการทรุดตัว (อ้างอิงเอกสาร Loading Step โครงการฉลองรัช)</p>
             </div>
             <span class="slide-badge-info">STATIC LOAD TEST</span>
           </div>
           <div class="slide-content">
-            <div class="grid-3">
-              <div class="card">
-                <div class="card-title">⚓ เสาเข็มสมอ (Anchor Pile)</div>
-                <p style="font-size: 13px; color: var(--text-muted);">เสาเข็มสำหรับยึดรั้งโครงเหล็กรับแรงดึงระหว่างการทดสอบกดเสาเข็มใช้งาน</p>
-                <div class="stat-box" style="margin-top: 10px;">
-                  <div class="stat-num">20 ต้น</div>
-                  <div class="stat-label">จำนวนเสาเข็มสมอในโครงการฉลองรัช</div>
+            <div class="grid-60-40">
+              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div style="width: 100%; height: 380px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
+                  <img src="Photo/Loading_step_diagram.jpg" alt="ตารางขั้นตอน Loading Step Static Load Test" style="width: 100%; height: 100%; object-fit: contain; display: block;">
                 </div>
+                <span style="font-size: 12px; color: var(--text-muted); margin-top: 8px;">📷 ตาราง Loading Step อ้างอิงเอกสารทดสอบทางวิชาการ (STS Corporation Co., Ltd.)</span>
               </div>
 
               <div class="card">
-                <div class="card-title">⚖️ ขั้นตอนการเพิ่มน้ำหนักกด</div>
-                <ul class="custom-list">
-                  <li>ทดสอบโดยวิธี Maintained Load Method (ASTM D1143)</li>
-                  <li>เพิ่มน้ำหนักเป็นขั้นๆ ละ 25% จนถึง <strong>200% ของ Design Load</strong></li>
-                  <li>คงน้ำหนักกดไว้นาน 24 ชั่วโมงเพื่อวัดค่าการทรุดตัวคงค้าง</li>
-                </ul>
-              </div>
-
-              <div class="card">
-                <div class="card-title">📊 เครื่องมือวัดและการประเมิน</div>
-                <ul class="custom-list">
-                  <li><strong>แม่แรงไฮดรอลิก (Hydraulic Jack):</strong> เทียบวัดแรงดันด้วย Calibrated Pressure Gauge</li>
-                  <li><strong>Dial Gauges:</strong> ติดตั้ง 4 จุด ตรวจวัดค่าการทรุดตัว (Settlement) ระดับทศนิยม 0.01 มม.</li>
-                  <li><strong>เกณฑ์ผ่าน:</strong> การทรุดตัวรวมและคงค้างไม่เกินค่าที่ออกแบบไว้</li>
+                <div class="card-title">📊 ข้อกำหนดวิศวกรรมการทดสอบ (Loading Step Spec)</div>
+                <ul class="custom-list spec-list">
+                  <li><strong>เสาเข็มทดสอบสนาม:</strong> Main Line (ML) STA.6+643.949 (BH-08) เสาเข็มเจาะ $\varnothing$ 1,500 มม.</li>
+                  <li><strong>กำลังแบกทานออกแบบ (Design Load):</strong> <strong>850 ตัน</strong> | น้ำหนักทดสอบสูงสุด (300%): <strong>2,550 ตัน</strong></li>
+                  <li><strong>ขั้นตอนเพิ่มน้ำหนัก (3 Cycles Schedule):</strong>
+                    <ul style="padding-left: 16px; font-size: 12px; margin-top: 4px;">
+                      <li><strong>Cycle I (100%):</strong> 25% &rarr; 50% &rarr; 75% &rarr; 100% (850 ตัน, Hold 24 ชม.)</li>
+                      <li><strong>Cycle II (200%):</strong> 125% &rarr; 150% &rarr; 175% &rarr; 200% (1,700 ตัน)</li>
+                      <li><strong>Cycle III (300%):</strong> 225% &rarr; 250% &rarr; 275% &rarr; 300% (2,550 ตัน Max Load)</li>
+                    </ul>
+                  </li>
+                  <li><strong>เครื่องมือวัดทรุดตัว:</strong> แม่แรงไฮดรอลิก Cylinder No. 87930 ร่วมกับ Dial Gauge 4 จุด (ละเอียด 0.01 มม.)</li>
                 </ul>
               </div>
             </div>
