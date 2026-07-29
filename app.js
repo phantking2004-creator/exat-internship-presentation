@@ -306,8 +306,8 @@ document.addEventListener('DOMContentLoaded', () => {
       icon: "🏗️",
       subtitle: "การกดท่อเหล็กชั่วคราวป้องกันการพังทลายของชั้นดิน",
       photos: [
-        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_8.jpg",
-        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_7.jpg"
+        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_7.jpg",
+        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_8.jpg"
       ],
       details: [
         "ASTM A36 ยาว ≥ 13 ม.",
