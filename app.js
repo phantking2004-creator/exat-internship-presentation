@@ -286,21 +286,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 10-Step Bored Pile Workflow Modal Interactive Logic (Slide 6)
-  const stepDetailsModal = document.getElementById('step-details-modal');
-  const closeStepModalBtn = document.getElementById('close-step-modal-btn');
-  const stepModalBackdrop = document.getElementById('step-modal-backdrop');
-  const stepModalIcon = document.getElementById('step-modal-icon');
-  const stepModalBadge = document.getElementById('step-modal-badge');
-  const stepModalTitle = document.getElementById('step-modal-title');
-  const stepModalSubtitle = document.getElementById('step-modal-subtitle');
-  const stepModalList = document.getElementById('step-modal-list');
+  // 10-Step Bored Pile Workflow Interactive Logic (Slide 6 Inline Renderer)
+  const stepActiveContainer = document.getElementById('step-active-container');
+  const stepNavBtns = document.querySelectorAll('.step-nav-btn');
 
   const workflowStepsData = {
     1: {
       title: "วางพิกัดตำแหน่ง (Survey & Staking Out)",
       icon: "📍",
       subtitle: "การกำหนดจุดศูนย์กลางเสาเข็มเจาะและตอกหมุดอ้างอิงสนาม",
+      photos: ["Photo/90062.jpg"],
       details: [
         "ใช้อุปกรณ์กล้อง Total Station กำหนดพิกัดจุดศูนย์กลางเสาเข็ม (Pile Center) ตามแบบวิศวกรรม",
         "ตอกหมุดอ้างอิง (Offset Pin) จำนวน 4 ทิศทาง (ระยะห่าง 1.0 - 2.0 เมตร) สำหรับตรวจสอบตำแหน่งขณะกด Casing",
@@ -311,6 +306,10 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "กดท่อ Casing (Temporary Casing Driving)",
       icon: "🏗️",
       subtitle: "การกดท่อเหล็กชั่วคราวป้องกันการพังทลายของชั้นดิน",
+      photos: [
+        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_8.jpg",
+        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_7.jpg"
+      ],
       details: [
         "กดท่อเหล็กชั่วคราว (Temporary Steel Casing) ความหนาไม่น้อยกว่า 10 มม. ความยาว 12 - 15 เมตร",
         "ใช้เครื่องจักร Vibro Hammer หรือ Hydraulic Casing Oscillator ในการกดท่ออย่างต่อเนื่อง",
@@ -321,6 +320,10 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "ขุดเจาะหลุม (Soil Excavation)",
       icon: "🚜",
       subtitle: "การขุดเจาะดินด้วยหัวเจาะชนิด Auger และ Drilling Bucket",
+      photos: [
+        "Photo/LINE_ALBUM_Gun_260729_1.jpg",
+        "Photo/LINE_ALBUM_1572569 BE_260727_4.jpg"
+      ],
       details: [
         "ใช้หัวเจาะ Auger ขุดดินชั้นบนบริเวณภายในท่อ Casing (ความลึก 0 - 12 ม.)",
         "เปลี่ยนเป็นถังขุด Drilling Bucket เมื่อเจาะเข้าสู่ชั้นดินลึกและระดับน้ำใต้ดิน",
@@ -331,6 +334,10 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "เติม Drilling Slurry (Slurry Stabilization)",
       icon: "🧪",
       subtitle: "การใช้สารพยุงหลุมเจาะรักษาเสถียรภาพผนังหลุม",
+      photos: [
+        "Photo/LINE_ALBUM_296 safety audit จตุโชติ_260727_1.jpg",
+        "Photo/LINE_ALBUM_22072569_260729_1.jpg"
+      ],
       details: [
         "เติมสารพยุงหลุมเจาะ (Polymer/Bentonite Slurry) รักษาระดับสารพยุงให้สูงกว่าระดับน้ำใต้ดิน >= 1.5 ม.",
         "ความหนาแน่น (Density): < 1.02 g/ml (Mud Balance ASTM D4380)",
@@ -343,6 +350,10 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "ทำความสะอาดก้นหลุม (Base Cleaning)",
       icon: "🧹",
       subtitle: "การขจัดเศษตกตะกอนและทรายปนเปื้อนก้นหลุมเจาะ",
+      photos: [
+        "Photo/LINE_ALBUM_296 safety audit จตุโชติ_260727_4.jpg",
+        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260729_2.jpg"
+      ],
       details: [
         "ใช้ Cleaning Bucket (ถังเจาะก้นราบ) ตักกวาดเศษดินและตะกอนตกค้างก้นหลุม",
         "ปั๊มหมุนเวียนสารพยุงหลุมเจาะผ่านเครื่องแยกทราย (Desander Unit) เพื่อตกตะกอนทรายปนเปื้อน",
@@ -353,6 +364,10 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "ทดสอบ Koden Test (Sonic Caliper Test)",
       icon: "📡",
       subtitle: "การตรวจวัดความดิ่ง รูปทรง และความสมบูรณ์ของหลุมเจาะด้วยคลื่นเสียง",
+      photos: [
+        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260729_3.jpg",
+        "Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260729_1.jpg"
+      ],
       details: [
         "หย่อนหัววัด Koden Test (Ultrasonic Drilling Logger) ลงในหลุมเจาะสารพยุง Slurry",
         "ส่งคลื่นสะท้อนความถี่สูงวัดเส้นผ่านศูนย์กลาง (Diameter Profile) และความดิ่ง (Verticality Profile) 2 แนวตั้งฉาก",
@@ -363,6 +378,10 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "หย่อนกรงเหล็กเสริม (Rebar Cage Installation)",
       icon: "⛓️",
       subtitle: "การประกอบ ยกรอย และติดตั้งกรงเหล็กเสริมเสาเข็ม",
+      photos: [
+        "Photo/LINE_ALBUM_22072569_260727_1.jpg",
+        "Photo/LINE_ALBUM_จตุโชติตอน3-120626_260727_6.jpg"
+      ],
       details: [
         "ผูก/ยึดกรงเหล็กเสริมตาม Bending Schedule พร้อมเชื่อมทบแนวต่อเหล็กตามมาตรฐานวิศวกรรม",
         "ติดตั้งลูกปูนรองระยะ (Concrete Spacers) โดยรอบทุกระยะ 2.0-3.0 ม. เพื่อรักษาความหนา Concrete Cover (7.5-10 ซม.)",
@@ -373,6 +392,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "ติดตั้งท่อ Tremie (Tremie Pipe Assembly)",
       icon: "🔩",
       subtitle: "การประกอบท่อเหล็กลำเลียงคอนกรีตใต้น้ำ",
+      photos: ["Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_1.jpg"],
       details: [
         "ประกอบท่อ Tremie Pipe ทำด้วยเหล็กเท่านั้น (**ห้ามใช้อลูมิเนียมเด็ดขาด**) ขนาด ศก. 250 - 300 มม.",
         "ต่อท่อนท่อท่อนละ 1.0 - 3.0 ม. ลงถึงก้นหลุมเจาะ โดยยกปลายท่อสูงจากก้นหลุม 20 - 30 ซม.",
@@ -383,6 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "เทคอนกรีตใต้น้ำ (Tremie Concrete Pouring)",
       icon: "🏗️",
       subtitle: "การเทคอนกรีตเกรด 30 AASHTO T 119 หน่วงเวลา >= 4 ชั่วโมง",
+      photos: ["Photo/step9_tremie_pouring.jpg"],
       details: [
         "ใช้คอนกรีต Grade 30 (กำลังอัดทรงกระบอก Cylinder >= 30 MPa / 300 ksc) ค่ายุบตัว Slump 18 - 23 ซม.",
         "ระยะเวลาเริ่มแข็งตัว (Setting Time): >= 4 ชั่วโมง (ASTM C494 Type D) เทคอนกรีตดัน Slurry ลอยขึ้นด้านบน",
@@ -394,6 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "ถอนท่อ Casing (Casing Extraction & Backfill)",
       icon: "🚜",
       subtitle: "การถอนท่อเหล็กชั่วคราวและการกลบหลังหัวเข็ม",
+      photos: ["Photo/step10_casing_extraction.jpg"],
       details: [
         "ใช้ Crane / Vibro Hammer ถอนท่อ Casing ออกอย่างช้าๆ ขณะคอนกรีตสดยังไม่เซ็ตตัว",
         "ตรวจสอบระดับคอนกรีตเผื่อ (Over-pouring) เหนือระดับตัดหัวเข็ม (Cut-off Level) ไม่น้อยกว่า 0.5 - 1.0 ม.",
@@ -402,45 +424,79 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  function openStepModal(stepIndex) {
+  function renderActiveStep(stepIndex) {
     const data = workflowStepsData[stepIndex];
-    if (!data || !stepDetailsModal) return;
+    if (!data || !stepActiveContainer) return;
 
-    if (stepModalIcon) stepModalIcon.textContent = data.icon;
-    if (stepModalBadge) stepModalBadge.textContent = `ขั้นตอนที่ ${stepIndex}`;
-    if (stepModalTitle) stepModalTitle.textContent = data.title;
-    if (stepModalSubtitle) stepModalSubtitle.textContent = data.subtitle;
+    stepNavBtns.forEach(btn => {
+      const idx = parseInt(btn.getAttribute('data-step-index'), 10);
+      btn.classList.toggle('active', idx === stepIndex);
+    });
 
-    if (stepModalList) {
-      stepModalList.innerHTML = data.details.map(detail => `<li>${detail}</li>`).join('');
+    let photosHtml = '';
+    if (data.photos && data.photos.length > 0) {
+      if (data.photos.length === 1) {
+        photosHtml = `
+          <div style="width: 100%; height: 260px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #f8fafc;">
+            <img src="${data.photos[0]}" alt="${data.title}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+        `;
+      } else {
+        photosHtml = `
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; height: 260px;">
+            <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
+              <img src="${data.photos[0]}" alt="${data.title}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
+              <img src="${data.photos[1]}" alt="${data.title}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+          </div>
+        `;
+      }
     }
 
-    stepDetailsModal.classList.add('active');
+    const detailsListHtml = data.details.map(d => `<li>${d}</li>`).join('');
+
+    stepActiveContainer.innerHTML = `
+      <div class="step-active-card">
+        <div style="display: flex; flex-direction: column; gap: 8px; align-items: center; justify-content: center;">
+          ${photosHtml}
+          <span style="font-size: 11px; color: var(--text-muted);">📷 ภาพประกอบการปฏิบัติงานสนามขั้นตอนที่ ${stepIndex} (${data.photos.length} รูป)</span>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 24px;">${data.icon}</span>
+            <div>
+              <span class="category-tag" style="background: var(--blue-accent); color: #ffffff; font-size: 10px; padding: 2px 8px;">ขั้นตอนที่ ${stepIndex} จาก 10</span>
+              <h3 style="font-family: var(--font-heading); font-size: 17px; color: var(--navy-primary); margin-top: 2px;">${data.title}</h3>
+            </div>
+          </div>
+          <p style="font-size: 12px; color: var(--text-muted); font-weight: 500; margin-bottom: 2px;">${data.subtitle}</p>
+          
+          <div class="card" style="background: rgba(15, 32, 66, 0.02); border: 1px solid var(--border-light); padding: 12px;">
+            <div class="card-title" style="font-size: 12px; margin-bottom: 8px;">📌 รายละเอียดการปฏิบัติงาน & ข้อกำหนดวิศวกรรม EXAT</div>
+            <ul class="custom-list spec-list" style="font-size: 11px; gap: 6px;">
+              ${detailsListHtml}
+            </ul>
+          </div>
+        </div>
+      </div>
+    `;
+
     playSlideSound();
   }
 
-  function closeStepModal() {
-    if (stepDetailsModal) {
-      stepDetailsModal.classList.remove('active');
-    }
-  }
-
-  document.querySelectorAll('.step-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const stepIdx = card.getAttribute('data-step-index');
-      if (stepIdx) {
-        openStepModal(parseInt(stepIdx, 10));
+  stepNavBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = parseInt(btn.getAttribute('data-step-index'), 10);
+      if (!isNaN(idx)) {
+        renderActiveStep(idx);
       }
     });
   });
 
-  if (closeStepModalBtn) {
-    closeStepModalBtn.addEventListener('click', closeStepModal);
-  }
-
-  if (stepModalBackdrop) {
-    stepModalBackdrop.addEventListener('click', closeStepModal);
-  }
+  renderActiveStep(1);
 
   // Keyboard Controls
   document.addEventListener('keydown', (e) => {
