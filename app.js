@@ -319,8 +319,8 @@ document.addEventListener('DOMContentLoaded', () => {
       icon: "🚜",
       subtitle: "ขั้นตอนการขุดเจาะชั้นดินและการเติมสารพยุงหลุมเจาะ",
       photos: [
-        "Photo/LINE_ALBUM_Gun_260729_1.jpg",
-        "Photo/LINE_ALBUM_1572569 BE_260727_4.jpg"
+        "Photo/LINE_ALBUM_1572569 BE_260727_4_flipped.jpg",
+        "Photo/LINE_ALBUM_Gun_260729_1.jpg"
       ],
       details: [
         "ใช้หัวเจาะ Auger ในการเปิดเนื้อดินระยะ 15 ม. หลังจากนั้นเปลี่ยนเป็น Bucket",
