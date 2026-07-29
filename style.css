@@ -1,6 +1,6 @@
 /* ==========================================================================
    EXAT Internship Presentation - Navy Light Design System
-   Synchronization: Total Slides = 31 (Wrapper width 3100%, Slide width 100%/31)
+   Synchronization: Total Slides = 32 (Wrapper width 3200%, Slide width 100%/32)
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap');
@@ -223,18 +223,18 @@ html, body {
   position: relative;
 }
 
-/* Slider Wrapper - 31 Slides Sync: 3100% width */
+/* Slider Wrapper - 32 Slides Sync: 3200% width */
 .slides-wrapper {
   display: flex;
-  width: 3100%;
+  width: 3200%;
   height: 100%;
   transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform;
 }
 
-/* Individual Slide - 31 Slides Sync: width calc(100% / 31) */
+/* Individual Slide - 32 Slides Sync: width calc(100% / 32) */
 .slide {
-  width: calc(100% / 31);
+  width: calc(100% / 32);
   height: 100%;
   padding: 24px 36px;
   display: flex;
@@ -996,4 +996,85 @@ html, body {
 
 .status-dot.green {
   background-color: #10b981;
+}
+
+/* Table of Contents Grid (Slide 4) */
+.toc-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+.toc-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-left: 4px solid var(--blue-accent);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toc-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--blue-accent);
+}
+
+.toc-num-badge {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--border-color);
+}
+
+.toc-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toc-card-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--sky-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.toc-section-tag {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--blue-accent);
+  letter-spacing: 1px;
+  background: #eff6ff;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.toc-card h3 {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy-primary);
+  line-height: 1.35;
+}
+
+.toc-card p {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.45;
 }

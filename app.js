@@ -1,10 +1,10 @@
 /* ==========================================================================
    EXAT Internship Presentation - Application Logic & Real-time Live Sync
-   Synchronization: Total Slides = 31
+   Synchronization: Total Slides = 32
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  const totalSlides = 31;
+  const totalSlides = 32;
   let currentSlide = 0;
   let audioEnabled = true;
 
