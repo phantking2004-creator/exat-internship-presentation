@@ -225,18 +225,25 @@ html, body {
 
 /* Slider Wrapper - 31 Slides Sync: 3100% width */
 .slides-wrapper {
-  display: flex;
-  width: 3100%;
-  height: 100%;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  width: 3100% !important;
+  height: 100% !important;
   transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform;
 }
 
 /* Individual Slide - 31 Slides Sync: width calc(100% / 31) */
 .slide {
-  width: calc(100% / 31);
-  height: 100%;
-  padding: 24px 36px;
+  box-sizing: border-box !important;
+  flex-shrink: 0 !important;
+  flex-grow: 0 !important;
+  width: calc(100% / 31) !important;
+  min-width: calc(100% / 31) !important;
+  max-width: calc(100% / 31) !important;
+  height: 100% !important;
+  padding: 14px 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -248,13 +255,13 @@ html, body {
 /* Anti-Overflow Header for each slide */
 .slide-header {
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   border-bottom: 2px solid var(--border-light);
-  padding-bottom: 12px;
+  padding-bottom: 8px;
 }
 
 .slide-title-group {
@@ -264,12 +271,12 @@ html, body {
 .category-tag {
   display: inline-block;
   font-family: var(--font-heading);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   color: var(--blue-accent);
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 4px;
+  letter-spacing: 0.8px;
+  margin-bottom: 2px;
   background: var(--sky-light);
   padding: 2px 10px;
   border-radius: 12px;
@@ -277,16 +284,16 @@ html, body {
 
 .slide-header h2 {
   font-family: var(--font-heading);
-  font-size: 26px;
+  font-size: 21px;
   font-weight: 700;
   color: var(--navy-primary);
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .slide-subtitle {
-  font-size: 14px;
+  font-size: 12px;
   color: var(--text-muted);
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .slide-badge-info {
@@ -304,10 +311,11 @@ html, body {
 .slide-content {
   flex: 1;
   width: 100%;
+  min-height: 0;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
   padding-right: 4px;
 }
 
@@ -330,30 +338,38 @@ html, body {
 /* Layout Grids */
 .grid-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 14px;
   width: 100%;
+  flex: 1;
+  min-height: 0;
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 12px;
   width: 100%;
+  flex: 1;
+  min-height: 0;
 }
 
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  gap: 10px;
   width: 100%;
+  flex: 1;
+  min-height: 0;
 }
 
 .grid-60-40 {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  gap: 20px;
+  gap: 14px;
   width: 100%;
+  flex: 1;
+  min-height: 0;
 }
 
 /* Cards & Panels */
@@ -361,12 +377,13 @@ html, body {
   background: var(--bg-card);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
-  padding: 20px;
+  padding: 14px;
   box-shadow: var(--shadow-sm);
   transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
 .card:hover {
@@ -392,13 +409,13 @@ html, body {
 
 .card-title {
   font-family: var(--font-heading);
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--navy-primary);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .card-icon {
@@ -419,15 +436,17 @@ html, body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
+  font-size: 12.5px;
+  line-height: 1.45;
 }
 
 .custom-list li {
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: inherit;
+  line-height: inherit;
   color: var(--text-dark);
   position: relative;
-  padding-left: 22px;
+  padding-left: 18px;
 }
 
 .custom-list li::before {
@@ -588,7 +607,7 @@ html, body {
   padding: 14px 18px;
   box-shadow: var(--shadow-sm);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.25fr 1fr;
   gap: 16px;
   align-items: center;
   animation: fadeInStep 0.3s cubic-bezier(0.25, 1, 0.5, 1);
@@ -733,7 +752,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 14px;
   max-width: 900px;
   width: 100%;
   text-align: center;
@@ -751,8 +770,9 @@ html, body {
 
 .cover-photo-card {
   width: 100%;
-  max-width: 520px;
-  height: 250px;
+  max-width: 620px;
+  aspect-ratio: 2468 / 1488;
+  height: auto;
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(11, 29, 58, 0.12);
@@ -878,7 +898,7 @@ html, body {
 
 .progress-bar-fill {
   height: 100%;
-  width: 3.2258%; /* Initially 1/31 */
+  width: calc(100% / 31); /* Initially 1/31 */
   background: linear-gradient(90deg, var(--blue-accent), var(--cyan-accent));
   transition: width 0.3s ease;
 }
@@ -998,7 +1018,7 @@ html, body {
 
 .live-roles-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.25fr 1fr;
   gap: 16px;
 }
 
@@ -1198,4 +1218,352 @@ html, body {
   font-size: 12px;
   color: var(--text-muted);
   line-height: 1.45;
+}
+
+
+/* ==========================================
+   Auto Photo Carousel (1 Large Image / 3s)
+   ========================================== */
+.photo-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  background: var(--navy-dark);
+}
+
+.photo-carousel-item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  pointer-events: none;
+}
+
+.photo-carousel-item.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.photo-carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-dots-bar {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 10;
+  background: rgba(11, 29, 58, 0.7);
+  backdrop-filter: blur(4px);
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.carousel-dots-bar .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-dots-bar .dot.active {
+  width: 22px;
+  border-radius: 10px;
+  background: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}
+
+
+/* ==========================================================================
+   Full Screen Mode Optimization (:fullscreen & F-key)
+   Ensures all slides fit 100% area without vertical overflow & images full aspect
+   ========================================================================== */
+:fullscreen, :-webkit-full-screen, :-moz-full-screen {
+  background-color: var(--bg-main) !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+}
+
+:fullscreen .app-header, 
+:-webkit-full-screen .app-header {
+  padding: 6px 24px !important;
+  height: 48px !important;
+}
+
+:fullscreen .presentation-viewport, 
+:-webkit-full-screen .presentation-viewport {
+  height: calc(100vh - 48px - 44px) !important;
+}
+
+:fullscreen .bottom-footer, 
+:-webkit-full-screen .bottom-footer {
+  height: 44px !important;
+  padding: 0 24px !important;
+}
+
+:fullscreen .slide, 
+:-webkit-full-screen .slide {
+  height: 100% !important;
+  padding: 16px 28px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+/* Guarantee images fit nicely without cropping or overflow */
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: var(--radius-sm);
+}
+
+.photo-carousel-wrapper img, 
+.photo-carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+/* Slide Content Auto Flex Fitting */
+.slide-content {
+  flex: 1 !important;
+  min-height: 0 !important;
+  overflow-y: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+/* Ensure Grids Expand and Prevent Overflow */
+.grid-2, .grid-3, .grid-4, .grid-60-40 {
+  flex: 1 !important;
+  min-height: 0 !important;
+}
+
+/* ------------ Slide 29 Tunnel Safety 2D Animations ------------ */
+@keyframes fanRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes smokeFlow {
+  0% { transform: translateX(0) scale(0.8); opacity: 0.8; }
+  50% { transform: translateX(40px) scale(1.1); opacity: 0.9; }
+  100% { transform: translateX(90px) scale(1.4); opacity: 0.1; }
+}
+@keyframes waterSpray {
+  0% { transform: translateY(0); opacity: 0.9; }
+  100% { transform: translateY(35px); opacity: 0.2; }
+}
+@keyframes canvasDrop {
+  0% { height: 0px; opacity: 0; }
+  100% { height: 50px; opacity: 1; }
+}
+@keyframes warningBlink {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px #ef4444); }
+  50% { opacity: 0.4; filter: none; }
+}
+
+/* Fullscreen Mode (F-Key / Button): Zero Excess Gap, 5px Gap Right Photo Expansion */
+:fullscreen .slide[data-slide-index="6"] .slide-content > div > div:last-child,
+:-webkit-full-screen .slide[data-slide-index="6"] .slide-content > div > div:last-child,
+:-moz-full-screen .slide[data-slide-index="6"] .slide-content > div > div:last-child {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+:fullscreen .slide[data-slide-index="6"] .fullscreen-photo-grid,
+:-webkit-full-screen .slide[data-slide-index="6"] .fullscreen-photo-grid,
+:-moz-full-screen .slide[data-slide-index="6"] .fullscreen-photo-grid {
+  gap: 5px !important;
+  flex: 1 !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+:fullscreen .slide[data-slide-index="6"] .fullscreen-photo-row-1,
+:-webkit-full-screen .slide[data-slide-index="6"] .fullscreen-photo-row-1,
+:-moz-full-screen .slide[data-slide-index="6"] .fullscreen-photo-row-1,
+:fullscreen .slide[data-slide-index="6"] .fullscreen-photo-row-2,
+:-webkit-full-screen .slide[data-slide-index="6"] .fullscreen-photo-row-2,
+:-moz-full-screen .slide[data-slide-index="6"] .fullscreen-photo-row-2 {
+  flex: 1 !important;
+  height: auto !important;
+  gap: 5px !important;
+}
+
+:fullscreen .slide[data-slide-index="6"] .fullscreen-photo-row-3,
+:-webkit-full-screen .slide[data-slide-index="6"] .fullscreen-photo-row-3,
+:-moz-full-screen .slide[data-slide-index="6"] .fullscreen-photo-row-3 {
+  flex: 1.8 !important;
+  height: auto !important;
+}
+
+/* ==========================================================================
+   Universal Image Lightbox Styles for All Presentation Images
+   ========================================================================== */
+.slide img {
+  cursor: pointer !important;
+  transition: filter 0.2s ease, transform 0.2s ease !important;
+}
+
+.slide img:hover {
+  filter: brightness(1.08) contrast(1.02);
+}
+
+.image-lightbox-modal.active {
+  display: flex !important;
+  opacity: 1 !important;
+}
+
+.image-lightbox-modal.active #lightbox-img {
+  transform: scale(1) !important;
+}
+
+#close-lightbox-btn:hover {
+  background: #ef4444 !important;
+  border-color: #ef4444 !important;
+  transform: scale(1.1);
+}
+
+/* ==========================================================================
+   Universal Image Lightbox Styles for All Presentation Images
+   ========================================================================== */
+.slide img {
+  cursor: pointer !important;
+  transition: filter 0.2s ease, transform 0.2s ease !important;
+}
+
+.slide img:hover {
+  filter: brightness(1.08) contrast(1.02);
+}
+
+.image-lightbox-modal {
+  display: none !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 9999999 !important;
+  background: rgba(0, 0, 0, 0.88) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 0;
+  transition: opacity 0.25s ease !important;
+  pointer-events: auto !important;
+}
+
+.image-lightbox-modal.active {
+  display: flex !important;
+  opacity: 1 !important;
+}
+
+.lightbox-content-box {
+  position: relative;
+  max-width: 94vw;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#lightbox-img {
+  max-width: 92vw;
+  max-height: 84vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.85);
+  transform: scale(0.92);
+  transition: transform 0.25s ease !important;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.image-lightbox-modal.active #lightbox-img {
+  transform: scale(1) !important;
+}
+
+#lightbox-caption {
+  margin-top: 12px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  background: rgba(11, 29, 58, 0.9);
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+#close-lightbox-btn {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 1;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000 !important;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.5);
+}
+
+#close-lightbox-btn:hover {
+  background: #ef4444 !important;
+  border-color: #ef4444 !important;
+  transform: scale(1.1);
+}
+
+/* ==========================================================================
+   Universal Image Lightbox Styles for All Presentation Images
+   ========================================================================== */
+.slide img {
+  cursor: pointer !important;
+  transition: filter 0.2s ease, transform 0.2s ease !important;
+}
+
+.slide img:hover {
+  filter: brightness(1.08) contrast(1.02);
+}
+
+/* ==========================================================================
+   Clickable Slide Images & Hover Pointer Style
+   ========================================================================== */
+.slide img {
+  cursor: pointer !important;
+  transition: transform 0.2s ease, filter 0.2s ease !important;
+}
+
+.slide img:hover {
+  filter: brightness(1.08) contrast(1.02);
+  transform: scale(1.008);
 }

@@ -11,7 +11,7 @@
   <!-- PeerJS for Real-time Peer-to-Peer Sync -->
   <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=1.1.1">
 </head>
 <body>
   <div class="app-container">
@@ -22,7 +22,7 @@
           <span class="brand-badge exat">EXAT</span>
           <span class="brand-badge mahidol">EG MAHIDOL</span>
         </div>
-        <h1 class="header-title">รายงานผลการปฏิบัติงานฝึกงาน (Final)</h1>
+        <h1 class="header-title">รายงานผลการปฏิบัติงานฝึกงาน</h1>
       </div>
       <div class="header-controls">
         <!-- Live Real-time Sync Button -->
@@ -31,38 +31,38 @@
         </button>
 
         <!-- Table of Contents Dropdown -->
-        <select id="toc-select" class="toc-select" title="เลือกสไลด์">
-          <option value="0">01. ปกการนำเสนอผลงานฝึกงาน</option>
-          <option value="1">02. ข้อมูลส่วนตัวผู้ฝึกงาน & ประวัติการศึกษา</option>
-          <option value="2">03. ภาพรวม EXAT & สรุปข้อมูลโครงการ</option>
-          <option value="3">04. สารบัญโครงสร้างหมวดหมู่การนำเสนอ (5 ส่วนงาน)</option>
-          <option value="4">05. ส่วนที่ 1: งานวิศวกรรมสนามและควบคุมการก่อสร้าง</option>
-          <option value="5">06. ขั้นตอนงานเสาเข็มเจาะระบบเปียก 10 ขั้นตอน</option>
-          <option value="6">07. เกณฑ์ควบคุม Drilling Slurry & คอนกรีต Grade 30</option>
-          <option value="7">08. ผังแบบแปลนขั้นตอนเสาเข็มเจาะระบบเปียก (Wet-Pile Diagram)</option>
-          <option value="8">09. การก่อสร้างคานขวางยกระดับ (Crossbeam Construction)</option>
-          <option value="9">10. การจัดทำบ้านพักคนงาน (Worker Camp Management)</option>
-          <option value="10">11. ขั้นตอนทดสอบรับน้ำหนักเสาเข็ม Static Load Test (Loading Step)</option>
-          <option value="11">12. ส่วนที่ 2: งานควบคุมคุณภาพวัสดุวิศวกรรมสนาม</option>
-          <option value="12">13. การสุ่มทดสอบแรงดึงเหล็กเส้น ณ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</option>
-          <option value="13">14. การตรวจเหล็กเส้นตรง Material On Site (MOS งวด 10) DB32 โกดัง 343</option>
-          <option value="14">15. การตรวจรับชิ้นงานคาน Precast I-Girder & C-Girder และการเบิกจ่าย 60/40</option>
-          <option value="15">16. การตรวจสอบโรงงานและลานผลิตคานสำเร็จรูป ITD Precast Yard</option>
-          <option value="16">17. ส่วนที่ 3: งานสิ่งแวดล้อมและความปลอดภัยสนาม</option>
-          <option value="17">18. การควบคุมมลพิษอากาศ & งานสแลนดักฝุ่น</option>
-          <option value="18">19. งานถนนเข้าพื้นที่ (Access Road) & แผนจัดจราจร</option>
-          <option value="19">20. ความปลอดภัยบนพื้นที่สูง & อุปกรณ์ PPE สนาม</option>
-          <option value="20">21. การควบคุมมลพิษเสียง & แผงกันเสียง</option>
-          <option value="21">22. การตรวจวัดคุณภาพน้ำ & ถังดักตะกอนสนาม</option>
-          <option value="22">23. ส่วนที่ 4: งานตรวจสอบเอกสารสัญญาทางวิศวกรรม</option>
-          <option value="23">24. ตารางรวมจำนวนและสัดส่วนคาน Girder (Main Line, Ramp 01, 03, ORR, SR1)</option>
-          <option value="24">25. วีดิทัศน์และตารางสัญลักษณ์จราจร โครงการพระราม 3 - ดาวคะนอง สัญญา 1</option>
-          <option value="25">26. ส่วนที่ 5: ปัญหาหน้างานและการประสานงานวิศวกรรม</option>
-          <option value="26">27. การประชุมความก้าวหน้าประจำสัปดาห์ & S-Curve</option>
-          <option value="27">28. การตรวจสอบเอกสารเบิกจ่าย & งบประมาณ</option>
-          <option value="28">29. เทคโนโลยีอุโมงค์ TBM & ระบบแจ้งเตือนเกาหลีใต้</option>
-          <option value="29">30. ทักษะวิศวกรรม ประสบการณ์สนาม & ระบบองค์กร</option>
-          <option value="30">31. บทสรุปการปฏิบัติงาน, Q&A และขอขอบพระคุณ</option>
+        <select id="toc-select">
+            <option value="0">สไลด์ที่ 01: หน้าแรกรายงานการฝึกงาน EXAT</option>
+            <option value="1">สไลด์ที่ 02: ข้อมูลส่วนตัวผู้ฝึกงาน &amp; ประวัติการศึกษา</option>
+            <option value="2">สไลด์ที่ 03: ภาพรวมหน่วยงาน EXAT &amp; ข้อมูลโครงการ</option>
+            <option value="3">สไลด์ที่ 04: สารบัญโครงสร้างหมวดหมู่การนำเสนอ (5 ส่วนงาน)</option>
+            <option value="4">สไลด์ที่ 05: ส่วนที่ 1: งานวิศวกรรมสนามและควบคุมการก่อสร้าง</option>
+            <option value="5">สไลด์ที่ 06: ขั้นตอนงานเสาเข็มเจาะระบบเปียก 10 ขั้นตอน (Workflow)</option>
+            <option value="6">สไลด์ที่ 07: เกณฑ์ควบคุมคุณภาพสารพยุงหลุมเจาะ &amp; คอนกรีต Grade 30</option>
+            <option value="7">สไลด์ที่ 08: ผังแบบแปลนและขั้นตอนงานเสาเข็มเจาะระบบเปียก</option>
+            <option value="8">สไลด์ที่ 09: การก่อสร้างคานขวางยกระดับ (Crossbeam Construction)</option>
+            <option value="9">สไลด์ที่ 10: การจัดทำและบริหารจัดการบ้านพักคนงาน (Worker Camp)</option>
+            <option value="10">สไลด์ที่ 11: การทดสอบการรับน้ำหนักเสาเข็มแบบสถิต (Static Load Test)</option>
+            <option value="11">สไลด์ที่ 12: ส่วนที่ 2: งานควบคุมคุณภาพวัสดุวิศวกรรมสนาม</option>
+            <option value="12">สไลด์ที่ 13: การสุ่มทดสอบแรงดึงเหล็กเส้นเสริม ณ แล็บ มจพ.</option>
+            <option value="13">สไลด์ที่ 14: สรุปปริมาณเหล็กเส้น MOS &amp; ยอดอนุมัติเบิกจ่าย</option>
+            <option value="14">สไลด์ที่ 15: การตรวจรับชิ้นงานคาน Precast I-Girder &amp; เกณฑ์เบิกจ่าย 60/40</option>
+            <option value="15">สไลด์ที่ 16: การตรวจสอบโรงงานและลานผลิตคาน ITD Precast Yard</option>
+            <option value="16">สไลด์ที่ 17: ส่วนที่ 3: งานสิ่งแวดล้อมและความปลอดภัยสนาม</option>
+            <option value="17">สไลด์ที่ 18: การควบคุมมลพิษอากาศ &amp; Safety Audit สนาม</option>
+            <option value="18">สไลด์ที่ 19: การตรวจสอบงานถนนเข้าพื้นที่ก่อสร้าง Access Road &amp; แผนจัดจราจร</option>
+            <option value="19">สไลด์ที่ 20: งานความปลอดภัยบนพื้นที่สูง &amp; อุปกรณ์ PPE สนาม</option>
+            <option value="20">สไลด์ที่ 21: การควบคุมมลพิษเสียง แผงกันเสียง (Noise Barrier)</option>
+            <option value="21">สไลด์ที่ 22: การตรวจวัดคุณภาพน้ำ นิเวศวิทยา &amp; บ่อดักตะกอนสนาม</option>
+            <option value="22">สไลด์ที่ 23: ส่วนที่ 4: งานตรวจสอบเอกสารสัญญาทางวิศวกรรม</option>
+            <option value="23">สไลด์ที่ 24: ตารางสรุปจำนวนชิ้นงานคาน Girder (75%, 100%, 125%, 150%)</option>
+            <option value="24">สไลด์ที่ 25: ตารางสรุปจำนวนสัญลักษณ์จราจรบนผิวทาง สัญญา 1</option>
+            <option value="25">สไลด์ที่ 26: ส่วนที่ 5: งานเข้าร่วมการประชุม</option>
+            <option value="26">สไลด์ที่ 27: บทบาทหน้าที่ของผู้มีส่วนเกี่ยวข้องหลัก &amp; Working Flow</option>
+            <option value="27">สไลด์ที่ 28: การตรวจสอบเอกสารเบิกจ่ายค่างวดสัญญาก่อสร้าง</option>
+            <option value="28">สไลด์ที่ 29: องค์ความรู้เทคโนโลยีอุโมงค์ TBM &amp; ระบบความปลอดภัยต่างประเทศ</option>
+            <option value="29">สไลด์ที่ 30: ทักษะทางวิศวกรรม ประสบการณ์สนาม &amp; การเรียนรู้ระบบองค์กร</option>
+            <option value="30">สไลด์ที่ 31: ขอขอบพระคุณคณะกรรมการทุกท่าน🙏 (Q&amp;A)</option>
         </select>
         <button id="fullscreen-btn" class="icon-btn" title="เต็มจอ (F)">⛶</button>
       </div>
@@ -77,8 +77,8 @@
           <div class="cover-center-container">
             <h1 class="cover-main-title">รายงานผลการปฏิบัติงานฝึกงาน</h1>
             
-            <div class="cover-photo-card">
-              <img src="Photo/LINE_ALBUM_296 safety audit จตุโชติ_260727_3.jpg" alt="Safety Audit จตุโชติ">
+            <div class="cover-photo-card" style="aspect-ratio: 2468 / 1488; max-width: 620px; height: auto;">
+              <img src="Photo/1231759.jpg" alt="รูปปกรายงานผลการปฏิบัติงานฝึกงาน EXAT & MAHIDOL" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;">
             </div>
 
             <div class="title-meta-grid">
@@ -88,7 +88,7 @@
               </div>
               <div class="meta-item">
                 <label>สถาบันการศึกษา</label>
-                <span>ภาควิชาวิศวกรรมโยธา มหาวิทยาลัยมหิดล</span>
+                <span>ภาควิชาวิศวกรรมโยธาและสิ่งแวดล้อม  มหาวิทยาลัยมหิดล</span>
               </div>
               <div class="meta-item">
                 <label>หน่วยงานฝึกงาน</label>
@@ -109,22 +109,72 @@
             <span class="slide-badge-info">INTERN PROFILE</span>
           </div>
           <div class="slide-content">
-            <div class="grid-2" style="align-items: center; flex: 1;">
-              <div class="card highlight" style="height: 100%; justify-content: center; padding: 28px;">
-                <div class="card-title" style="margin-bottom: 20px; font-size: 20px;">
-                  <div class="card-icon">👤</div>
-                  <span>ข้อมูลส่วนตัวผู้ฝึกงาน</span>
+            <div class="grid-60-40" style="flex: 1; align-items: stretch;">
+              
+              <!-- Left Card: Executive Profile Info (Enlarged Fonts) -->
+              <div class="card highlight" style="display: flex; flex-direction: column; justify-content: space-between; padding: 20px 22px; background: #ffffff;">
+                <div>
+                  <!-- Profile Header Badge -->
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; border-bottom: 1px dashed var(--border-light); padding-bottom: 10px;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                      <div class="card-icon" style="width: 42px; height: 42px; font-size: 22px; background: rgba(37, 99, 235, 0.1);">👤</div>
+                      <div>
+                        <h3 style="font-family: var(--font-heading); font-size: 22px; color: var(--navy-primary); margin: 0; font-weight: 800;">นายฐิติพงศ์ วิโรจน์ธนกิจ</h3>
+                        <span style="font-size: 14px; color: var(--blue-accent); font-weight: 600;">Mr. Thitipong Virojthanakit</span>
+                      </div>
+                    </div>
+                    <span style="background: rgba(37, 99, 235, 0.1); color: var(--blue-accent); font-size: 12.5px; font-weight: 800; padding: 5px 12px; border-radius: 12px; font-family: var(--font-heading);">CIVIL INTERN</span>
+                  </div>
+
+                  <!-- Details Grid / Info List -->
+                  <div style="display: flex; flex-direction: column; gap: 12px;">
+                    
+                    <div style="background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 10px 14px; display: flex; align-items: flex-start; gap: 12px;">
+                      <span style="font-size: 24px; line-height: 1;">🎓</span>
+                      <div>
+                        <div style="font-size: 12.5px; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">สถานศึกษา & สาขาวิชา</div>
+                        <div style="font-size: 15px; color: var(--navy-primary); font-weight: 700; margin-top: 2px;">
+                          ภาควิชาวิศวกรรมโยธาและสิ่งแวดล้อม คณะวิศวกรรมศาสตร์
+                        </div>
+                        <div style="font-size: 13.5px; color: var(--blue-accent); font-weight: 600;">มหาวิทยาลัยมหิดล (Mahidol University)</div>
+                      </div>
+                    </div>
+
+                    <div style="background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 10px 14px; display: flex; align-items: flex-start; gap: 12px;">
+                      <span style="font-size: 24px; line-height: 1;">🏢</span>
+                      <div>
+                        <div style="font-size: 12.5px; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">หน่วยงานฝึกงาน</div>
+                        <div style="font-size: 15px; color: var(--navy-primary); font-weight: 700; margin-top: 2px;">
+                          ฝ่ายวิศวกรรมการก่อสร้าง 2
+                        </div>
+                        <div style="font-size: 13.5px; color: var(--blue-accent); font-weight: 600;">การทางพิเศษแห่งประเทศไทย (EXAT)</div>
+                      </div>
+                    </div>
+
+                    <div style="background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 10px 14px; display: flex; align-items: flex-start; gap: 12px;">
+                      <span style="font-size: 24px; line-height: 1;">📅</span>
+                      <div>
+                        <div style="font-size: 12.5px; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">ระยะเวลาปฏิบัติงาน</div>
+                        <div style="font-size: 15px; color: var(--navy-primary); font-weight: 700; margin-top: 2px;">
+                          2 มิถุนายน - 31 กรกฎาคม 2569
+                        </div>
+                        <div style="font-size: 13.5px; color: var(--blue-accent); font-weight: 600; margin-top: 2px;">ระยะเวลาปฏิบัติงานรวม 2 เดือน</div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
-                <ul class="custom-list" style="gap: 16px;">
-                  <li style="font-size: 15px;"><strong>ชื่อ-นามสกุล:</strong> นายฐิติพงศ์ วิโรจน์ธนกิจ (Mr. Thitipong Virojthanakit)</li>
-                  <li style="font-size: 15px;"><strong>สถานศึกษา:</strong> คณะวิศวกรรมศาสตร์ ภาควิชาวิศวกรรมโยธาและสิ่งแวดล้อม มหาวิทยาลัยมหิดล</li>
-                  <li style="font-size: 15px;"><strong>ฝ่ายที่เข้าฝึกงาน:</strong> ฝ่ายวิศวกรรมการก่อสร้าง 2</li>
-                  <li style="font-size: 15px;"><strong>ระยะเวลาปฏิบัติงาน:</strong> 2 มิถุนายน - 31 กรกฎาคม 2569</li>
-                </ul>
               </div>
-              <div class="card" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); box-shadow: var(--shadow-md); height: 100%; min-height: 340px; max-height: 440px;">
-                <img src="Photo/LINE_ALBUM_Gun_260727_1.jpg" alt="นายฐิติพงศ์ วิโรจน์ธนกิจ" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;">
+
+              <!-- Right Card: Photo with Modern Frame -->
+              <div class="card" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); box-shadow: var(--shadow-md); position: relative; border: 1px solid var(--border-light);">
+                <img src="Photo/LINE_ALBUM_Gun_260727_1.jpg" alt="นายฐิติพงศ์ วิโรจน์ธนกิจ" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block;">
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(11, 29, 58, 0.88), transparent); padding: 22px 18px 14px; color: #ffffff; text-align: center;">
+                  <span style="font-family: var(--font-heading); font-size: 16px; font-weight: 800; letter-spacing: 0.5px; display: block; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">นายฐิติพงศ์ วิโรจน์ธนกิจ</span>
+                  <span style="font-size: 13px; color: #93c5fd; font-weight: 600;">วิศวกรรมโยธาและสิ่งแวดล้อม มหาวิทยาลัยมหิดล • EXAT Intern</span>
+                </div>
               </div>
+
             </div>
           </div>
         </section>
@@ -140,41 +190,106 @@
             <span class="slide-badge-info">PROJECT OVERVIEW</span>
           </div>
           <div class="slide-content">
-            <div class="grid-2">
-              <div class="card">
-                <div class="card-title">
-                  <div class="card-icon">🛣️</div>
-                  <span>โครงการทางพิเศษสายพระราม 3 - ดาวคะนอง - วงแหวนรอบนอกกรุงเทพมหานครด้านตะวันตก สัญญาที่ 1</span>
+            <div class="grid-2" style="flex: 1; align-items: stretch;">
+              
+              <!-- Card 1: Rama 3 - Dao Khanong Contract 1 -->
+              <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 8px 12px; background: #ffffff; border: 1px solid var(--border-light); border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                <div>
+                  <!-- Header Badge Title -->
+                  <div style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 5px; border-bottom: 1.5px solid #f1f5f9; padding-bottom: 3px;">
+                    <div class="card-icon" style="flex-shrink: 0; width: 30px; height: 30px; font-size: 14px; background: rgba(37, 99, 235, 0.1);">🛣️</div>
+                    <div>
+                      <span style="font-size: 10px; font-weight: 800; color: var(--blue-accent); text-transform: uppercase; letter-spacing: 0.5px;">โครงการที่ 1 • สัญญาที่ 1</span>
+                      <h3 style="font-family: var(--font-heading); font-size: 14px; color: var(--navy-primary); margin: 0; font-weight: 800; line-height: 1.2;">
+                        ทางพิเศษสายพระราม 3 - ดาวคะนอง - วงแหวนรอบนอกฯ
+                      </h3>
+                    </div>
+                  </div>
+
+                  <!-- High Quality Image Container (220px height) -->
+                  <div style="height: 220px; width: 100%; border-radius: 8px; overflow: hidden; margin-bottom: 5px; border: 1px solid var(--border-light); background: #0b1d3a; box-shadow: 0 4px 10px rgba(0,0,0,0.12); display: flex; align-items: center; justify-content: center;">
+                    <img src="Photo/Project01.jpg" alt="โครงการทางพิเศษสายพระราม 3 - ดาวคะนอง สัญญาที่ 1" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+                  </div>
+
+                  <!-- 4 Metric Cards Grid -->
+                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 5px;">
+                    <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 6px; padding: 3px 6px; text-align: center;">
+                      <span style="font-size: 9px; color: var(--text-muted); font-weight: 700; text-transform: uppercase; display: block;">ระยะทางรวม</span>
+                      <span style="font-family: var(--font-heading); font-size: 14.5px; font-weight: 800; color: var(--blue-accent);">6.40 กิโลเมตร</span>
+                    </div>
+                    <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 6px; padding: 3px 6px; text-align: center;">
+                      <span style="font-size: 9px; color: var(--text-muted); font-weight: 700; text-transform: uppercase; display: block;">มูลค่าสัญญา</span>
+                      <span style="font-family: var(--font-heading); font-size: 14.5px; font-weight: 800; color: var(--emerald-accent);">7,359 ล้านบาท</span>
+                    </div>
+                  </div>
+
+                  <!-- Detailed Spec Cards -->
+                  <div style="display: flex; flex-direction: column; gap: 4px;">
+                    <div style="background: rgba(15, 32, 66, 0.04); border-left: 3.5px solid var(--navy-primary); padding: 4px 8px; border-radius: 4px; font-size: 12.5px; line-height: 1.3; color: var(--navy-primary);">
+                      <strong>🎯 วัตถุประสงค์:</strong> บรรเทาการจราจรติดขัดบนถนนพระราม 2 และสะพานพระราม 9 มุ่งสู่ภาคใต้
+                    </div>
+                    <div style="background: rgba(15, 32, 66, 0.04); border-left: 3.5px solid var(--blue-accent); padding: 4px 8px; border-radius: 4px; font-size: 12.5px; line-height: 1.3; color: var(--navy-primary);">
+                      <strong>🏗️ ขอบเขตงาน:</strong> ทางยกระดับ 6 ช่องจราจร เกาะกลางถนนพระราม 2 (กม.13+000 ถึง รพ.นครธน)
+                    </div>
+                  </div>
                 </div>
-                <div style="height: 135px; width: 100%; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 12px; border: 1px solid var(--border-light);">
-                  <img src="Photo/Project01.jpg" alt="โครงการทางพิเศษสายพระราม 3 - ดาวคะนอง สัญญาที่ 1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+                <!-- Footer Contracting Info -->
+                <div style="margin-top: 4px; padding-top: 4px; border-top: 1px dashed var(--border-light); display: flex; justify-content: space-between; font-size: 11.5px; color: var(--navy-primary); font-weight: 600;">
+                  <span><strong>ผู้รับจ้าง:</strong> UN-CC Joint Venture</span>
+                  <span><strong>ลงนาม:</strong> 11 ต.ค. 2564</span>
                 </div>
-                <ul class="custom-list spec-list">
-                  <li><strong>ระยะทาง:</strong> 6.4 กิโลเมตร</li>
-                  <li><strong>วัตถุประสงค์:</strong> บรรเทาการจราจรติดขัดบนถนนพระราม 2 และสะพานพระราม 9 มุ่งสู่ภาคใต้</li>
-                  <li><strong>ขอบเขตงาน:</strong> ทางยกระดับ 6 ช่องจราจร เกาะกลางถนนพระราม 2 (กม.13+000 ถึง รพ.นครธน) พร้อมด่าน 2 จุด (บางขุนเทียน, บางกระดี)</li>
-                  <li><strong>มูลค่าสัญญา:</strong> 7,359 ล้านบาท</li>
-                  <li><strong>ผู้รับจ้าง:</strong> กิจการร่วมค้า ยูเอ็น-ซีซี (UN-CC Joint Venture)</li>
-                  <li><strong>วันลงนามสัญญา:</strong> 11 ตุลาคม 2564</li>
-                </ul>
               </div>
-              <div class="card">
-                <div class="card-title">
-                  <div class="card-icon">🌉</div>
-                  <span>โครงการทางพิเศษฉลองรัชส่วนต่อขยาย (ช่วงจตุโชติ - ถนนลำลูกกา)</span>
+
+              <!-- Card 2: Chalong Rat Extension (Chatuchot - Lam Luk Ka) -->
+              <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 8px 12px; background: #ffffff; border: 1px solid var(--border-light); border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                <div>
+                  <!-- Header Badge Title -->
+                  <div style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 5px; border-bottom: 1.5px solid #f1f5f9; padding-bottom: 3px;">
+                    <div class="card-icon" style="flex-shrink: 0; width: 30px; height: 30px; font-size: 14px; background: rgba(37, 99, 235, 0.1);">🌉</div>
+                    <div>
+                      <span style="font-size: 10px; font-weight: 800; color: var(--blue-accent); text-transform: uppercase; letter-spacing: 0.5px;">โครงการที่ 2 • ส่วนต่อขยาย</span>
+                      <h3 style="font-family: var(--font-heading); font-size: 14px; color: var(--navy-primary); margin: 0; font-weight: 800; line-height: 1.2;">
+                        ทางพิเศษฉลองรัชส่วนต่อขยาย (จตุโชติ - ลำลูกกา)
+                      </h3>
+                    </div>
+                  </div>
+
+                  <!-- High Quality Image Container (220px height) -->
+                  <div style="height: 220px; width: 100%; border-radius: 8px; overflow: hidden; margin-bottom: 5px; border: 1px solid var(--border-light); background: #0b1d3a; box-shadow: 0 4px 10px rgba(0,0,0,0.12); display: flex; align-items: center; justify-content: center;">
+                    <img src="Photo/Pic-2-1024x569.jpg" alt="โครงการทางพิเศษฉลองรัชส่วนต่อขยาย" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+                  </div>
+
+                  <!-- 4 Metric Cards Grid -->
+                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 5px;">
+                    <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 6px; padding: 3px 6px; text-align: center;">
+                      <span style="font-size: 9px; color: var(--text-muted); font-weight: 700; text-transform: uppercase; display: block;">ระยะทางรวม</span>
+                      <span style="font-family: var(--font-heading); font-size: 14.5px; font-weight: 800; color: var(--blue-accent);">16.21 กิโลเมตร</span>
+                    </div>
+                    <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 6px; padding: 3px 6px; text-align: center;">
+                      <span style="font-size: 9px; color: var(--text-muted); font-weight: 700; text-transform: uppercase; display: block;">มูลค่าสัญญา</span>
+                      <span style="font-family: var(--font-heading); font-size: 14.5px; font-weight: 800; color: var(--emerald-accent);">18,699.93 ล้านบาท</span>
+                    </div>
+                  </div>
+
+                  <!-- Detailed Spec Cards -->
+                  <div style="display: flex; flex-direction: column; gap: 4px;">
+                    <div style="background: rgba(15, 32, 66, 0.04); border-left: 3.5px solid var(--navy-primary); padding: 4px 8px; border-radius: 4px; font-size: 12.5px; line-height: 1.3; color: var(--navy-primary);">
+                      <strong>🎯 วัตถุประสงค์:</strong> ลดการจราจรสะสมบนมอเตอร์เวย์ M9 รองรับการขยายตัวย่านลำลูกกาและปทุมธานี
+                    </div>
+                    <div style="background: rgba(15, 32, 66, 0.04); border-left: 3.5px solid var(--blue-accent); padding: 4px 8px; border-radius: 4px; font-size: 12.5px; line-height: 1.3; color: var(--navy-primary);">
+                      <strong>🏗️ ขอบเขตงาน:</strong> ต่อขยายจากด่านจตุโชติ ผ่านถนนหทัยราษฎร์ ถนนนิมิตใหม่ สิ้นสุดที่ถนนลำลูกกา
+                    </div>
+                  </div>
                 </div>
-                <div style="height: 135px; width: 100%; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 12px; border: 1px solid var(--border-light);">
-                  <img src="Photo/Pic-2-1024x569.jpg" alt="โครงการทางพิเศษฉลองรัชส่วนต่อขยาย" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+                <!-- Footer Contracting Info -->
+                <div style="margin-top: 4px; padding-top: 4px; border-top: 1px dashed var(--border-light); display: flex; justify-content: space-between; font-size: 11.5px; color: var(--navy-primary); font-weight: 600;">
+                  <span><strong>ผู้รับจ้าง:</strong> ITD (บมจ. อิตาเลียนไทย)</span>
+                  <span><strong>ลงนาม:</strong> 22 ส.ค. 2567</span>
                 </div>
-                <ul class="custom-list spec-list">
-                  <li><strong>ระยะทาง:</strong> 16.21 กิโลเมตร</li>
-                  <li><strong>วัตถุประสงค์:</strong> ลดการจราจรสะสมบนมอเตอร์เวย์ M9 รองรับการขยายตัวย่านลำลูกกาและปทุมธานี</li>
-                  <li><strong>ขอบเขตงาน:</strong> ต่อขยายจากด่านจตุโชติ ผ่านถนนหทัยราษฎร์ ถนนนิมิตใหม่ สิ้นสุดที่ถนนลำลูกกา</li>
-                  <li><strong>มูลค่าสัญญา:</strong> 18,699.93 ล้านบาท</li>
-                  <li><strong>ผู้รับจ้าง:</strong> บมจ. อิตาเลียนไทย ดีเวล๊อปเมนต์ (ITD)</li>
-                  <li><strong>วันลงนามสัญญา:</strong> 22 สิงหาคม 2567</li>
-                </ul>
               </div>
+
             </div>
           </div>
         </section>
@@ -190,56 +305,106 @@
             <span class="slide-badge-info">TABLE OF CONTENTS</span>
           </div>
           <div class="slide-content">
-            <div class="toc-grid-container">
-              <div class="toc-card" data-goto-index="4">
-                <div class="toc-num-badge">01</div>
-                <div class="toc-card-header">
-                  <div class="toc-card-icon">🏗️</div>
-                  <span class="toc-section-tag">SECTION 01</span>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; flex: 1; align-items: stretch;">
+              
+              <!-- Left Column: All 5 SECTIONS Stacked vertically on the Left (Enlarged Fonts) -->
+              <div class="card" style="padding: 12px 14px; display: flex; flex-direction: column; justify-content: space-between; background: #ffffff;">
+
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                  
+                  <!-- SECTION 01: Go to Slide Page 5 (data-slide-index="4") -->
+                  <div class="toc-card" data-goto-index="4" onclick="window.goToSlide(4)" style="cursor: pointer; padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--border-light); background: #f8fafc; transition: all 0.2s; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 10;">
+                    <div style="display: flex; align-items: center; gap: 10px; pointer-events: none;">
+                      <span style="background: var(--navy-primary); color: #ffffff; font-size: 12px; font-weight: 800; padding: 3px 8px; border-radius: 5px;">01</span>
+                      <div>
+                        <div style="font-size: 13.5px; font-weight: 700; color: var(--navy-primary); line-height: 1.25;">SECTION 01: งานวิศวกรรมสนามและควบคุมการก่อสร้าง</div>
+                        <div style="font-size: 11px; color: var(--text-muted); margin-top: 1px;">เสาเข็มเจาะ 10 ขั้นตอน, Slurry Test, Koden, Load Test</div>
+                      </div>
+                    </div>
+                    <span style="font-size: 11px; font-weight: 700; color: #ffffff; background: var(--blue-accent); padding: 5px 10px; border-radius: 6px; white-space: nowrap; pointer-events: none;">ไปหน้า 5 ➔</span>
+                  </div>
+
+                  <!-- SECTION 02: Go to Slide Page 12 (data-slide-index="11") -->
+                  <div class="toc-card" data-goto-index="11" onclick="window.goToSlide(11)" style="cursor: pointer; padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--border-light); background: #f8fafc; transition: all 0.2s; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 10;">
+                    <div style="display: flex; align-items: center; gap: 10px; pointer-events: none;">
+                      <span style="background: var(--navy-primary); color: #ffffff; font-size: 12px; font-weight: 800; padding: 3px 8px; border-radius: 5px;">02</span>
+                      <div>
+                        <div style="font-size: 13.5px; font-weight: 700; color: var(--navy-primary); line-height: 1.25;">SECTION 02: งานควบคุมคุณภาพวัสดุวิศวกรรมสนาม</div>
+                        <div style="font-size: 11px; color: var(--text-muted); margin-top: 1px;">ทดสอบเหล็กเส้น SD40/SD50, เบิกจ่าย MOS, คาน ITD Yard</div>
+                      </div>
+                    </div>
+                    <span style="font-size: 11px; font-weight: 700; color: #ffffff; background: var(--blue-accent); padding: 5px 10px; border-radius: 6px; white-space: nowrap; pointer-events: none;">ไปหน้า 12 ➔</span>
+                  </div>
+
+                  <!-- SECTION 03: Go to Slide Page 17 (data-slide-index="16") -->
+                  <div class="toc-card" data-goto-index="16" onclick="window.goToSlide(16)" style="cursor: pointer; padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--border-light); background: #f8fafc; transition: all 0.2s; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 10;">
+                    <div style="display: flex; align-items: center; gap: 10px; pointer-events: none;">
+                      <span style="background: var(--navy-primary); color: #ffffff; font-size: 12px; font-weight: 800; padding: 3px 8px; border-radius: 5px;">03</span>
+                      <div>
+                        <div style="font-size: 13.5px; font-weight: 700; color: var(--navy-primary); line-height: 1.25;">SECTION 03: งานสิ่งแวดล้อมและความปลอดภัยสนาม</div>
+                        <div style="font-size: 11px; color: var(--text-muted); margin-top: 1px;">ควบคุมฝุ่น PM2.5, ถนน Access Road, Safety PPE, เสียง & น้ำ</div>
+                      </div>
+                    </div>
+                    <span style="font-size: 11px; font-weight: 700; color: #ffffff; background: var(--blue-accent); padding: 5px 10px; border-radius: 6px; white-space: nowrap; pointer-events: none;">ไปหน้า 17 ➔</span>
+                  </div>
+
+                  <!-- SECTION 04: Go to Slide Page 23 (data-slide-index="22") -->
+                  <div class="toc-card" data-goto-index="22" onclick="window.goToSlide(22)" style="cursor: pointer; padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--border-light); background: #f8fafc; transition: all 0.2s; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 10;">
+                    <div style="display: flex; align-items: center; gap: 10px; pointer-events: none;">
+                      <span style="background: var(--navy-primary); color: #ffffff; font-size: 12px; font-weight: 800; padding: 3px 8px; border-radius: 5px;">04</span>
+                      <div>
+                        <div style="font-size: 13.5px; font-weight: 700; color: var(--navy-primary); line-height: 1.25;">SECTION 04: งานตรวจสอบเอกสารสัญญาทางวิศวกรรม</div>
+                        <div style="font-size: 11px; color: var(--text-muted); margin-top: 1px;">เบิกจ่ายค่างวดคาน Girder (IPC), สัญลักษณ์จราจรพระราม 3</div>
+                      </div>
+                    </div>
+                    <span style="font-size: 11px; font-weight: 700; color: #ffffff; background: var(--blue-accent); padding: 5px 10px; border-radius: 6px; white-space: nowrap; pointer-events: none;">ไปหน้า 23 ➔</span>
+                  </div>
+
+                  <!-- SECTION 05: Go to Slide Page 26 (data-slide-index="25") -->
+                  <div class="toc-card" data-goto-index="25" onclick="window.goToSlide(25)" style="cursor: pointer; padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--border-light); background: #f8fafc; transition: all 0.2s; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 10;">
+                    <div style="display: flex; align-items: center; gap: 10px; pointer-events: none;">
+                      <span style="background: var(--navy-primary); color: #ffffff; font-size: 12px; font-weight: 800; padding: 3px 8px; border-radius: 5px;">05</span>
+                      <div>
+                        <div style="font-size: 13.5px; font-weight: 700; color: var(--navy-primary); line-height: 1.25;">SECTION 05: งานเข้าร่วมการประชุม</div>
+                        <div style="font-size: 11px; color: var(--text-muted); margin-top: 1px;">ประชุมความก้าวหน้า S-Curve, เทคโนโลยีอุโมงค์ TBM, Q&A</div>
+                      </div>
+                    </div>
+                    <span style="font-size: 11px; font-weight: 700; color: #ffffff; background: var(--blue-accent); padding: 5px 10px; border-radius: 6px; white-space: nowrap; pointer-events: none;">ไปหน้า 26 ➔</span>
+                  </div>
+
                 </div>
-                <h3>ส่วนที่ 1: งานวิศวกรรมสนามและควบคุมการก่อสร้าง</h3>
-                <p>เทคนิคงานสนาม, เสาเข็มเจาะระบบเปียก 10 ขั้นตอน, Slurry Test, Koden, Sonic Logging, Tremie Pipe & Load Test</p>
               </div>
 
-              <div class="toc-card" data-goto-index="12">
-                <div class="toc-num-badge">02</div>
-                <div class="toc-card-header">
-                  <div class="toc-card-icon">🧪</div>
-                  <span class="toc-section-tag">SECTION 02</span>
+              <!-- Right Column: 5-Photo Auto Carousel Showcase (Identical structure to Slide 9) -->
+              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
+                <div class="photo-carousel-wrapper" style="width: 100%; flex: 1; min-height: 270px;">
+                  <div class="photo-carousel-item active">
+                    <img src="Photo/LINE_ALBUM_296 safety audit จตุโชติ_260727_2.jpg" alt="งานวิศวกรรมสนาม SECTION 01">
+                  </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_22072569_260727_2.jpg" alt="งานควบคุมคุณภาพวัสดุ SECTION 02">
+                  </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_272569 BE_260730_1.jpg" alt="งานสิ่งแวดล้อมและความปลอดภัย SECTION 03">
+                  </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_8769_260730_1.jpg" alt="งานตรวจสอบเอกสารสัญญา SECTION 04">
+                  </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_Ball_260729_1.jpg" alt="ปัญหาหน้างานและการประสานงาน SECTION 05">
+                  </div>
+
+                  <div class="carousel-dots-bar">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
                 </div>
-                <h3>ส่วนที่ 2: งานควบคุมคุณภาพวัสดุวิศวกรรมสนาม</h3>
-                <p>การตรวจสอบคุณภาพเหล็กเส้น SD40/SD50, การตรวจรับวัสดุหน้างาน (Material On Site) และการตรวจสอบโรงงานผลิตคาน ITD Yard</p>
+                <span style="font-size: 12px; color: var(--navy-primary); margin-top: 8px; text-align: center; font-weight: 600;">📷 ภาพบรรยากาศการปฏิบัติงานทั้ง 5 ส่วนงาน</span>
               </div>
 
-              <div class="toc-card" data-goto-index="17">
-                <div class="toc-num-badge">03</div>
-                <div class="toc-card-header">
-                  <div class="toc-card-icon">🛡️</div>
-                  <span class="toc-section-tag">SECTION 03</span>
-                </div>
-                <h3>ส่วนที่ 3: งานสิ่งแวดล้อมและความปลอดภัยสนาม</h3>
-                <p>การควบคุมมลพิษอากาศ/เสียง, ถนนเข้าพื้นที่ (Access Road), จัดการจราจร, ความปลอดภัยบนพื้นที่สูง, PPE และถังดักตะกอนน้ำ</p>
-              </div>
-
-              <div class="toc-card" data-goto-index="23">
-                <div class="toc-num-badge">04</div>
-                <div class="toc-card-header">
-                  <div class="toc-card-icon">📋</div>
-                  <span class="toc-section-tag">SECTION 04</span>
-                </div>
-                <h3>ส่วนที่ 4: งานตรวจสอบเอกสารสัญญาทางวิศวกรรม</h3>
-                <p>การคิดราคาเบิกจ่ายค่างวดคาน Girder (IPC), การตรวจสอบ Shop Drawings และแบบก่อสร้างสัญญาณจราจร</p>
-              </div>
-
-              <div class="toc-card" data-goto-index="26">
-                <div class="toc-num-badge">05</div>
-                <div class="toc-card-header">
-                  <div class="toc-card-icon">🤝</div>
-                  <span class="toc-section-tag">SECTION 05</span>
-                </div>
-                <h3>ส่วนที่ 5: ปัญหาหน้างานและการประสานงานวิศวกรรม</h3>
-                <p>การประชุมความก้าวหน้า (S-Curve), ตรวจสอบเอกสารงบประมาณ, เทคโนโลยีอุโมงค์ TBM และบทสรุปทักษะการฝึกงาน</p>
-              </div>
             </div>
           </div>
         </section>
@@ -249,7 +414,7 @@
           <div class="section-divider-content">
             <span class="section-num-badge">SECTION 01</span>
             <h2 class="section-divider-title">ส่วนที่ 1: งานวิศวกรรมสนามและควบคุมการก่อสร้าง</h2>
-            <p class="section-divider-desc">การศึกษาเทคนิคงานสนาม ขั้นตอนการเจาะเสาเข็มระบบเปียก การทดสอบความสมบูรณ์ และการเทคอนกรีตใต้น้ำ</p>
+            <p class="section-divider-desc">ขั้นตอนงานเสาเข็มเจาะระบบเปียก การทดสอบ Slurry/คอนกรีต การทดสอบ Koden & Static Load Test และการควบคุมคุณภาพคาน Precast</p>
           </div>
         </section>
 
@@ -327,88 +492,129 @@
             <span class="slide-badge-info">QUALITY CONTROL CRITERIA</span>
           </div>
           <div class="slide-content">
-            <div class="grid-2">
-              <div class="card">
-                <div class="card-title">🧪 1. ข้อกำหนดสารพยุงหลุมเจาะ (Drilling Slurry)</div>
-                <table class="custom-table">
-                  <thead>
-                    <tr>
-                      <th>รายการทดสอบ</th>
-                      <th>เกณฑ์ควบคุม EXAT</th>
-                      <th>เครื่องมือทดสอบมาตรฐาน</th>
-                      <th style="width: 80px; text-align: center;">ภาพประกอบ</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><strong>ความหนาแน่น (Density)</strong></td>
-                      <td>&lt; 1.02 g/ml</td>
-                      <td>Mud Balance (ASTM D4380)</td>
-                      <td style="text-align: center; padding: 4px;"><img src="Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_2.jpg" alt="Mud Balance" style="width: 70px; height: 46px; object-fit: cover; border-radius: 4px; border: 1px solid var(--border-light); display: block; margin: 0 auto;"></td>
-                    </tr>
-                    <tr>
-                      <td><strong>ความหนืด (Viscosity)</strong></td>
-                      <td>45 - 90 วินาที</td>
-                      <td>Marsh Funnel (API-RP13B-S2)</td>
-                      <td style="text-align: center; padding: 4px;"><img src="Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_4.jpg" alt="Marsh Funnel" style="width: 70px; height: 46px; object-fit: cover; border-radius: 4px; border: 1px solid var(--border-light); display: block; margin: 0 auto;"></td>
-                    </tr>
-                    <tr>
-                      <td><strong>ปริมาณทราย (Sand Content)</strong></td>
-                      <td>&le; 1%</td>
-                      <td>Sand Screen (ASTM D4381)</td>
-                      <td style="text-align: center; padding: 4px;"><img src="Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_3.jpg" alt="Sand Screen" style="width: 70px; height: 46px; object-fit: cover; border-radius: 4px; border: 1px solid var(--border-light); display: block; margin: 0 auto;"></td>
-                    </tr>
-                    <tr>
-                      <td><strong>ค่าความเป็นกรด-ด่าง (pH)</strong></td>
-                      <td>8 - 12</td>
-                      <td>pH Paper / Meter (ASTM D4972)</td>
-                      <td style="text-align: center; padding: 4px;"><img src="Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_5.jpg" alt="pH Test" style="width: 70px; height: 46px; object-fit: cover; border-radius: 4px; border: 1px solid var(--border-light); display: block; margin: 0 auto;"></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="warning-callout">
-                  ⚠️ <strong>ข้อห้ามเด็ดขาด:</strong> หากค่า pH ของสารพยุงหลุมเจาะ <strong>&lt; 8 เด็ดขาด</strong> ห้ามใช้อนุญาตให้เทคอนกรีตโดยเด็ดขาด เนื่องจากจะทำให้สารตกตะกอนและหลุมพังทลาย
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; flex: 1; align-items: stretch; min-height: 0;">
+              
+              <!-- Left Column (50%): Both Engineering Specs (Black Color Text Tables) -->
+              <div class="card" style="padding: 10px 12px; display: flex; flex-direction: column; justify-content: space-between; background: #ffffff;">
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                  
+                  <!-- Section 1: Drilling Slurry Specifications -->
+                  <div>
+                    <div class="card-title" style="font-size: 16px; font-weight: 800; margin-bottom: 8px;">🧪 1. ข้อกำหนดสารพยุงหลุมเจาะ (Drilling Slurry)</div>
+                    <table class="custom-table" style="margin-bottom: 0; font-size: 12.5px; color: #000000; line-height: 1.45;">
+                      <thead>
+                        <tr>
+                          <th style="color: #ffffff; background: var(--navy-primary);">รายการทดสอบ</th>
+                          <th style="color: #ffffff; background: var(--navy-primary);">เกณฑ์ควบคุม EXAT</th>
+                          <th style="color: #ffffff; background: var(--navy-primary);">มาตรฐานอ้างอิง</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="color: #000000;"><strong>ความหนาแน่น (Density)</strong></td>
+                          <td style="color: #000000; font-weight: 700;">&lt; 1.02 g/ml</td>
+                          <td style="color: #000000;">ASTM D4380</td>
+                        </tr>
+                        <tr>
+                          <td style="color: #000000;"><strong>ความหนืด (Viscosity)</strong></td>
+                          <td style="color: #000000; font-weight: 700;">45 - 90 วินาที</td>
+                          <td style="color: #000000;">API-RP13B-S2</td>
+                        </tr>
+                        <tr>
+                          <td style="color: #000000;"><strong>ปริมาณทราย (Sand Content)</strong></td>
+                          <td style="color: #000000; font-weight: 700;">&le; 1%</td>
+                          <td style="color: #000000;">ASTM D4381</td>
+                        </tr>
+                        <tr>
+                          <td style="color: #000000;"><strong>ความเป็นกรด-ด่าง (pH)</strong></td>
+                          <td style="color: #000000; font-weight: 800;">8 - 12 (ห้าม &lt; 8)</td>
+                          <td style="color: #000000;">ASTM D4972</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- Section 2: Concrete Grade 30 Specifications -->
+                  <div>
+                    <div class="card-title" style="font-size: 16px; font-weight: 800; margin-bottom: 8px; margin-top: 4px;">🧱 2. ข้อกำหนดคอนกรีตเสาเข็มเจาะ (RC. Pile Concrete)</div>
+                    <table class="custom-table" style="margin-bottom: 0; font-size: 12.5px; color: #000000; line-height: 1.45;">
+                      <thead>
+                        <tr>
+                          <th style="color: #ffffff; background: var(--navy-primary);">รายการวิศวกรรม</th>
+                          <th style="color: #ffffff; background: var(--navy-primary);">เกณฑ์ข้อกำหนดสนาม</th>
+                          <th style="color: #ffffff; background: var(--navy-primary);">มาตรฐานอ้างอิง</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="color: #000000;"><strong>กำลังอัดออกแบบ (Strength)</strong></td>
+                          <td style="color: #000000; font-weight: 700;">Grade 30 (&ge; 30 MPa / 300 ksc)</td>
+                          <td style="color: #000000;">ASTM C39</td>
+                        </tr>
+                        <tr>
+                          <td style="color: #000000;"><strong>ค่ายุบตัว (Slump Test)</strong></td>
+                          <td style="color: #000000; font-weight: 700;">18 - 23 ซม.</td>
+                          <td style="color: #000000;">AASHTO T 119</td>
+                        </tr>
+                        <tr>
+                          <td style="color: #000000;"><strong>ระยะเวลาเริ่มแข็งตัว</strong></td>
+                          <td style="color: #000000; font-weight: 700;">&ge; 4 ชั่วโมง (Setting Time)</td>
+                          <td style="color: #000000;">ASTM C494 Type D</td>
+                        </tr>
+                        <tr>
+                          <td style="color: #000000;"><strong>การเก็บตัวอย่างปูน</strong></td>
+                          <td style="color: #000000; font-weight: 700;">9 แท่ง/ต้น (15x30 ซม. 3 ชุด)</td>
+                          <td style="color: #000000;">EXAT Sec 501</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
                 </div>
               </div>
 
-              <div class="card">
-                <div class="card-title">🧱 2. ข้อกำหนดคอนกรีตเสาเข็มเจาะ (RC. Pile Concrete)</div>
-                <table class="custom-table">
-                  <thead>
-                    <tr>
-                      <th>รายการวิศวกรรม</th>
-                      <th>เกณฑ์ข้อกำหนดสนาม</th>
-                      <th>อ้างอิงมาตรฐาน</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><strong>กำลังอัดออกแบบ (Strength)</strong></td>
-                      <td>Grade 30 (Cylinder 28 วัน &ge; 30 MPa / 300 ksc)</td>
-                      <td>ASTM C39</td>
-                    </tr>
-                    <tr>
-                      <td><strong>ค่ายุบตัว (Slump Test)</strong></td>
-                      <td>18 - 23 ซม.</td>
-                      <td>AASHTO T 119</td>
-                    </tr>
-                    <tr>
-                      <td><strong>ระยะเวลาเริ่มแข็งตัว</strong></td>
-                      <td>&ge; 4 ชั่วโมง (Setting Time)</td>
-                      <td>ASTM C494 Type D</td>
-                    </tr>
-                    <tr>
-                      <td><strong>การเก็บตัวอย่างปูน</strong></td>
-                      <td>9 แท่ง/ต้น (ทรงกระบอก 15x30 ซม. 3 ชุด ชุดละ 3 แท่ง)</td>
-                      <td>EXAT Spec Section 501</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div style="width: 100%; height: 130px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); margin-top: 8px;">
-                  <img src="Photo/LINE_ALBUM_22072569_260727_3.jpg" alt="RC Pile Concrete Test" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              <!-- Right Column (50%): Tight 5px Gap Image Grid with Zero Excess White Space -->
+              <div class="card" style="padding: 10px 12px; display: flex; flex-direction: column; background: #ffffff; overflow: hidden;">
+                <div class="card-title" style="font-size: 16px; font-weight: 800; margin-bottom: 8px; flex-shrink: 0;">
+                  <div class="card-icon" style="background: rgba(37, 99, 235, 0.1);">📸</div>
+                  <span>เครื่องมือและภาพบรรยากาศการทดสอบสนามจริง (5 รายการ)</span>
                 </div>
-                <span style="font-size: 10px; color: var(--text-muted); margin-top: 4px; display: block; text-align: center;">📷 ภาพประกอบการทดสอบคอนกรีตสนาม</span>
+
+                <div class="fullscreen-photo-grid" style="flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 5px;">
+                  
+                  <!-- Row 1: Mud Balance + Marsh Funnel -->
+                  <div class="fullscreen-photo-row-1" style="flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+                    <div style="position: relative; width: 100%; height: 100%; border-radius: 6px; overflow: hidden; border: 1px solid var(--border-light); box-shadow: 0 2px 4px rgba(0,0,0,0.06);">
+                      <img src="Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_2.jpg" alt="Mud Balance" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;">
+                      <span style="position: absolute; bottom: 4px; left: 4px; font-size: 9px; font-weight: 800; color: #ffffff; background: rgba(11,29,58,0.85); padding: 2px 6px; border-radius: 4px; white-space: nowrap;">⚖️ Mud Balance (ความหนาแน่น)</span>
+                    </div>
+                    <div style="position: relative; width: 100%; height: 100%; border-radius: 6px; overflow: hidden; border: 1px solid var(--border-light); box-shadow: 0 2px 4px rgba(0,0,0,0.06);">
+                      <img src="Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_4.jpg" alt="Marsh Funnel" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;">
+                      <span style="position: absolute; bottom: 4px; left: 4px; font-size: 9px; font-weight: 800; color: #ffffff; background: rgba(11,29,58,0.85); padding: 2px 6px; border-radius: 4px; white-space: nowrap;">⏳ Marsh Funnel (ความหนืด)</span>
+                    </div>
+                  </div>
+
+                  <!-- Row 2: Sand Screen + pH Meter -->
+                  <div class="fullscreen-photo-row-2" style="flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+                    <div style="position: relative; width: 100%; height: 100%; border-radius: 6px; overflow: hidden; border: 1px solid var(--border-light); box-shadow: 0 2px 4px rgba(0,0,0,0.06);">
+                      <img src="Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_3.jpg" alt="Sand Screen" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;">
+                      <span style="position: absolute; bottom: 4px; left: 4px; font-size: 9px; font-weight: 800; color: #ffffff; background: rgba(11,29,58,0.85); padding: 2px 6px; border-radius: 4px; white-space: nowrap;">🧹 Sand Screen (ปริมาณทราย)</span>
+                    </div>
+                    <div style="position: relative; width: 100%; height: 100%; border-radius: 6px; overflow: hidden; border: 1px solid var(--border-light); box-shadow: 0 2px 4px rgba(0,0,0,0.06);">
+                      <img src="Photo/LINE_ALBUM_11669 งานจตุโชติ สัญญา3_260727_5.jpg" alt="pH Test" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;">
+                      <span style="position: absolute; bottom: 4px; left: 4px; font-size: 9px; font-weight: 800; color: #ffffff; background: rgba(11,29,58,0.85); padding: 2px 6px; border-radius: 4px; white-space: nowrap;">🧪 pH Meter (ความเป็นกรด-ด่าง)</span>
+                    </div>
+                  </div>
+
+                  <!-- Row 3: RC Pile Concrete 50% -->
+                  <div class="fullscreen-photo-row-3" style="flex: 1.8; min-height: 0; position: relative; border-radius: 6px; overflow: hidden; border: 1px solid var(--border-light); box-shadow: 0 2px 4px rgba(0,0,0,0.06);">
+                    <img src="Photo/LINE_ALBUM_22072569_260727_3.jpg" alt="RC Pile Concrete Test" style="width: 100%; height: 100%; object-fit: cover; object-position: center bottom; display: block;">
+                    <span style="position: absolute; bottom: 4px; left: 4px; font-size: 9.5px; font-weight: 800; color: #ffffff; background: rgba(11,29,58,0.85); padding: 2px 8px; border-radius: 4px; white-space: nowrap;">🧱 ทดสอบและเก็บตัวอย่างคอนกรีตเสาเข็มเจาะ (RC. Pile Grade 30)</span>
+                  </div>
+
+                </div>
               </div>
+
             </div>
           </div>
         </section>
@@ -419,28 +625,13 @@
             <div class="slide-title-group">
               <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
               <h2>ผังแบบแปลนและขั้นตอนงานเสาเข็มเจาะระบบเปียก (Wet Process Bored Pile Diagram)</h2>
-              <p class="slide-subtitle">ผังแบบแปลนมาตรฐานทางวิศวกรรมและขั้นตอนปฏิบัติงานเสาเข็มเจาะระบบเปียกสนาม (อ้างอิงเอกสาร Wet-Pile.pdf)</p>
+              <p class="slide-subtitle">ผังแบบแปลนมาตรฐานทางวิศวกรรมและขั้นตอนปฏิบัติงานเสาเข็มเจาะระบบเปียกสนาม</p>
             </div>
             <span class="slide-badge-info">WET PILE DIAGRAM</span>
           </div>
           <div class="slide-content">
-            <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="width: 100%; height: 380px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
-                  <img src="Photo/Wet-Pile_diagram.jpg" alt="ผังแบบแปลนเสาเข็มเจาะระบบเปียก Wet-Pile Diagram" style="width: 100%; height: 100%; object-fit: contain; display: block;">
-                </div>
-                <span style="font-size: 12px; color: var(--text-muted); margin-top: 8px;">📷 ผังแปลนขั้นตอนงานเสาเข็มเจาะระบบเปียก (ถอดความจากไฟล์ Wet-Pile.pdf)</span>
-              </div>
-
-              <div class="card">
-                <div class="card-title">📋 สรุปขั้นตอนจากแบบแปลน Wet-Pile</div>
-                <ul class="custom-list spec-list">
-                  <li><strong>1. งานเตรียมพื้นที่ & Casing:</strong> กำหนดพิกัดเสาเข็ม และลงปลอกเหล็กชั่วคราว (Temporary Casing) ป้องกันปากหลุมพัง</li>
-                  <li><strong>2. การเจาะ & เติม Slurry:</strong> ขุดเจาะหลุมด้วยหัวเจาะ พร้อมเติมสารพยุงหลุมเจาะ (Bentonite Slurry) ควบคุมความหนาแน่นและค่า pH</li>
-                  <li><strong>3. การลงโครงเหล็ก & ท่อ Sonic:</strong> หย่อนกรงเหล็กเสริม (Rebar Cage) ติดตั้งท่อ Sonic Logging และลูกปูนหนุน (Spacer Block)</li>
-                  <li><strong>4. การเทคอนกรีตระบบ Tremie:</strong> สอดท่อเหล็ก Tremie ลงก้นหลุม เทคอนกรีตสดไล่ Slurry ขึ้นปากหลุม คุมระยะจมท่อ 3.0-5.0 ม.</li>
-                </ul>
-              </div>
+            <div class="card" style="padding: 8px; flex: 1; display: flex; align-items: center; justify-content: center; background: #ffffff;">
+              <img src="Photo/Wet-Pile_diagram.jpg" alt="ผังแบบแปลนเสาเข็มเจาะระบบเปียก Wet-Pile Diagram" style="width: 100%; height: 100%; object-fit: contain; display: block; border-radius: var(--radius-sm);">
             </div>
           </div>
         </section>
@@ -456,50 +647,41 @@
             <span class="slide-badge-info">CROSSBEAM WORK</span>
           </div>
           <div class="slide-content">
-            <div class="grid-3">
-              <div class="card">
-                <div class="card-title">
-                  <div class="card-icon">🏗️</div>
-                  <span>1. การติดตั้งนั่งร้านค้ำยัน & แบบหล่อ</span>
+            <div class="grid-60-40">
+              <!-- Left Card: 3s Auto Photo Carousel from 3 old photos -->
+              <div class="card" style="padding: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div class="photo-carousel-wrapper" style="width: 100%; flex: 1; min-height: 280px;">
+                  <div class="photo-carousel-item active">
+                    <img src="Photo/LINE_ALBUM_1572569 BE_260727_1.jpg" alt="การตั้งนั่งร้านค้ำยันและแบบหล่อคานขวาง">
+                  </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_1572569 BE_260727_2.jpg" alt="งานผูกเหล็กเสริมและท่ออัดแรงคานขวาง">
+                  </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_1572569 BE_260727_3.jpg" alt="การเทคอนกรีตและการดึงลวดอัดแรงคานขวาง">
+                  </div>
+                  <div class="carousel-dots-bar">
+                    <span class="dot active" data-slide-to="0"></span>
+                    <span class="dot" data-slide-to="1"></span>
+                    <span class="dot" data-slide-to="2"></span>
+                  </div>
                 </div>
-                <div style="height: 150px; width: 100%; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 12px; border: 1px solid var(--border-light);">
-                  <img src="Photo/LINE_ALBUM_1572569 BE_260727_1.jpg" alt="การตั้งนั่งร้านค้ำยันและแบบหล่อคานขวาง" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                </div>
-                <ul class="custom-list">
-                  <li><strong>ระบบค้ำยัน:</strong> ติดตั้งนั่งร้านรับน้ำหนัก (Heavy Duty Shoring) รับน้ำหนักโครงสร้าง</li>
-                  <li><strong>ประกอบแบบ:</strong> ติดตั้งท้องแบบและข้างแบบคานขวาง (Crossbeam Formwork)</li>
-                  <li><strong>ตรวจสอบระดับ:</strong> ตรวจสอบพิกัดความสูงและระดับท้องคานก่อนการผูกเหล็ก</li>
-                </ul>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 6px; text-align: center; font-weight: 500;">📷 ภาพขั้นตอนงานก่อสร้างคานขวางสนาม</span>
               </div>
 
-              <div class="card">
-                <div class="card-title">
-                  <div class="card-icon">⛓️</div>
-                  <span>2. งานผูกเหล็กเสริม & ท่ออัดแรง</span>
+              <!-- Right Card: Formwork & Shoring Detail -->
+              <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <div class="card-title" style="font-size: 18px; font-weight: 800;">
+                    <div class="card-icon">🏗️</div>
+                    <span>การติดตั้งนั่งร้านค้ำยัน & แบบหล่อ</span>
+                  </div>
+                  <ul class="custom-list spec-list" style="font-size: 16px; gap: 14px; margin-top: 12px;">
+                    <li><strong>ระบบค้ำยัน:</strong> ติดตั้งนั่งร้านรับน้ำหนัก (Heavy Duty Shoring) รับน้ำหนักโครงสร้าง</li>
+                    <li><strong>ประกอบแบบ:</strong> ติดตั้งท้องแบบและข้างแบบคานขวาง (Crossbeam Formwork)</li>
+                    <li><strong>ตรวจสอบระดับ:</strong> ตรวจสอบพิกัดความสูงและระดับท้องคานก่อนการผูกเหล็ก</li>
+                  </ul>
                 </div>
-                <div style="height: 150px; width: 100%; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 12px; border: 1px solid var(--border-light);">
-                  <img src="Photo/LINE_ALBUM_1572569 BE_260727_2.jpg" alt="งานผูกเหล็กเสริมและท่ออัดแรงคานขวาง" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                </div>
-                <ul class="custom-list">
-                  <li><strong>เหล็กเสริมหลัก:</strong> ผูกเหล็กแกนหลักและเหล็กปลอกตามระยะการออกแบบ</li>
-                  <li><strong>ท่อลวดอัดแรง:</strong> วางท่อร้อยสลิงอัดแรง (Post-Tensioning Ducts) ตามแนว Profile</li>
-                  <li><strong>ตรวจรับโครงเหล็ก:</strong> ตรวจสอบ ระยะรองลูกปูน (Spacing) และคราบสนิมก่อนเทปูน</li>
-                </ul>
-              </div>
-
-              <div class="card">
-                <div class="card-title">
-                  <div class="card-icon">🧱</div>
-                  <span>3. การเทคอนกรีต & งานอัดแรง</span>
-                </div>
-                <div style="height: 150px; width: 100%; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 12px; border: 1px solid var(--border-light);">
-                  <img src="Photo/LINE_ALBUM_1572569 BE_260727_3.jpg" alt="การเทคอนกรีตและการดึงลวดอัดแรงคานขวาง" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                </div>
-                <ul class="custom-list">
-                  <li><strong>เทคอนกรีต:</strong> เทคอนกรีตโครงสร้างคานขวาง พร้อมเขย่าเข็มจี้ (Vibrator) อย่างทั่วถึง</li>
-                  <li><strong>การบ่มปูน:</strong> บ่มคอนกรีตจนได้กำลังอัดออกแบบตามข้อกำหนดสัญญา</li>
-                  <li><strong>ดึงสลิงอัดแรง:</strong> ดึงลวดสลิงอัดแรง (Post-Tensioning) และอัดน้ำปูนเกร้าท์ปิดท่อ</li>
-                </ul>
               </div>
             </div>
           </div>
@@ -516,51 +698,74 @@
             <span class="slide-badge-info">WORKER CAMP</span>
           </div>
           <div class="slide-content">
-            <div class="grid-3">
-              <div class="card">
-                <div class="card-title">
-                  <div class="card-icon">🏠</div>
-                  <span>1. การวางผังและสร้างอาคารพักอาศัย</span>
+            <div class="grid-3" style="flex: 1; align-items: stretch;">
+              
+              <!-- Card 1: Planning & Housing (Blue Theme) -->
+              <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 12px; border: 1.5px solid rgba(37, 99, 235, 0.3); background: #ffffff;">
+                <div>
+                  <!-- Distinct Color Header Box -->
+                  <div style="background: rgba(37, 99, 235, 0.08); border-left: 4px solid #2563eb; border-radius: 6px; padding: 8px 12px; display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                    <div style="width: 28px; height: 28px; border-radius: 50%; background: #2563eb; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0;">🏠</div>
+                    <span style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: #1e40af;">1. การวางผังและสร้างอาคารพักอาศัย</span>
+                  </div>
+                  
+                  <!-- Enlarged 200px Height Photo Frame -->
+                  <div style="height: 200px; width: 100%; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 10px; border: 1px solid var(--border-light); background: #f8fafc; box-shadow: 0 2px 4px rgba(0,0,0,0.06);">
+                    <img src="Photo/LINE_ALBUM_จตุโชติตอน3-120626_260727_1.jpg" alt="การวางผังและจัดทำแคมป์พักคนงาน" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  </div>
+
+                  <ul class="custom-list spec-list" style="font-size: 16px; gap: 5px;">
+                    <li><strong>การจัดสรรพื้นที่:</strong> วางผังแคมป์คนงานแยกพื้นที่พักอาศัย พื้นที่ส่วนกลาง และคลังเก็บวัสดุอย่างเป็นระเบียบ</li>
+                    <li><strong>โครงสร้างอาคาร:</strong> ก่อสร้างเรือนนอนชั่วคราวที่มีความมั่นคง ป้องกันแดด-ฝน และถ่ายเทอากาศได้ดี</li>
+                    <li><strong>รั้วกั้นอาณาเขต:</strong> กั้นรั้วล้อมรอบพื้นที่แคมป์พักคนงานเพื่อระบบความปลอดภัยและการควบคุมเข้า-ออก</li>
+                  </ul>
                 </div>
-                <div style="height: 150px; width: 100%; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 12px; border: 1px solid var(--border-light);">
-                  <img src="Photo/LINE_ALBUM_จตุโชติตอน3-120626_260727_1.jpg" alt="การวางผังและจัดทำแคมป์พักคนงาน" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                </div>
-                <ul class="custom-list">
-                  <li><strong>การจัดสรรพื้นที่:</strong> วางผังแคมป์คนงานแยกพื้นที่พักอาศัย พื้นที่ส่วนกลาง และคลังเก็บวัสดุอย่างเป็นระเบียบ</li>
-                  <li><strong>โครงสร้างอาคาร:</strong> ก่อสร้างเรือนนอนชั่วคราวที่มีความมั่นคง ป้องกันแดด-ฝน และถ่ายเทอากาศได้ดี</li>
-                  <li><strong>รั้วกั้นอาณาเขต:</strong> กั้นรั้วล้อมรอบพื้นที่แคมป์พักคนงานเพื่อระบบความปลอดภัยและการควบคุมเข้า-ออก</li>
-                </ul>
               </div>
 
-              <div class="card">
-                <div class="card-title">
-                  <div class="card-icon">🚰</div>
-                  <span>2. ระบบสาธารณูปโภค & สุขาภิบาล</span>
+              <!-- Card 2: Utilities & Sanitation (Emerald Green Theme) -->
+              <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 12px; border: 1.5px solid rgba(16, 185, 129, 0.3); background: #ffffff;">
+                <div>
+                  <!-- Distinct Color Header Box -->
+                  <div style="background: rgba(16, 185, 129, 0.08); border-left: 4px solid #10b981; border-radius: 6px; padding: 8px 12px; display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                    <div style="width: 28px; height: 28px; border-radius: 50%; background: #10b981; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0;">🚰</div>
+                    <span style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: #065f46;">2. ระบบสาธารณูปโภค & สุขาภิบาล</span>
+                  </div>
+                  
+                  <!-- Enlarged 200px Height Photo Frame -->
+                  <div style="height: 200px; width: 100%; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 10px; border: 1px solid var(--border-light); background: #f8fafc; box-shadow: 0 2px 4px rgba(0,0,0,0.06);">
+                    <img src="Photo/LINE_ALBUM_22072569_260727_4.jpg" alt="ระบบสุขาภิบาลและสาธารณูปโภคแคมป์คนงาน" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  </div>
+
+                  <ul class="custom-list spec-list" style="font-size: 16px; gap: 5px;">
+                    <li><strong>น้ำ-ไฟมาตรฐาน:</strong> ติดตั้งระบบจ่ายน้ำประปาและระบบไฟฟ้าส่องสว่างชั่วคราวอย่างปลอดภัย</li>
+                    <li><strong>ห้องน้ำ-สุขา:</strong> จัดเตรียมห้องน้ำห้องสวมสะอาดจำนวนเพียงพอตามเกณฑ์มาตรฐานกฎหมายแรงงาน</li>
+                    <li><strong>ระบบบำบัดน้ำเสีย:</strong> ติดตั้งถังแซทส์ (SATS Tank) บำบัดน้ำเสียก่อนปล่อยระบายสู่ภายนอก</li>
+                  </ul>
                 </div>
-                <div style="height: 150px; width: 100%; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 12px; border: 1px solid var(--border-light);">
-                  <img src="Photo/LINE_ALBUM_จตุโชติตอน3-120626_260727_2.jpg" alt="ระบบสุขาภิบาลและสาธารณูปโภคแคมป์คนงาน" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                </div>
-                <ul class="custom-list">
-                  <li><strong>น้ำ-ไฟมาตรฐาน:</strong> ติดตั้งระบบจ่ายน้ำประปาและระบบไฟฟ้าส่องสว่างชั่วคราวอย่างปลอดภัย</li>
-                  <li><strong>ห้องน้ำ-สุขา:</strong> จัดเตรียมห้องน้ำห้องสวมสะอาดจำนวนเพียงพอตามเกณฑ์มาตรฐานกฎหมายแรงงาน</li>
-                  <li><strong>ระบบบำบัดน้ำเสีย:</strong> ติดตั้งถังแซทส์ (SATS Tank) บำบัดน้ำเสียก่อนปล่อยระบายสู่ภายนอก</li>
-                </ul>
               </div>
 
-              <div class="card">
-                <div class="card-title">
-                  <div class="card-icon">🪰</div>
-                  <span>3. สิ่งแวดล้อม & สุขอานามัยชุมชน</span>
+              <!-- Card 3: Environment & Community Hygiene (Amber Orange Theme) -->
+              <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 12px; border: 1.5px solid rgba(245, 158, 11, 0.3); background: #ffffff;">
+                <div>
+                  <!-- Distinct Color Header Box -->
+                  <div style="background: rgba(245, 158, 11, 0.08); border-left: 4px solid #f59e0b; border-radius: 6px; padding: 8px 12px; display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                    <div style="width: 28px; height: 28px; border-radius: 50%; background: #f59e0b; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0;">🪰</div>
+                    <span style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: #92400e;">3. สิ่งแวดล้อม & สุขอานามัยชุมชน</span>
+                  </div>
+                  
+                  <!-- Enlarged 200px Height Photo Frame with Bottom Object Position Focus -->
+                  <div style="height: 200px; width: 100%; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 10px; border: 1px solid var(--border-light); background: #f8fafc; box-shadow: 0 2px 4px rgba(0,0,0,0.06);">
+                    <img src="Photo/S__61464612-1024x768.jpg" alt="งานจัดการสิ่งแวดล้อมและความปลอดภัยในบ้านพัก" style="width: 100%; height: 100%; object-fit: cover; object-position: center 65%; display: block;">
+                  </div>
+
+                  <ul class="custom-list spec-list" style="font-size: 16px; gap: 5px;">
+                    <li><strong>การจัดการขยะ:</strong> จัดตั้งจุดคัดแยกขยะมูลฝอย มีฝาปิดมิดชิด ป้องกันสัตว์พาหะนำโรค</li>
+                    <li><strong>ความปลอดภัย:</strong> ติดตั้งอุปกรณ์ดับเพลิง ป้ายแจ้งเตือนความปลอดภัย และไฟส่องสว่างตอนกลางคืน</li>
+                    <li><strong>ตรวจสุขอนามัย:</strong> รณรงค์ความสะอาด ป้องกันโรคติดต่อ และตรวจตราสุขอนามัยสม่ำเสมอ</li>
+                  </ul>
                 </div>
-                <div style="height: 150px; width: 100%; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 12px; border: 1px solid var(--border-light);">
-                  <img src="Photo/LINE_ALBUM_22072569_260727_4.jpg" alt="งานจัดการสิ่งแวดล้อมและความปลอดภัยในบ้านพัก" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                </div>
-                <ul class="custom-list">
-                  <li><strong>การจัดการขยะ:</strong> จัดตั้งจุดคัดแยกขยะมูลฝอย มีฝาปิดมิดชิด ป้องกันสัตว์พาหะนำโรค</li>
-                  <li><strong>ความปลอดภัย:</strong> ติดตั้งอุปกรณ์ดับเพลิง ป้ายแจ้งเตือนความปลอดภัย และไฟส่องสว่างตอนกลางคืน</li>
-                  <li><strong>ตรวจสุขอนามัย:</strong> รณรงค์ความสะอาด ป้องกันโรคติดต่อ และตรวจตราสุขอนามัยสม่ำเสมอ</li>
-                </ul>
               </div>
+
             </div>
           </div>
         </section>
@@ -570,35 +775,120 @@
           <div class="slide-header">
             <div class="slide-title-group">
               <span class="category-tag">ส่วนที่ 1: งานวิศวกรรมสนาม</span>
-              <h2>ขั้นตอนการทดสอบรับน้ำหนักเสาเข็ม (Static Load Test - Loading Step)</h2>
-              <p class="slide-subtitle">ข้อกำหนดขั้นตอนการเพิ่ม-ลดน้ำหนักบรรทุก เกณฑ์การคงน้ำหนัก และการบันทึกค่าการทรุดตัว (อ้างอิงเอกสาร Loading Step โครงการฉลองรัช)</p>
+              <h2>การทดสอบการรับน้ำหนักเสาเข็มแบบสถิต (Static Load Test)</h2>
+              <p class="slide-subtitle">จำลองลูกเล่นการทรุดตัวของเสาเข็มตาม Loading Step และภาพบรรยากาศการทดสอบสนามจริง</p>
             </div>
             <span class="slide-badge-info">STATIC LOAD TEST</span>
           </div>
           <div class="slide-content">
-            <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="width: 100%; height: 380px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
-                  <img src="Photo/Loading_step_diagram.jpg" alt="ตารางขั้นตอน Loading Step Static Load Test" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+            <div class="grid-60-40" style="flex: 1; align-items: stretch;">
+              
+              <!-- Left Card: Interactive Static Load Test Settlement Simulator -->
+              <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 14px; background: #ffffff;">
+                <div>
+                  <div class="card-title" style="font-size: 20px; font-weight: 800; margin-bottom: 10px;">
+                    <div class="card-icon" style="background: rgba(37, 99, 235, 0.1);">📉</div>
+                    <span>ลูกเล่นจำลองการทรุดตัวเสาเข็ม (Static Load Test Cycle Simulator)</span>
+                  </div>
+
+                  <!-- Tested Pile Identification Badge (Added on top as requested) -->
+                  <div style="background: rgba(15, 32, 66, 0.04); border-left: 4px solid var(--navy-primary); border-radius: 6px; padding: 8px 12px; margin-bottom: 8px; font-size: 12.5px; color: var(--navy-primary); line-height: 1.45;">
+                    <strong>📍 ข้อมูลเสาเข็มที่ทำการทดสอบ (STS Corporation Report):</strong><br>
+                    <strong>โครงการ:</strong> ทางพิเศษฉลองรัช (ส่วนต่อขยาย) ช่วงจตุโชติ - ถนนลำลูกกา ตอนที่ 3<br>
+                    <strong>ตำแหน่งทดสอบ:</strong> Main Line (ML) : STA. 6+643.949 (BH-08)<br>
+                    <strong>เสาเข็ม:</strong> เสาเข็มเจาะ (Bored Pile) ขนาดเส้นผ่านศูนย์กลาง <strong>&Oslash; 1.50 เมตร (1,500 mm.)</strong> | คอนกรีต <strong>Grade 30 (300 ksc, แท่งตัวอย่าง #87930-38)</strong><br>
+                    <strong>วันที่ทำการทดสอบ:</strong> <span style="color: var(--blue-accent); font-weight: 700;">18 - 21 กรกฎาคม 2569</span> (ผู้ทดสอบ: STS Corporation Co., Ltd.)
+                  </div>
+
+                  <!-- Cycle Specifications List Header (Separated on top as requested) -->
+                  <div style="background: rgba(37, 99, 235, 0.05); border: 1px solid rgba(37, 99, 235, 0.15); border-left: 4px solid var(--blue-accent); border-radius: 6px; padding: 8px 12px; margin-bottom: 8px;">
+                    <div style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: var(--navy-primary); margin-bottom: 4px;">
+                      📌 ขั้นตอนกำหนดน้ำหนักบรรทุก (Loading Step Schedule):
+                    </div>
+                    <ul style="margin: 0; padding-left: 14px; font-size: 12.5px; color: var(--navy-primary); line-height: 1.5; font-weight: 600; list-style-type: none;">
+                      <li style="margin-bottom: 2px;">• Cycle I (100%): 25% &rarr; 100% &rarr; 0% (850 ตัน, Hold 24 ชม.)</li>
+                      <li style="margin-bottom: 2px;">• Cycle II (200%): 25% &rarr; 200% &rarr; 0% (1,700 ตัน, Hold 24 ชม.)</li>
+                      <li style="margin-bottom: 2px;">• Cycle III (300%): 25% &rarr; 300% &rarr; 0% (2,550 ตัน Max Load)</li>
+                    </ul>
+                  </div>
+
+                  <!-- Cycle Selector Buttons -->
+                  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin-bottom: 8px;">
+                    <button class="cycle-sim-btn active" data-cycle="1" onclick="window.switchPileSimCycle(1)" style="padding: 6px 4px; border-radius: 6px; border: 1.5px solid var(--blue-accent); background: var(--blue-accent); color: #ffffff; font-family: var(--font-heading); font-size: 12px; font-weight: 700; cursor: pointer; transition: all 0.2s; text-align: center;">
+                      Cycle I (100%)
+                    </button>
+                    <button class="cycle-sim-btn" data-cycle="2" onclick="window.switchPileSimCycle(2)" style="padding: 6px 4px; border-radius: 6px; border: 1.5px solid var(--border-light); background: #f8fafc; color: var(--navy-primary); font-family: var(--font-heading); font-size: 12px; font-weight: 700; cursor: pointer; transition: all 0.2s; text-align: center;">
+                      Cycle II (200%)
+                    </button>
+                    <button class="cycle-sim-btn" data-cycle="3" onclick="window.switchPileSimCycle(3)" style="padding: 6px 4px; border-radius: 6px; border: 1.5px solid var(--border-light); background: #f8fafc; color: var(--navy-primary); font-family: var(--font-heading); font-size: 12px; font-weight: 700; cursor: pointer; transition: all 0.2s; text-align: center;">
+                      Cycle III (300%)
+                    </button>
+                  </div>
+
+                  <!-- Interactive Pile Settlement Visual Diagram -->
+                  <div class="pile-settlement-visual" style="position: relative; height: 165px; background: linear-gradient(180deg, #e0f2fe 0%, #cbd5e1 32%, #94a3b8 100%); border-radius: 8px; border: 1px solid var(--border-light); overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                    
+                    <!-- Ground Level Dash Line -->
+                    <div style="position: absolute; top: 34px; left: 0; width: 100%; height: 2px; background: #475569; border-bottom: 1.5px dashed #334155;">
+                      <span style="position: absolute; right: 8px; top: -15px; font-size: 9px; font-weight: 700; color: #334155;">ระดับพื้นดิน (Ground Level)</span>
+                    </div>
+
+                    <!-- Hydraulic Jack Force Arrow Indicator -->
+                    <div id="sim-jack-arrow" style="position: absolute; top: 3px; left: 50%; transform: translateX(-50%); text-align: center; transition: all 0.4s ease; z-index: 5;">
+                      <span id="sim-jack-text" style="font-size: 10px; font-weight: 800; color: #dc2626; background: rgba(255,255,255,0.92); padding: 1px 6px; border-radius: 4px; border: 1px solid #fca5a5;">⬇️ 850 TON (100%)</span>
+                    </div>
+
+                    <!-- Concrete Bored Pile Column (Animates downward on settlement) -->
+                    <div id="sim-pile-column" style="position: absolute; top: 28px; left: 50%; transform: translate(-50%, 6px); width: 64px; height: 125px; background: linear-gradient(90deg, #94a3b8, #cbd5e1, #64748b); border: 2px solid #1e293b; border-radius: 4px; transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 4px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 3;">
+                      <span style="font-size: 8px; font-weight: 800; color: #0f172a;">Ø 1,500 mm</span>
+                      <div style="width: 80%; height: 1px; background: rgba(0,0,0,0.25);"></div>
+                      <span style="font-size: 9.5px; font-weight: 900; color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.7);" id="sim-pile-label">เสาเข็มเจาะ</span>
+                    </div>
+
+                    <!-- Settlement Meter Badge -->
+                    <div style="position: absolute; right: 10px; bottom: 8px; background: rgba(255,255,255,0.95); border: 1.5px solid var(--blue-accent); border-radius: 6px; padding: 3px 6px; font-size: 9.5px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1); z-index: 6;">
+                      <span style="font-size: 8.5px; color: var(--text-muted); display: block; font-weight: 600;">การทรุดตัว (Settlement)</span>
+                      <span id="sim-settlement-val" style="font-size: 13px; font-weight: 900; color: var(--blue-accent);">4.25 มม.</span>
+                    </div>
+
+                    <!-- Side Soil Strata Labels -->
+                    <div style="position: absolute; left: 8px; top: 44px; font-size: 8px; font-weight: 700; color: #475569; line-height: 1.3;">
+                      <div>🟤 ชั้นดินเหนียวอ่อน</div>
+                      <div style="margin-top: 30px;">🟡 ชั้นทรายแน่น (Sand)</div>
+                    </div>
+                  </div>
+
                 </div>
-                <span style="font-size: 12px; color: var(--text-muted); margin-top: 8px;">📷 ตาราง Loading Step อ้างอิงเอกสารทดสอบทางวิชาการ (STS Corporation Co., Ltd.)</span>
               </div>
 
-              <div class="card">
-                <div class="card-title">📊 ข้อกำหนดวิศวกรรมการทดสอบ (Loading Step Spec)</div>
-                <ul class="custom-list spec-list">
-                  <li><strong>เสาเข็มทดสอบสนาม:</strong> Main Line (ML) STA.6+643.949 (BH-08) เสาเข็มเจาะ $\varnothing$ 1,500 มม.</li>
-                  <li><strong>กำลังแบกทานออกแบบ (Design Load):</strong> <strong>850 ตัน</strong> | น้ำหนักทดสอบสูงสุด (300%): <strong>2,550 ตัน</strong></li>
-                  <li><strong>ขั้นตอนเพิ่มน้ำหนัก (3 Cycles Schedule):</strong>
-                    <ul style="padding-left: 16px; font-size: 12px; margin-top: 4px;">
-                      <li><strong>Cycle I (100%):</strong> 25% &rarr; 50% &rarr; 75% &rarr; 100% (850 ตัน, Hold 24 ชม.)</li>
-                      <li><strong>Cycle II (200%):</strong> 125% &rarr; 150% &rarr; 175% &rarr; 200% (1,700 ตัน)</li>
-                      <li><strong>Cycle III (300%):</strong> 225% &rarr; 250% &rarr; 275% &rarr; 300% (2,550 ตัน Max Load)</li>
-                    </ul>
-                  </li>
-                  <li><strong>เครื่องมือวัดทรุดตัว:</strong> แม่แรงไฮดรอลิก Cylinder No. 87930 ร่วมกับ Dial Gauge 4 จุด (ละเอียด 0.01 มม.)</li>
-                </ul>
+              <!-- Right Card: 3s Auto Photo Carousel (3 Photos specified by user) -->
+              <div class="card" style="padding: 10px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; background: #ffffff;">
+                <div style="width: 100%; text-align: left; margin-bottom: 6px;">
+                  <div class="card-title" style="font-size: 18px; margin-bottom: 2px;">
+                    <div class="card-icon" style="background: rgba(37, 99, 235, 0.1);">📷</div>
+                    <span>ภาพการทดสอบ Static Load Test สนาม</span>
+                  </div>
+                </div>
+
+                <div class="photo-carousel-wrapper" style="width: 100%; flex: 1; min-height: 270px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light);">
+                  <div class="photo-carousel-item active">
+                    <img src="Photo/S__4087819.jpg" alt="ภาพการทดสอบ Static Load Test สนาม 1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/S__4087818.jpg" alt="ภาพการทดสอบ Static Load Test สนาม 2" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/1721090.jpg" alt="ภาพการทดสอบ Static Load Test สนาม 3" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  </div>
+                  <div class="carousel-dots-bar">
+                    <span class="dot active" data-slide-to="0"></span>
+                    <span class="dot" data-slide-to="1"></span>
+                    <span class="dot" data-slide-to="2"></span>
+                  </div>
+                </div>
+                <span style="font-size: 10.5px; color: var(--text-muted); margin-top: 6px; text-align: center; font-weight: 500;">📷 ภาพบรรยากาศการทดสอบรับน้ำหนักเสาเข็มสนาม</span>
               </div>
+
             </div>
           </div>
         </section>
@@ -608,7 +898,7 @@
           <div class="section-divider-content">
             <span class="section-num-badge">SECTION 02</span>
             <h2 class="section-divider-title">ส่วนที่ 2: งานควบคุมคุณภาพวัสดุวิศวกรรมสนาม</h2>
-            <p class="section-divider-desc">การตรวจสอบคุณภาพเหล็กเสริม SD40/SD50, วัสดุหน้างาน (Material On Site) และการตรวจรับคาน Precast I-Girder</p>
+            <p class="section-divider-desc">การตรวจรับคานสำเร็จรูป กระบวนการดึงลวดอัดแรง Pre-tensioning การบ่มไอน้ำ และการควบคุมคุณภาพ ITD Precast Yard</p>
           </div>
         </section>
 
@@ -618,46 +908,111 @@
             <div class="slide-title-group">
               <span class="category-tag">ส่วนที่ 2: งานควบคุมคุณภาพวัสดุ</span>
               <h2>การสุ่มทดสอบแรงดึงเหล็กเส้นเสริม ณ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
-              <p class="slide-subtitle">การตรวจสอบจำนวนสุ่มและทดสอบกำลังดึงเหล็กเส้น โครงการสายพระราม 3 - ดาวคะนอง สัญญา 1 (อ้างอิง Daily Report 8 มิ.ย. 69)</p>
+              <p class="slide-subtitle">การตรวจสอบจำนวนสุ่มและทดสอบกำลังดึงเหล็กเส้น โครงการสายพระราม 3 - ดาวคะนอง สัญญา 1</p>
             </div>
             <span class="slide-badge-info">REBAR TENSILE TEST</span>
           </div>
           <div class="slide-content">
-            <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; height: 260px;">
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_ตรวจสอบเหล็ก_260727_1.jpg" alt="การสุ่มตรวจนับจำนวนเหล็กตัวอย่าง" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div class="grid-60-40" style="flex: 1; align-items: stretch;">
+              
+              <!-- Left Card: Auto Photo Carousel (Reversed order 3 to 1) -->
+              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; background: #ffffff;">
+                <div class="photo-carousel-wrapper" style="width: 100%; flex: 1; min-height: 300px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light);">
+                  <div class="photo-carousel-item active">
+                    <img src="Photo/LINE_ALBUM_ตรวจสอบเหล็ก_260727_3.jpg" alt="การสุ่มตรวจสภาพผิวและขนาดเส้นผ่านศูนย์กลางเหล็กเส้นเสริม" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
+                  <div class="photo-carousel-item">
                     <img src="Photo/LINE_ALBUM_ตรวจสอบเหล็ก_260727_2.jpg" alt="การทดสอบแรงดึงเหล็กเส้น ณ ห้องแล็บ มจพ." style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_ตรวจสอบเหล็ก_260727_1.jpg" alt="การสุ่มตรวจนับจำนวนเหล็กตัวอย่าง" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  </div>
+                  <div class="carousel-dots-bar">
+                    <span class="dot active" data-slide-to="0"></span>
+                    <span class="dot" data-slide-to="1"></span>
+                    <span class="dot" data-slide-to="2"></span>
+                  </div>
                 </div>
-                <span style="font-size: 12px; color: var(--text-muted); margin-top: 10px;">📷 ภาพการตรวจนับจำนวนและสุ่มทดสอบแรงดึงเหล็กเสริม ณ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (มจพ.)</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center; font-weight: 500;">📷 ภาพการสุ่มตรวจวัดขนาด ผิวสัมผัส และทดสอบแรงดึงเหล็กเสริม ณ มจพ.</span>
               </div>
 
-              <div class="card">
-                <div class="card-title">🔬 ผลการทดสอบกำลังดึงเหล็กเส้น (KMUTNB Lab Report)</div>
-                <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">
-                  <strong>สถานที่ทดสอบ:</strong> มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ | <strong>ผู้จัดส่ง:</strong> บจก. ซีวิล คอนสตรัคชั่น เซอร์วิส แอนด์ โปรดักส์
-                </p>
-                <table class="custom-table" style="font-size: 12px;">
-                  <thead>
-                    <tr>
-                      <th>ชนิดเหล็ก (Type)</th>
-                      <th>ชั้นคุณภาพ</th>
-                      <th>จำนวนท่อน</th>
-                      <th>ผลทดสอบ</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td><strong>RB 6 / RB 9</strong></td><td>SR 24</td><td>3 / 6 ท่อน</td><td><span style="color: var(--emerald-accent); font-weight: bold;">ถูกต้อง 100%</span></td></tr>
-                    <tr><td><strong>DB 12 / DB 16</strong></td><td>SD 40</td><td>48 / 41 ท่อน</td><td><span style="color: var(--emerald-accent); font-weight: bold;">ถูกต้อง 100%</span></td></tr>
-                    <tr><td><strong>DB 20 / DB 25</strong></td><td>SD 40</td><td>36 / 45 ท่อน</td><td><span style="color: var(--emerald-accent); font-weight: bold;">ถูกต้อง 100%</span></td></tr>
-                    <tr><td><strong>DB 28 / DB 35</strong></td><td>SD 40 / SD 50</td><td>10 / 60 ท่อน</td><td><span style="color: var(--emerald-accent); font-weight: bold;">ถูกต้อง 100%</span></td></tr>
-                  </tbody>
-                </table>
+              <!-- Right Card: Beautified Lab Report Table -->
+              <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: space-between; background: #ffffff;">
+                <div>
+                  <div class="card-title" style="font-size: 18px; margin-bottom: 8px;">
+                    <div class="card-icon" style="background: rgba(37, 99, 235, 0.1);">🔬</div>
+                    <span>ผลการทดสอบกำลังดึงเหล็กเส้น (KMUTNB Lab Report)</span>
+                  </div>
+
+                  <div style="background: rgba(15, 32, 66, 0.03); border-left: 3.5px solid var(--blue-accent); padding: 10px 12px; border-radius: 6px; font-size: 12.5px; color: var(--navy-primary); margin-bottom: 10px; line-height: 1.5;">
+                    <strong>สถานที่ทดสอบ:</strong> มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (KMUTNB)<br>
+                    <strong>ผู้จัดส่งตัวอย่าง:</strong> บจก. ซีวิล คอนสตรัคชั่น เซอร์วิส แอนด์ โปรดักส์
+                  </div>
+
+                  <table class="custom-table" style="font-size: 12.5px; margin-bottom: 0; line-height: 1.45;">
+                    <thead>
+                      <tr>
+                        <th>ชนิดเหล็ก (Type)</th>
+                        <th>ชั้นคุณภาพ</th>
+                        <th>จำนวนสุ่มตรวจ</th>
+                        <th>ผลการทดสอบ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>RB 6</strong></td>
+                        <td><span style="font-weight: 600; color: var(--navy-primary);">SR 24</span></td>
+                        <td>3 ท่อน</td>
+                        <td><span style="color: var(--emerald-accent); font-weight: 800;">✓ ผ่านมาตรฐาน</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>RB 9</strong></td>
+                        <td><span style="font-weight: 600; color: var(--navy-primary);">SR 24</span></td>
+                        <td>6 ท่อน</td>
+                        <td><span style="color: var(--emerald-accent); font-weight: 800;">✓ ผ่านมาตรฐาน</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>DB 12</strong></td>
+                        <td><span style="font-weight: 600; color: var(--navy-primary);">SD 40</span></td>
+                        <td>48 ท่อน</td>
+                        <td><span style="color: var(--emerald-accent); font-weight: 800;">✓ ผ่านมาตรฐาน</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>DB 16</strong></td>
+                        <td><span style="font-weight: 600; color: var(--navy-primary);">SD 40</span></td>
+                        <td>41 ท่อน</td>
+                        <td><span style="color: var(--emerald-accent); font-weight: 800;">✓ ผ่านมาตรฐาน</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>DB 20</strong></td>
+                        <td><span style="font-weight: 600; color: var(--navy-primary);">SD 40</span></td>
+                        <td>36 ท่อน</td>
+                        <td><span style="color: var(--emerald-accent); font-weight: 800;">✓ ผ่านมาตรฐาน</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>DB 25</strong></td>
+                        <td><span style="font-weight: 600; color: var(--navy-primary);">SD 40</span></td>
+                        <td>45 ท่อน</td>
+                        <td><span style="color: var(--emerald-accent); font-weight: 800;">✓ ผ่านมาตรฐาน</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>DB 28</strong></td>
+                        <td><span style="font-weight: 600; color: var(--navy-primary);">SD 40</span></td>
+                        <td>10 ท่อน</td>
+                        <td><span style="color: var(--emerald-accent); font-weight: 800;">✓ ผ่านมาตรฐาน</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>DB 35</strong></td>
+                        <td><span style="font-weight: 600; color: var(--navy-primary);">SD 50</span></td>
+                        <td>60 ท่อน</td>
+                        <td><span style="color: var(--emerald-accent); font-weight: 800;">✓ ผ่านมาตรฐาน</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
               </div>
+
             </div>
           </div>
         </section>
@@ -668,47 +1023,72 @@
             <div class="slide-title-group">
               <span class="category-tag">ส่วนที่ 2: งานควบคุมคุณภาพวัสดุ</span>
               <h2>การตรวจสอบปริมาณและการเบิกจ่ายค่าเหล็กเส้นตรง Material On Site (MOS งวด 10)</h2>
-              <p class="slide-subtitle">การสุ่มตรวจนับเหล็กข้ออ้อย DB32 ณ โกดัง 343 โรงงาน ITD สมุทรปราการ (อ้างอิง Daily Report 19 มิ.ย. 69)</p>
+              <p class="slide-subtitle">การสุ่มตรวจนับเหล็กข้ออ้อย DB32 ณ โกดัง 343 โรงงาน ITD สมุทรปราการ</p>
             </div>
             <span class="slide-badge-info">MATERIAL ON SITE (MOS)</span>
           </div>
           <div class="slide-content">
-            <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; height: 270px;">
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_1906 โรงเหล็ก_260727_4.jpg" alt="การตรวจสอบโกดังจัดเก็บเหล็กเส้น" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div class="grid-60-40" style="flex: 1; align-items: stretch;">
+              
+              <!-- Left Card: Auto Photo Carousel (Reversed order 4 to 1) -->
+              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; background: #ffffff;">
+                <div class="photo-carousel-wrapper" style="width: 100%; flex: 1; min-height: 300px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light);">
+                  <div class="photo-carousel-item active">
+                    <img src="Photo/LINE_ALBUM_1906 โรงเหล็ก_260727_1.jpg" alt="การตรวจสอบ Mill Certificate และเอกสารรับรอง" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block;">
                   </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_1906 โรงเหล็ก_260727_3.jpg" alt="การสุ่มตรวจนับจำนวนเหล็กเส้นตรง DB32" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                  </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
+                  <div class="photo-carousel-item">
                     <img src="Photo/LINE_ALBUM_1906 โรงเหล็ก_260727_2.jpg" alt="การตรวจสอบผังจัดเก็บและแท็กสินค้า" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_1906 โรงเหล็ก_260727_1.jpg" alt="การตรวจสอบ Mill Certificate และเอกสารรับรอง" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_1906 โรงเหล็ก_260727_3.jpg" alt="การสุ่มตรวจนับจำนวนเหล็กเส้นตรง DB32" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_1906 โรงเหล็ก_260727_4.jpg" alt="การตรวจสอบโกดังจัดเก็บเหล็กเส้น" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  </div>
+                  <div class="carousel-dots-bar">
+                    <span class="dot active" data-slide-to="0"></span>
+                    <span class="dot" data-slide-to="1"></span>
+                    <span class="dot" data-slide-to="2"></span>
+                    <span class="dot" data-slide-to="3"></span>
                   </div>
                 </div>
-                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">📷 ภาพการสุ่มตรวจปริมาณ การจัดเก็บ และ Mill Certificate เหล็กเส้นตรง DB32 ณ โกดัง 343 ITD</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center; font-weight: 500;">📷 ภาพการสุ่มตรวจปริมาณ การจัดเก็บ และ Mill Certificate เหล็ก DB32 ณ โกดัง 343 ITD</span>
               </div>
 
-              <div class="card">
-                <div class="card-title">📦 สรุปปริมาณเหล็กเส้น MOS & ยอดอนุมัติเบิกจ่าย</div>
-                <p style="font-size: 11px; color: var(--text-muted); margin-bottom: 6px;">
-                  <strong>สถานที่:</strong> โกดัง 343 ITD สมุทรปราการ (สยามสตีลซินดิเคท) | <strong>โครงการ:</strong> ฉลองรัช ตอน 3 (Section 4)
-                </p>
-                <ul class="custom-list spec-list" style="font-size: 12px;">
-                  <li><strong>รายการตรวจรับ (Section 4):</strong> เหล็กเส้นข้ออ้อย <strong>DB32 x 12.00 เมตร</strong> จำนวน <strong>13,350 เส้น</strong> (น้ำหนักรวม <strong>1,011.34 ตัน</strong>)</li>
-                  <li><strong>มูลค่ารวมวัสดุทั้งหมด:</strong> <strong>31,026,666.11 บาท</strong> (อัตรา 30,678.69 บาท/เมตริกตัน)</li>
-                  <li><strong>ยอดอนุมัติเบิกจ่าย MOS (60%):</strong>
-                    <ul style="padding-left: 14px; font-size: 11px; margin-top: 2px;">
-                      <li><strong>ยอดเงินอนุมัติเบิกได้ (60%):</strong> <span style="color: var(--emerald-accent); font-weight: bold;">18,615,999.67 บาท</span></li>
-                      <li><strong>ยอดเงินคงเหลือค้างหักคืน (40%):</strong> <strong>12,410,666.44 บาท</strong></li>
-                    </ul>
-                  </li>
-                  <li><strong>เกณฑ์จัดเก็บ (Spec 1.2.7.4):</strong> แบ่ง Section จัดเก็บชัดเจน หนุนหมอนรองสูงจากพื้น ป้องกันบิดงอและสนิม</li>
-                </ul>
+              <!-- Right Card: MOS Financial & Storage Summary -->
+              <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: space-between; background: #ffffff;">
+                <div>
+                  <div class="card-title" style="font-size: 18px; margin-bottom: 8px;">
+                    <div class="card-icon" style="background: rgba(37, 99, 235, 0.1);">📦</div>
+                    <span>สรุปปริมาณเหล็กเส้น MOS & ยอดอนุมัติเบิกจ่าย</span>
+                  </div>
+                  
+                  <div style="background: rgba(15, 32, 66, 0.03); border-left: 3.5px solid var(--blue-accent); padding: 10px 12px; border-radius: 6px; font-size: 12.5px; color: var(--navy-primary); margin-bottom: 10px; line-height: 1.5;">
+                    <strong>สถานที่:</strong> โกดัง 343 ITD สมุทรปราการ (สยามสตีลซินดิเคท)<br>
+                    <strong>โครงการ:</strong> ทางพิเศษฉลองรัชส่วนต่อขยาย (Section 4)
+                  </div>
+
+                  <ul class="custom-list spec-list" style="font-size: 16px; gap: 6px;">
+                    <li><strong>รายการตรวจรับ (Section 4):</strong> เหล็กเส้นข้ออ้อย <strong>DB32 x 12.00 เมตร</strong> จำนวน <strong>13,350 เส้น</strong> (น้ำหนักรวม <strong>1,011.34 ตัน</strong>)</li>
+                    <li><strong>มูลค่ารวมวัสดุทั้งหมด:</strong> <span style="color: var(--navy-primary); font-weight: 700;">31,026,666.11 บาท</span> (อัตรา 30,678.69 บาท/เมตริกตัน)</li>
+                    <li><strong>ยอดอนุมัติเบิกจ่าย MOS (60%):</strong>
+                      <div style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.15); border-radius: 6px; padding: 10px 12px; margin-top: 6px;">
+                        <div style="display: flex; justify-content: space-between; font-size: 13.5px; margin-bottom: 4px; font-weight: 700; color: var(--navy-primary);">
+                          <span>ยอดเงินอนุมัติเบิกได้ (60%):</span>
+                          <span style="color: var(--emerald-accent); font-weight: 800;">18,615,999.67 บาท</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 12.5px; color: var(--navy-primary); font-weight: 600;">
+                          <span>ยอดเงินคงเหลือค้างหักคืน (40%):</span>
+                          <span style="font-weight: 700; color: var(--navy-primary);">12,410,666.44 บาท</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li><strong>เกณฑ์จัดเก็บ (Spec 1.2.7.4):</strong> แบ่ง Section จัดเก็บชัดเจน หนุนหมอนรองสูงจากพื้น ป้องกันบิดงอและสนิม</li>
+                  </ul>
+                </div>
+
               </div>
+
             </div>
           </div>
         </section>
@@ -719,46 +1099,71 @@
             <div class="slide-title-group">
               <span class="category-tag">ส่วนที่ 2: งานควบคุมคุณภาพวัสดุ</span>
               <h2>การตรวจรับชิ้นงานคาน Precast I-Girder & C-Girder และเกณฑ์เบิกจ่าย 60/40</h2>
-              <p class="slide-subtitle">การตรวจสอบความถูกต้องชิ้นงานคาน ลานกองเก็บ และเงื่อนไขการเบิกจ่ายค่างวด (อ้างอิง Daily Report 8 ก.ค. 69)</p>
+              <p class="slide-subtitle">การตรวจสอบความถูกต้องชิ้นงานคาน ลานกองเก็บ และเงื่อนไขการเบิกจ่ายค่างวด</p>
             </div>
             <span class="slide-badge-info">PRECAST GIRDER QA</span>
           </div>
           <div class="slide-content">
-            <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; height: 270px;">
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_8769_260727_8.jpg" alt="การตรวจรับคาน Precast Girder" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                  </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_8769_260727_7.jpg" alt="การตรวจสอบมิติตัวคานและเหล็กเสริม" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                  </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_8769_260727_6.jpg" alt="การสุ่มตรวจสภาพผิวคอนกรีตคาน" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                  </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
+            <div class="grid-60-40" style="flex: 1; align-items: stretch;">
+              
+              <!-- Left Card: Auto Photo Carousel (Reversed order 4 to 1 -> file 5 to 8) -->
+              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; background: #ffffff;">
+                <div class="photo-carousel-wrapper" style="width: 100%; flex: 1; min-height: 300px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light);">
+                  <div class="photo-carousel-item active">
                     <img src="Photo/LINE_ALBUM_8769_260727_5.jpg" alt="การทำ Marking รหัสชิ้นงานบนตัวคาน" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_8769_260727_6.jpg" alt="การสุ่มตรวจสภาพผิวคอนกรีตคาน" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_8769_260727_7.jpg" alt="การตรวจสอบมิติตัวคานและเหล็กเสริม" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_8769_260727_8.jpg" alt="การตรวจรับคาน Precast Girder" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  </div>
+                  <div class="carousel-dots-bar">
+                    <span class="dot active" data-slide-to="0"></span>
+                    <span class="dot" data-slide-to="1"></span>
+                    <span class="dot" data-slide-to="2"></span>
+                    <span class="dot" data-slide-to="3"></span>
+                  </div>
                 </div>
-                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">📷 ภาพการตรวจรับชิ้นงานคาน Precast I-Girder & C-Girder ณ ลานกองเก็บ บจก. บางปะอินเสาเข็มคอนกรีต (ITD)</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center; font-weight: 500;">📷 ภาพการตรวจรับชิ้นงานคาน Precast I-Girder & C-Girder ณ ลานกองเก็บ ITD</span>
               </div>
 
-              <div class="card">
-                <div class="card-title">🏗️ สรุปยอดผลการตรวจรับคาน & เกณฑ์เบิกจ่าย</div>
-                <p style="font-size: 11px; color: var(--text-muted); margin-bottom: 6px;">
-                  <strong>สถานที่:</strong> ลานกองเก็บ บจก. บางปะอินเสาเข็มคอนกรีต | <strong>ผู้รับจ้าง:</strong> บมจ. อิตาเลียนไทย (ITD ฉลองรัช 1)
-                </p>
-                <ul class="custom-list spec-list" style="font-size: 12px;">
-                  <li><strong>ยอดชิ้นงานผ่านการตรวจ (ครั้งที่ 9):</strong> รวม <strong>42 ชิ้นงาน</strong> (I-Girder 29 ชิ้น + C-Girder 13 ชิ้น) | ราคารวม <strong>12,326,317.01 บาท</strong></li>
-                  <li><strong>เงื่อนไขการเบิกจ่ายค่างวด (BOQ Milestone):</strong>
-                    <ul style="padding-left: 14px; font-size: 11px; margin-top: 2px;">
-                      <li><strong>งวด 1 (ร้อยละ 60):</strong> <strong>7,395,790.21 บาท</strong> (หล่อคานเสร็จ จัดเก็บ ณ Yard และผ่านการตรวจรับ)</li>
-                      <li><strong>งวด 2 (ร้อยละ 40):</strong> <strong>4,930,526.80 บาท</strong> (ติดตั้งแล้วเสร็จสมบูรณ์ถูกต้องบนตัวพาย)</li>
-                    </ul>
-                  </li>
-                  <li><strong>ข้อกำหนดขนย้าย (Spec 5.1.4):</strong> 1) กำลังอัด &ge; 90% ของกำลังอัด 28 วัน และ 2) อายุคอนกรีต &ge; 14 วัน</li>
-                </ul>
+              <!-- Right Card: Precast Girder Financial & Storage Summary -->
+              <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: space-between; background: #ffffff;">
+                <div>
+                  <div class="card-title" style="font-size: 18px; margin-bottom: 8px;">
+                    <div class="card-icon" style="background: rgba(37, 99, 235, 0.1);">🏗️</div>
+                    <span>สรุปยอดผลการตรวจรับคาน & เกณฑ์เบิกจ่าย 60/40</span>
+                  </div>
+
+                  <div style="background: rgba(15, 32, 66, 0.03); border-left: 3.5px solid var(--blue-accent); padding: 10px 12px; border-radius: 6px; font-size: 12.5px; color: var(--navy-primary); margin-bottom: 10px; line-height: 1.5;">
+                    <strong>สถานที่:</strong> ลานกองเก็บ บจก. บางปะอินเสาเข็มคอนกรีต<br>
+                    <strong>ผู้รับจ้าง:</strong> บมจ. อิตาเลียนไทย ดีเวล๊อปเมนต์ (ITD ฉลองรัช สัญญา 1)
+                  </div>
+
+                  <ul class="custom-list spec-list" style="font-size: 16px; gap: 6px;">
+                    <li><strong>ยอดชิ้นงานผ่านการตรวจ (ครั้งที่ 9):</strong> รวม <strong>42 ชิ้นงาน</strong> (I-Girder 29 ชิ้น + C-Girder 13 ชิ้น) | ราคารวม <strong>12,326,317.01 บาท</strong></li>
+                    <li><strong>เงื่อนไขการเบิกจ่ายค่างวด (BOQ Milestone):</strong>
+                      <div style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.15); border-radius: 6px; padding: 10px 12px; margin-top: 6px;">
+                        <div style="display: flex; justify-content: space-between; font-size: 13.5px; margin-bottom: 4px; font-weight: 700; color: var(--navy-primary);">
+                          <span>งวด 1 (ร้อยละ 60):</span>
+                          <span style="color: var(--emerald-accent); font-weight: 800;">7,395,790.21 บาท</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 12.5px; color: var(--navy-primary); font-weight: 600;">
+                          <span>งวด 2 (ร้อยละ 40 หลังติดตั้ง):</span>
+                          <span style="font-weight: 700; color: var(--navy-primary);">4,930,526.80 บาท</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li><strong>ข้อกำหนดขนย้าย (Spec 5.1.4):</strong> 1) กำลังอัด &ge; 90% ของกำลังอัด 28 วัน และ 2) อายุคอนกรีต &ge; 14 วัน</li>
+                  </ul>
+                </div>
+
               </div>
+
             </div>
           </div>
         </section>
@@ -769,39 +1174,87 @@
             <div class="slide-title-group">
               <span class="category-tag">ส่วนที่ 2: งานควบคุมคุณภาพวัสดุ</span>
               <h2>การตรวจสอบโรงงานและลานผลิตคานสำเร็จรูป ITD Precast Yard</h2>
-              <p class="slide-subtitle">กระบวนการตรวจรับรองคุณภาพลานหล่อ การประกอบแบบหล่อเหล็ก การบ่มปูน และการจัดเก็บคานสำเร็จรูป</p>
+              <p class="slide-subtitle">กระบวนการตรวจรับรองคุณภาพลานหล่อ การประกอบแบบหล่อเหล็ก การบ่มปูน และหลักการ Pre-tensioning 6 ขั้นตอน</p>
             </div>
             <span class="slide-badge-info">ITD YARD FACTORY AUDIT</span>
           </div>
           <div class="slide-content">
-            <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; height: 270px;">
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
+            <div class="grid-60-40" style="flex: 1; align-items: stretch;">
+              
+              <!-- Left Card: 3s Auto Photo Carousel -->
+              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; background: #ffffff;">
+                <div class="photo-carousel-wrapper" style="width: 100%; flex: 1; min-height: 300px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light);">
+                  <div class="photo-carousel-item active">
                     <img src="Photo/LINE_ALBUM_8769_260727_4.jpg" alt="การตรวจสอบแบบหล่อคานสำเร็จรูป" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
+                  <div class="photo-carousel-item">
                     <img src="Photo/LINE_ALBUM_8769_260727_3.jpg" alt="การวางกรงเหล็กและท่อร้อยลวดอัดแรง" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
+                  <div class="photo-carousel-item">
                     <img src="Photo/LINE_ALBUM_8769_260727_2.jpg" alt="กระบวนการบ่มด้วยไอน้ำและถอดแบบ" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
+                  <div class="photo-carousel-item">
                     <img src="Photo/LINE_ALBUM_8769_260727_1.jpg" alt="การจัดวางคานสำเร็จรูป ณ ลานกองเก็บ" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
+                  <div class="carousel-dots-bar">
+                    <span class="dot active" data-slide-to="0"></span>
+                    <span class="dot" data-slide-to="1"></span>
+                    <span class="dot" data-slide-to="2"></span>
+                    <span class="dot" data-slide-to="3"></span>
+                  </div>
                 </div>
-                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">📷 ภาพการตรวจสอบขั้นตอนการผลิตคานและการกองเก็บชิ้นงาน ณ ITD Precast Yard</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center; font-weight: 500;">📷 ภาพการตรวจสอบขั้นตอนการผลิตคานและการกองเก็บชิ้นงาน ณ ITD Precast Yard</span>
               </div>
 
-              <div class="card">
-                <div class="card-title">🏭 ขั้นตอนควบคุมคุณภาพการผลิต (Factory Audit Controls)</div>
-                <ul class="custom-list spec-list" style="font-size: 12px;">
-                  <li><strong>1. แบบหล่อเหล็ก (Steel Mold):</strong> ตรวจสอบมิติแนวฉาก ระดับความเที่ยงตรง ทาน้ำยาถอดแบบ (Form Oil) สม่ำเสมอ และไม่มีรอยรั่วซึม</li>
-                  <li><strong>2. ท่อร้อยลวดอัดแรง (PT Ducts):</strong> วางแนวสลิงอัดแรงดัดโค้งตาม Profile ออกแบบ อัดปิดรอยต่อท่อป้องกันปูนไหลทะลักเข้าท่อ</li>
-                  <li><strong>3. การบ่มด้วยไอน้ำ (Steam Curing):</strong> ควบคุมอุณหภูมิ 60-70 °C เพื่อเร่งกำลังอัดคอนกรีตถอดแบบ (&ge; 25 MPa) ภายใน 18-24 ชม.</li>
-                  <li><strong>4. การจัดเก็บ & Marking:</strong> พ่นสัญลักษณ์ Marking ถาวรระบุรหัสคาน ชนิด วันที่หล่อ และจัดวางหมอนรอง (Dunnage) ตรงจุดยกออกแบบ</li>
-                </ul>
+              <!-- Right Card: Factory Audit Controls + Self-Crafted SVG Vector Graphic Pre-tensioning Simulator -->
+              <div class="card" style="padding: 12px; display: flex; flex-direction: column; justify-content: space-between; background: #ffffff;">
+                <div>
+                  <!-- Upper Summary Box -->
+                  <div class="card-title" style="font-size: 20px; font-weight: 800; margin-bottom: 10px;">
+                    <div class="card-icon" style="background: rgba(37, 99, 235, 0.1);">🏭</div>
+                    <span>ขั้นตอนควบคุมคุณภาพการผลิต (Factory Audit)</span>
+                  </div>
+                  <ul class="custom-list spec-list" style="font-size: 16px; gap: 3px; margin-bottom: 6px;">
+                    <li><strong>1. แบบหล่อเหล็ก (Mold):</strong> ตรวจมิติแนวฉาก ทาน้ำยาถอดแบบ (Form Oil) ไม่มีรอยรั่ว</li>
+                    <li><strong>2. การจัดเก็บลวดผูกเหล็ก:</strong> จัดเก็บในอาคารที่ร่ม ยกสูงจากพื้น ป้องกันความชื้นและคราบสนิม</li>
+                  </ul>
+
+                  <!-- Lower Pre-tensioning Principles Interactive SVG Simulator Header -->
+                  <div style="border-top: 1px dashed var(--border-light); padding-top: 6px; margin-top: 2px;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
+                      <span style="font-family: var(--font-heading); font-size: 14px; font-weight: 800; color: var(--navy-primary);">
+                        ⚙️ หลักการ Pre-tensioning
+                      </span>
+                    </div>
+
+                    <!-- 6 Step Nav Buttons -->
+                    <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 3px; margin-bottom: 6px;">
+                      <button class="pretension-step-btn active" data-step="1" onclick="window.switchPretensionStep && window.switchPretensionStep(1)" style="padding: 4px 2px; border-radius: 4px; border: 1px solid var(--blue-accent); background: var(--blue-accent); color: #ffffff; font-size: 10px; font-weight: bold; cursor: pointer; text-align: center;">1</button>
+                      <button class="pretension-step-btn" data-step="2" onclick="window.switchPretensionStep && window.switchPretensionStep(2)" style="padding: 4px 2px; border-radius: 4px; border: 1px solid var(--border-light); background: #f8fafc; color: var(--navy-primary); font-size: 10px; font-weight: bold; cursor: pointer; text-align: center;">2</button>
+                      <button class="pretension-step-btn" data-step="3" onclick="window.switchPretensionStep && window.switchPretensionStep(3)" style="padding: 4px 2px; border-radius: 4px; border: 1px solid var(--border-light); background: #f8fafc; color: var(--navy-primary); font-size: 10px; font-weight: bold; cursor: pointer; text-align: center;">3</button>
+                      <button class="pretension-step-btn" data-step="4" onclick="window.switchPretensionStep && window.switchPretensionStep(4)" style="padding: 4px 2px; border-radius: 4px; border: 1px solid var(--border-light); background: #f8fafc; color: var(--navy-primary); font-size: 10px; font-weight: bold; cursor: pointer; text-align: center;">4</button>
+                      <button class="pretension-step-btn" data-step="5" onclick="window.switchPretensionStep && window.switchPretensionStep(5)" style="padding: 4px 2px; border-radius: 4px; border: 1px solid var(--border-light); background: #f8fafc; color: var(--navy-primary); font-size: 10px; font-weight: bold; cursor: pointer; text-align: center;">5</button>
+                      <button class="pretension-step-btn" data-step="6" onclick="window.switchPretensionStep && window.switchPretensionStep(6)" style="padding: 4px 2px; border-radius: 4px; border: 1px solid var(--border-light); background: #f8fafc; color: var(--navy-primary); font-size: 10px; font-weight: bold; cursor: pointer; text-align: center;">6</button>
+                    </div>
+
+                    <!-- Step Description Badge -->
+                    <div style="background: rgba(11, 29, 58, 0.04); border: 1px solid var(--border-light); border-radius: 6px; padding: 5px 8px; font-size: 10.5px; margin-bottom: 6px;">
+                      <span id="pretension-title" style="font-weight: 800; color: var(--navy-primary); display: block;">1. Unstressed beam</span>
+                      <span id="pretension-desc" style="font-size: 9.5px; color: var(--text-muted);">คานสี่เหลี่ยมธรรมดา + ลูกศรสีดำ 4 หัวกดทับด้านบน (↓↓↓↓)</span>
+                    </div>
+
+                    <!-- Pure Hand-crafted SVG Vector Display Area -->
+                    <div id="pretension-visual-area" style="position: relative; height: 115px; background: #ffffff; border-radius: 6px; border: 1px solid var(--border-light); overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 6px rgba(0,0,0,0.03);">
+                      <svg id="pretension-svg" width="100%" height="100%" viewBox="0 0 290 100" style="display: block;">
+                        <!-- Default Step 1 SVG Render -->
+                      </svg>
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
+
             </div>
           </div>
         </section>
@@ -811,7 +1264,7 @@
           <div class="section-divider-content">
             <span class="section-num-badge">SECTION 03</span>
             <h2 class="section-divider-title">ส่วนที่ 3: งานสิ่งแวดล้อมและความปลอดภัยสนาม</h2>
-            <p class="section-divider-desc">การควบคุมมลพิษ แผนจัดจราจร ความปลอดภัยบนพื้นที่สูง และการจัดการนิเวศวิทยาทางน้ำ</p>
+            <p class="section-divider-desc">มาตรการฝุ่น PM2.5/Safety Audit แผนจัดจราจร Access Road มาตรฐาน Safety บนพื้นที่สูง/PPE แผง Noise Barrier และการจัดการนิเวศวิทยาทางน้ำ</p>
           </div>
         </section>
 
@@ -827,21 +1280,26 @@
           </div>
           <div class="slide-content">
             <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="width: 100%; height: 380px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
+                                          <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div style="width: 100%; flex: 1; min-height: 320px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
                   <img src="Photo/LINE_ALBUM_296 safety audit จตุโชติ_260727_5.jpg" alt="งานตรวจสอบ Safety Audit และควบคุมมลพิษอากาศสนาม" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                 </div>
-                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">📷 ภาพการตรวจสอบ Safety Audit & มาตรการควบคุมมลพิษฝุ่นละอองสนาม โครงการฉลองรัช (ช่วงจตุโชติ)</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center; font-weight: 500;">📷 ภาพการตรวจสอบ Safety Audit & มาตรการควบคุมมลพิษฝุ่นละอองสนาม โครงการฉลองรัช (ช่วงจตุโชติ)</span>
               </div>
 
-              <div class="card">
-                <div class="card-title">🛡️ มาตรการป้องกันมลพิษอากาศ & Safety Audit</div>
-                <ul class="custom-list spec-list" style="font-size: 12px;">
-                  <li><strong>1. แนวสแลนดักฝุ่น (Dust Nets):</strong> ติดตั้งสแลน/ผ้าใบดักฝุ่นความสูง &ge; 3.0 เมตร ล้อมรอบเขตก่อสร้าง</li>
-                  <li><strong>2. ฉีดพ่นละอองน้ำ (Dust Suppression):</strong> จัดรถน้ำสเปรย์ลดฝุ่นละออง PM2.5/PM10 บนถนน Access Road สม่ำเสมอ</li>
-                  <li><strong>3. อ่างล้างล้อ (Wheel Wash):</strong> ล้างล้อรถบรรทุกขนส่งดินและวัสดุก่อนออกสู่ถนนสาธารณะ</li>
-                  <li><strong>4. การคลุมผ้าใบมิดชิด:</strong> บังคับคลุมผ้าใบท้ายรถบรรทุกทุกคัน ป้องกันวัสดุร่วงหล่นลงพื้นผิวจราจร</li>
-                </ul>
+              <div class="card" style="padding: 16px 18px; display: flex; flex-direction: column; justify-content: flex-start; background: #ffffff;">
+                <div>
+                  <div class="card-title" style="font-size: 18px; font-weight: 800; margin-bottom: 14px;">
+                    <div class="card-icon" style="background: rgba(37, 99, 235, 0.1); width: 30px; height: 30px; font-size: 18px;">🛡️</div>
+                    <span>มาตรการป้องกันมลพิษอากาศ & Safety Audit</span>
+                  </div>
+
+                  <ul class="custom-list spec-list" style="font-size: 16px; line-height: 1.55; gap: 10px;">
+                    <li><strong>1. แนวสแลนดักฝุ่น (Dust Nets):</strong> ติดตั้งสแลน/ผ้าใบดักฝุ่นความสูง &ge; 3.0 เมตร ล้อมรอบเขตก่อสร้าง</li>
+                    <li><strong>2. ฉีดพ่นละอองน้ำ (Dust Suppression):</strong> จัดรถน้ำสเปรย์ลดฝุ่นละออง PM2.5/PM10 บนถนน Access Road สม่ำเสมอ</li>
+                    <li><strong>3. อ่างล้างล้อ (Wheel Wash):</strong> ล้างล้อรถบรรทุกขนส่งดินและวัสดุก่อนออกสู่ถนนสาธารณะ</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -859,16 +1317,16 @@
           </div>
           <div class="slide-content">
             <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="width: 100%; height: 380px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
-                  <img src="Photo/LINE_ALBUM_1572569 BE_260727_5.jpg" alt="การตรวจสอบงานถนนเข้าพื้นที่ก่อสร้าง Access Road และแบริเออร์จัดการจราจร" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                                          <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div style="width: 100%; flex: 1; min-height: 320px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
+                  <img src="Photo/LINE_ALBUM_1572569 BE_260727_5.jpg" alt="การตรวจสอบงานถนนเข้าพื้นที่ก่อสร้าง Access Road และแบริเออร์จัดการจราจร" style="width: 100%; height: 100%; object-fit: cover; object-position: center bottom; display: block;">
                 </div>
-                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">📷 ภาพการตรวจสอบงานถนนเข้าพื้นที่ก่อสร้าง (Access Road) และแบริเออร์จัดการจราจรสนาม</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center; font-weight: 500;">📷 ภาพการตรวจสอบงานถนนเข้าพื้นที่ก่อสร้าง (Access Road) และแบริเออร์จัดการจราจรสนาม</span>
               </div>
 
               <div class="card">
-                <div class="card-title">🚧 มาตรการบริหารจัดการจราจร & ถนน Access Road</div>
-                <ul class="custom-list spec-list" style="font-size: 12px;">
+                <div class="card-title" style="font-size: 18px; font-weight: 800;">🚧 มาตรการบริหารจัดการจราจร & ถนน Access Road</div>
+                <ul class="custom-list spec-list" style="font-size: 16px;">
                   <li><strong>1. แนวแผงกั้น (Jersey Barrier):</strong> ติดตั้งแผงคอนกรีต Jersey Barrier พร้อมแถบสะท้อนแสง กั้นแนวเขตก่อสร้างสนามอย่างปลอดภัย</li>
                   <li><strong>2. ป้ายสัญญาณเตือน (Traffic Signs):</strong> ติดตั้งป้ายเตือนเขตก่อสร้างล่วงหน้า และป้ายไฟกะพริบ Arrow Board ในช่วงเวลากลางคืน</li>
                   <li><strong>3. ทางเข้า-ออกโครงการ (Access Point):</strong> บดอัดจัดทำถนนชั่วคราว Access Road รองรับเครื่องจักรหนักและรถบรรทุก</li>
@@ -890,33 +1348,61 @@
             <span class="slide-badge-info">SAFETY & PPE</span>
           </div>
           <div class="slide-content">
-            <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; height: 270px;">
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
+            <div class="grid-60-40" style="flex: 1; align-items: stretch;">
+              
+              <!-- Left Card: 4-Photo Auto Carousel (Added photo 1 and photo 4) -->
+              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; background: #ffffff;">
+                <div class="photo-carousel-wrapper" style="width: 100%; flex: 1; min-height: 300px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light);">
+                  <div class="photo-carousel-item active">
+                    <img src="Photo/LINE_ALBUM_2962569 BE_260727_1.jpg" alt="การตรวจสอบการติดตั้งสาย Lifeline และราวกั้นความปลอดภัย" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  </div>
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_2962569 BE_260727_4.jpg" alt="การสุ่มตรวจอุปกรณ์ PPE และเข็มขัดนิรภัยประจำตัวช่าง" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  </div>
+                  <div class="photo-carousel-item">
                     <img src="Photo/LINE_ALBUM_2962569 BE_260727_3.jpg" alt="การตรวจสอบงานความปลอดภัยบนพื้นที่สูง" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
+                  <div class="photo-carousel-item">
                     <img src="Photo/LINE_ALBUM_2962569 BE_260727_2.jpg" alt="การตรวจสอบอุปกรณ์ PPE และสาย Lifeline" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
+                  <div class="carousel-dots-bar">
+                    <span class="dot active" data-slide-to="0"></span>
+                    <span class="dot" data-slide-to="1"></span>
+                    <span class="dot" data-slide-to="2"></span>
+                    <span class="dot" data-slide-to="3"></span>
+                  </div>
                 </div>
-                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">📷 ภาพการตรวจสอบความปลอดภัยการทำงานบนพื้นที่สูง และอุปกรณ์ PPE สนาม โครงการฉลองรัช (จตุโชติ)</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center; font-weight: 500;">📷 ภาพการตรวจสอบความปลอดภัยงานบนพื้นที่สูง และอุปกรณ์ PPE สนาม</span>
               </div>
 
-              <div class="card">
-                <div class="card-title">🥾 มาตรฐานความปลอดภัยบนพื้นที่สูง & PPE</div>
-                <ul class="custom-list spec-list" style="font-size: 12px;">
-                  <li><strong>1. มาตรการพื้นที่สูง (&gt; 2.0m):</strong> สวมใส่ชุด <strong>Full Body Harness</strong> สายช่วยชีวิตคู่ (Double Lanyards) พร้อม Shock Absorber เกี่ยวกับสาย Lifeline ศก. &ge; 8 มม.</li>
-                  <li><strong>2. ราวกันตก & ตาข่ายเซฟตี้:</strong> ติดตั้งราวกันตกชั่วคราวความสูง &ge; 1.10 เมตร และตาข่าย safety net ใต้โครงสร้างยกระดับ</li>
-                  <li><strong>3. อุปกรณ์ PPE มาตรฐาน:</strong>
-                    <ul style="padding-left: 14px; font-size: 11px; margin-top: 2px;">
-                      <li><strong>หมวกนิรภัย (Hard Hat):</strong> มอก. พร้อมสายรัดคางแน่นหนา</li>
-                      <li><strong>เสื้อสะท้อนแสง:</strong> สีส้ม/เหลืองจราจร แถบสะท้อนแสง</li>
-                      <li><strong>รองเท้านิรภัย (Safety Boots):</strong> หัวเหล็กกันกระแทก และพื้นกันแทง</li>
-                    </ul>
-                  </li>
-                </ul>
+              <!-- Right Card: Safety & PPE Specifications Summary -->
+              <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: space-between; background: #ffffff;">
+                <div>
+                  <div class="card-title" style="font-size: 18px; margin-bottom: 8px;">
+                    <div class="card-icon" style="background: rgba(37, 99, 235, 0.1);">🥾</div>
+                    <span>มาตรฐานความปลอดภัยบนพื้นที่สูง & PPE</span>
+                  </div>
+
+                  
+
+                  <ul class="custom-list spec-list" style="font-size: 16px; gap: 6px;">
+                    <li><strong>1. มาตรการพื้นที่สูง (&gt; 2.0m):</strong> สวมใส่ชุด <strong>Full Body Harness</strong> สายช่วยชีวิตคู่ (Double Lanyards) พร้อม Shock Absorber เกี่ยวกับสาย Lifeline ศก. &ge; 8 มม.</li>
+                    <li><strong>2. ราวกันตก & ตาข่ายเซฟตี้:</strong> ติดตั้งราวกันตกชั่วคราวความสูง &ge; 1.10 เมตร และตาข่าย safety net ใต้โครงสร้างยกระดับ</li>
+                    <li><strong>3. อุปกรณ์ PPE มาตรฐาน:</strong>
+                      <div style="background: rgba(37, 99, 235, 0.05); border: 1px solid rgba(37, 99, 235, 0.15); border-radius: 6px; padding: 6px 10px; margin-top: 4px;">
+                        <div style="font-size: 12px; color: var(--navy-primary); line-height: 1.45;">
+                          • <strong>หมวกนิรภัย (Hard Hat):</strong> มอก. พร้อมสายรัดคางแน่นหนา<br>
+                          • <strong>เสื้อสะท้อนแสง:</strong> สีส้ม/เหลืองจราจร แถบสะท้อนแสงเห็นชัด<br>
+                          • <strong>รองเท้านิรภัย (Safety Boots):</strong> หัวเหล็กกันกระแทก และพื้นกันแทง
+                        </div>
+                      </div>
+                    </li>
+                    <li><strong>4. การเบี่ยงเส้นทางจราจร:</strong> ดำเนินการเบี่ยงเส้นทางจราจรช่วง 22.00 น. (หากวันใดปริมาณการสัญจรน้อย จะพิจารณาเบี่ยงเส้นทางในทางช่วงเวลาที่เร็วขึ้น)</li>
+                  </ul>
+                </div>
+
               </div>
+
             </div>
           </div>
         </section>
@@ -933,24 +1419,27 @@
           </div>
           <div class="slide-content">
             <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; height: 270px;">
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_272569 BE_260727_2.jpg" alt="การติดตั้งแผงกั้นเสียง Noise Barrier" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <div class="card" style="padding: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div class="photo-carousel-wrapper" style="width: 100%; flex: 1; min-height: 280px;">
+                  <div class="photo-carousel-item active">
+                    <img src="Photo/LINE_ALBUM_272569 BE_260727_2.jpg" alt="การติดตั้งแผงกั้นเสียง Noise Barrier">
                   </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_272569 BE_260727_1.jpg" alt="การตรวจสอบแผงซับเสียง acoustic panels" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_272569 BE_260727_1.jpg" alt="การตรวจสอบแผงซับเสียง acoustic panels">
+                  </div>
+                  <div class="carousel-dots-bar">
+                    <span class="dot active" data-slide-to="0"></span><span class="dot" data-slide-to="1"></span>
                   </div>
                 </div>
-                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">📷 ภาพการติดตั้งแผงกั้นเสียง (Noise Barrier) และการตรวจวัดระดับเสียงมลพิษสนาม</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 6px; text-align: center; font-weight: 500;">📷 ภาพการติดตั้งแผงกั้นเสียง (Noise Barrier) และการตรวจวัดระดับเสียงสนาม</span>
               </div>
 
               <div class="card">
-                <div class="card-title">🔇 มาตรการควบคุมมลพิษเสียง & Noise Barrier</div>
-                <ul class="custom-list spec-list" style="font-size: 12px;">
+                <div class="card-title" style="font-size: 18px; font-weight: 800;">🔇 มาตรการควบคุมมลพิษเสียง & Noise Barrier</div>
+                <ul class="custom-list spec-list" style="font-size: 16px;">
                   <li><strong>1. ติดตั้งแผงซับเสียง (Acoustic Panels):</strong> ติดตั้งแผงกั้นเสียงความสูง 3.0 - 5.0 เมตร บริเวณใกล้เคียงชุมชนและพื้นที่อ่อนไหว</li>
                   <li><strong>2. แผงซับเสียงประสิทธิภาพสูง:</strong> ลดระดับเสียงรบกวนลงได้อย่างน้อย 10 - 15 dB(A)</li>
-                  <li><strong>3. ตรวจวัดระดับเสียงต่อเนื่อง:</strong> ติดตั้ง Sound Level Meter ควบคุมค่าเสียงเฉลี่ย $L_{eq\text{ 24hr}} \le 70\text{ dB(A)}$ ตามมาตรฐาน EIA</li>
+                  <li><strong>3. ตรวจวัดระดับเสียงต่อเนื่อง:</strong> ติดตั้ง Sound Level Meter ควบคุมค่าเสียงเฉลี่ยตลอด 24 ชม. ต้องไม่เกิน 70 dB และค่าระดับเสียงสูงสุดต้องไม่เกิน 115 dB ตามมาตรฐาน EIA</li>
                   <li><strong>4. ควบคุมเวลาทำงาน:</strong> จำกัดเวลาทำงานที่มีเสียงดังรบกวนให้อยู่เฉพาะในเวลากลางวันที่ได้รับอนุมัติ</li>
                 </ul>
               </div>
@@ -970,22 +1459,25 @@
           </div>
           <div class="slide-content">
             <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; height: 270px;">
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_272569 BE_260727_5.jpg" alt="การตรวจวัดคุณภาพน้ำทิ้งสนาม" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <div class="card" style="padding: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div class="photo-carousel-wrapper" style="width: 100%; flex: 1; min-height: 280px;">
+                  <div class="photo-carousel-item active">
+                    <img src="Photo/LINE_ALBUM_272569 BE_260727_4.jpg" alt="การตรวจสอบบ่อตกตะกอนและการระบายน้ำ">
                   </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_272569 BE_260727_4.jpg" alt="การตรวจสอบบ่อตกตะกอนและการระบายน้ำ" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_272569 BE_260727_5.jpg" alt="การตรวจวัดคุณภาพน้ำทิ้งสนาม">
+                  </div>
+                  <div class="carousel-dots-bar">
+                    <span class="dot active" data-slide-to="0"></span><span class="dot" data-slide-to="1"></span>
                   </div>
                 </div>
-                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">📷 ภาพการตรวจวัดคุณภาพน้ำ สภาพน้ำทิ้ง และการจัดการบ่อดักตะกอนสนาม</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 6px; text-align: center; font-weight: 500;">📷 ภาพการตรวจวัดคุณภาพน้ำ สภาพน้ำทิ้ง และการจัดการบ่อดักตะกอนสนาม</span>
               </div>
 
               <div class="card">
-                <div class="card-title">🧪 มาตรการควบคุมคุณภาพน้ำ & นิเวศวิทยา</div>
-                <ul class="custom-list spec-list" style="font-size: 12px;">
-                  <li><strong>1. บ่อตกตะกอน 3 บ่อ (Sediment Pits):</strong> ดักตกตะกอนดิน 3 ขั้นตอนให้ได้ค่าน้ำใสก่อนระบายสู่ลำคลอง</li>
+                <div class="card-title" style="font-size: 18px; font-weight: 800;">🧪 มาตรการควบคุมคุณภาพน้ำ & นิเวศวิทยา</div>
+                <ul class="custom-list spec-list" style="font-size: 16px;">
+                  <li><strong>1. ดัชนีความหลากหลายทางระบบนิเวศ:</strong> การตรวจสอบดัชนีความหลากหลายทางระบบนิเวศและคุณภาพสิ่งแวดล้อมทางน้ำ</li>
                   <li><strong>2. ตรวจสอบคุณภาพน้ำทิ้ง:</strong> สุ่มตรวจค่า pH, ความขุ่น (Turbidity), และสารแขวนลอย (TSS) ประจำเดือน</li>
                   <li><strong>3. ม่านดักตะกอน (Silt Curtain):</strong> ติดตั้งม่านกั้นตะกอนในลำคลองใกล้เคียง ป้องกันผลกระทบนิเวศทางน้ำ</li>
                   <li><strong>4. ควบคุม Slurry ปูนเจาะเข็ม:</strong> หมุนเวียนสารพยุงหลุมเจาะในระบบปิด ห้ามปล่อยลงแหล่งน้ำสาธารณะเด็ดขาด</li>
@@ -1000,7 +1492,7 @@
           <div class="section-divider-content">
             <span class="section-num-badge">SECTION 04</span>
             <h2 class="section-divider-title">ส่วนที่ 4: งานตรวจสอบเอกสารสัญญาทางวิศวกรรม</h2>
-            <p class="section-divider-desc">การคิดราคาค่างวด (IPC) การตรวจสอบแบบ Shop Drawings และสัญญาจราจรสนาม</p>
+            <p class="section-divider-desc">การตรวจสอบปริมาณงาน BOQ การคิดค่างวด IPC งานคาน และการตรวจสอบแบบ Shop Drawings สัญญาจราจรสนาม</p>
           </div>
         </section>
 
@@ -1010,21 +1502,40 @@
             <div class="slide-title-group">
               <span class="category-tag">ส่วนที่ 4: เอกสารสัญญาทางวิศวกรรม</span>
               <h2>ตารางสรุปจำนวนชิ้นงานคาน Girder แยกตามสัดส่วนการผลิต (75%, 100%, 125%, 150%)</h2>
-              <p class="slide-subtitle">สรุปการตรวจสอบจำนวนชิ้นงานคาน Precast Girder รายช่วงสายทาง Main Line, Ramp 01, Ramp 03, Ramp ORR และ SR1 (อ้างอิง จำนวน Girder.xlsx)</p>
+              <p class="slide-subtitle">สรุปการตรวจสอบจำนวนชิ้นงานคาน Precast Girder รายช่วงสายทาง Main Line, Ramp 01, Ramp 03, Ramp ORR และ SR1 </p>
             </div>
             <span class="slide-badge-info">GIRDER QUANTITY TABLE</span>
           </div>
-          <div class="slide-content">
-            <div class="card" style="margin-bottom: 12px; padding: 14px;">
-              <div class="card-title" style="margin-bottom: 8px;">📊 ตารางสรุปจำนวนคาน Girder แต่ละช่วงสายทาง (75%, 100%, 125%, 150%)</div>
-              <table class="custom-table" style="font-size: 13px; text-align: center;">
+          <div class="slide-content" style="display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+            
+            <!-- Upper Section: 2 Enlarged Field Photos (No captions below, increased height) -->
+            <div class="grid-2" style="margin-bottom: 8px; gap: 14px;">
+              <!-- Photo 1 Card (Enlarged Height 235px) -->
+              <div class="card" style="padding: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #ffffff;">
+                <div style="width: 100%; height: 235px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+                  <img src="Photo/139731.jpg" alt="การตรวจสอบและถอดแบบการผลิตคาน Girder ณ ลานกองเก็บ" style="width: 100%; height: 100%; object-fit: cover; object-position: center 40%; display: block;">
+                </div>
+              </div>
+
+              <!-- Photo 2 Card (Enlarged Height 235px) -->
+              <div class="card" style="padding: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #ffffff;">
+                <div style="width: 100%; height: 235px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+                  <img src="Photo/LINE_ALBUM_Pop_260727_1.jpg" alt="การสุ่มตรวจวัดมิติและความสมบูรณ์ของชิ้นงานคาน" style="width: 100%; height: 100%; object-fit: cover; object-position: center 40%; display: block;">
+                </div>
+              </div>
+            </div>
+
+            <!-- Lower Section: Summary Table Moved to Bottom -->
+            <div class="card" style="padding: 10px 14px; background: #ffffff;">
+              <div class="card-title" style="font-size: 20px; font-weight: 800; margin-bottom: 10px;">📊 ตารางสรุปจำนวนคาน Girder แต่ละช่วงสายทาง (75%, 100%, 125%, 150%)</div>
+              <table class="custom-table" style="font-size: 11px; text-align: center; margin-bottom: 0;">
                 <thead>
                   <tr style="background: var(--navy-primary); color: #ffffff;">
                     <th style="text-align: left; padding: 8px 12px;">ช่วงสายทาง / โครงสร้าง (Section)</th>
-                    <th style="padding: 8px 10px; background: rgba(239, 68, 68, 0.15); color: #dc2626;">สัดส่วน 75% (ชิ้น)</th>
-                    <th style="padding: 8px 10px; background: rgba(37, 99, 235, 0.15); color: #2563eb;">สัดส่วน 100% (ชิ้น)</th>
-                    <th style="padding: 8px 10px; background: rgba(245, 158, 11, 0.15); color: #d97706;">สัดส่วน 125% (ชิ้น)</th>
-                    <th style="padding: 8px 10px; background: rgba(16, 185, 129, 0.15); color: #059669;">สัดส่วน 150% (ชิ้น)</th>
+                    <th style="padding: 6px 8px; background: rgba(239, 68, 68, 0.15); color: #dc2626;">สัดส่วน 75% (ชิ้น)</th>
+                    <th style="padding: 6px 8px; background: rgba(37, 99, 235, 0.15); color: #2563eb;">สัดส่วน 100% (ชิ้น)</th>
+                    <th style="padding: 6px 8px; background: rgba(245, 158, 11, 0.15); color: #d97706;">สัดส่วน 125% (ชิ้น)</th>
+                    <th style="padding: 6px 8px; background: rgba(16, 185, 129, 0.15); color: #059669;">สัดส่วน 150% (ชิ้น)</th>
                     <th style="padding: 8px 12px; background: var(--navy-dark); color: #ffffff;">ยอดรวมทั้งสิ้น (Total Units)</th>
                   </tr>
                 </thead>
@@ -1075,41 +1586,12 @@
                     <td style="color: #2563eb;">8,676 ชิ้น</td>
                     <td style="color: #d97706;">43 ชิ้น</td>
                     <td style="color: #059669;">19 ชิ้น</td>
-                    <td style="color: var(--navy-primary); font-size: 14px;">8,750 ชิ้น</td>
+                    <td style="color: var(--navy-primary); font-size: 13px;">8,750 ชิ้น</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <div class="grid-3" style="margin-top: 10px;">
-              <div class="card" style="padding: 10px 12px;">
-                <div class="card-title" style="font-size: 12px; margin-bottom: 4px;">📈 สัดส่วนการผลิต (Breakdown)</div>
-                <ul class="custom-list spec-list" style="font-size: 11px;">
-                  <li><strong>สัดส่วน 100%:</strong> <strong>8,676 ชิ้น</strong> (99.15%)</li>
-                  <li><strong>สัดส่วน 125%:</strong> <strong>43 ชิ้น</strong> (0.49%)</li>
-                  <li><strong>สัดส่วน 150%:</strong> <strong>19 ชิ้น</strong> (0.22%)</li>
-                  <li><strong>สัดส่วน 75%:</strong> <strong>12 ชิ้น</strong> (0.14%)</li>
-                </ul>
-              </div>
-
-              <div class="card" style="padding: 10px 12px;">
-                <div class="card-title" style="font-size: 12px; margin-bottom: 4px;">🏗️ สรุปประเภทคาน (Girder Types)</div>
-                <ul class="custom-list spec-list" style="font-size: 11px;">
-                  <li><strong>IFV (I-Girder):</strong> 5,941 ชิ้น</li>
-                  <li><strong>CFV (C-Girder):</strong> 2,426 ชิ้น</li>
-                  <li><strong>IHV & CHV (Heavy):</strong> 189 ชิ้น (IHV 135, CHV 54)</li>
-                  <li><strong>IPT & CPT (Post-Tension):</strong> 182 ชิ้น (IPT 98, CPT 84)</li>
-                </ul>
-              </div>
-
-              <div class="card" style="padding: 10px 12px;">
-                <div class="card-title" style="font-size: 12px; margin-bottom: 4px;">⚙️ คานสัดส่วนพิเศษ (Special Types)</div>
-                <ul class="custom-list spec-list" style="font-size: 11px;">
-                  <li><strong>Ramp 03:</strong> `IFV234` (125%: 10), `IFV235` (125%: 2, 150%: 3), `IPT231` (125%: 3), `CFV232` (125%: 2, 150%: 7), `CFV234` (125%: 5), `CFV235` (125%: 2, 150%: 4), `CPT231` (125%: 6)</li>
-                  <li><strong>Ramp ORR:</strong> `IPT233` (75%: 6), `CPT233` (75%: 6), `IFV231` (125%: 2), `CFV231` (125%: 1), `CFV233` (125%: 10, 150%: 5)</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -1119,7 +1601,7 @@
             <div class="slide-title-group">
               <span class="category-tag">ส่วนที่ 4: เอกสารสัญญาทางวิศวกรรม & สัญญาณจราจร</span>
               <h2>การตรวจสอบเครื่องหมายจราจรบนผิวทาง & วีดิทัศน์สำรวจสนาม (พระราม 3 สัญญา 1)</h2>
-              <p class="slide-subtitle">การตรวจรับตารางจำนวนสัญลักษณ์ขีดเขียนบนผิวทาง (อ้างอิง จำนวนสัญลักษณ์พระราม 3.xlsx) และวีดิทัศน์สำรวจสนาม</p>
+              <p class="slide-subtitle">การตรวจรับตารางจำนวนสัญลักษณ์ขีดเขียนบนผิวทาง  และวีดิทัศน์สำรวจสนาม</p>
             </div>
             <span class="slide-badge-info">TRAFFIC MARKING & VIDEO</span>
           </div>
@@ -1136,11 +1618,11 @@
               </div>
 
               <div class="card">
-                <div class="card-title">🚥 ตารางสรุปจำนวนสัญลักษณ์จราจรบนผิวทาง (สัญญา 1)</div>
-                <p style="font-size: 11px; color: var(--text-muted); margin-bottom: 6px;">
+                <div class="card-title" style="font-size: 18px; font-weight: 800;">🚥 ตารางสรุปจำนวนสัญลักษณ์จราจรบนผิวทาง (สัญญา 1)</div>
+                <p style="font-size: 12.5px; color: var(--text-muted); margin-bottom: 8px;">
                   <strong>ช่วงพื้นที่ตรวจวัด:</strong> STA. 1+040 ถึง 2+750 | <strong>แหล่งข้อมูล:</strong> จำนวนสัญลักษณ์พระราม 3.xlsx
                 </p>
-                <table class="custom-table" style="font-size: 12px;">
+                <table class="custom-table" style="font-size: 13px; line-height: 1.45;">
                   <thead>
                     <tr>
                       <th>ประเภทสัญลักษณ์ / เส้นจราจร</th>
@@ -1185,119 +1667,264 @@
         <section class="slide section-divider" data-slide-index="25">
           <div class="section-divider-content">
             <span class="section-num-badge">SECTION 05</span>
-            <h2 class="section-divider-title">ส่วนที่ 5: ปัญหาหน้างานและการประสานงานวิศวกรรม</h2>
-            <p class="section-divider-desc">การประชุมติดตามแผน S-Curve งบประมาณ เทคโนโลยีอุโมงค์ TBM และทักษะวิศวกรรมที่ได้รับ</p>
+            <h2 class="section-divider-title">ส่วนที่ 5: งานเข้าร่วมการประชุม</h2>
+            <p class="section-divider-desc">การประชุม Working Flow 3 ฝ่าย การตรวจสอบสัญญาเบิกจ่าย การศึกษาเทคโนโลยีอุโมงค์ TBM และสรุปทักษะวิศวกรรมที่ได้รับ</p>
           </div>
         </section>
 
-        <!-- SLIDE 27: Weekly Meeting & S-Curve Progress -->
+        <!-- SLIDE 27: Weekly Meeting & Working Flow for Construction Procedure -->
         <section class="slide" data-slide-index="26">
           <div class="slide-header">
             <div class="slide-title-group">
-              <span class="category-tag">ส่วนที่ 5: ปัญหาและการประสานงาน</span>
-              <h2>การประชุมความก้าวหน้าประจำสัปดาห์และการติดตามแผนงาน S-Curve</h2>
-              <p class="slide-subtitle">การเปรียบเทียบผลงานจริง (Actual Progress) กับแผนงาน (Planned S-Curve) และบรรยากาศการประชุม 3 ฝ่าย</p>
+              <span class="category-tag">ส่วนที่ 5: งานเข้าร่วมการประชุม</span>
+              <h2>การประชุมความก้าวหน้า & กระบวนการอนุมัติเพื่อเริ่มการก่อสร้าง</h2>
+              <p class="slide-subtitle">บทบาทหน้าที่หลัก 3 ฝ่าย และขั้นตอนการอนุมัติการทำงาน (Working Flow for Construction Procedure)</p>
             </div>
-            <span class="slide-badge-info">S-CURVE & WEEKLY MEETING</span>
+            <span class="slide-badge-info">ROLES & WORKING FLOW</span>
           </div>
           <div class="slide-content">
-            <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; height: 270px;">
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_150669_260727_2.jpg" alt="การประชุมความก้าวหน้าประจำสัปดาห์ 3 ฝ่าย" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div class="grid-60-40" style="flex: 1; align-items: stretch;">
+              
+              <!-- Left Card: Original 3 Photo Auto Carousel -->
+              <div class="card" style="padding: 10px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; background: #ffffff;">
+                <div class="photo-carousel-wrapper" style="width: 100%; flex: 1; min-height: 280px;">
+                  <div class="photo-carousel-item active">
+                    <img src="Photo/LINE_ALBUM_150669_260727_2.jpg" alt="การประชุมความก้าวหน้าประจำสัปดาห์ 3 ฝ่าย">
                   </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_150669_260727_1.jpg" alt="การนำเสนอผลงานประจำสัปดาห์" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_150669_260727_1.jpg" alt="การนำเสนอผลงานประจำสัปดาห์">
                   </div>
-                  <div style="grid-column: span 2; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 120px;">
-                    <img src="Photo/LINE_ALBUM_Pop_260729_1.jpg" alt="การติดตามกราฟ S-Curve และแผนเร่งรัดงาน" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_Pop_260729_1.jpg" alt="การติดตามกราฟ S-Curve และแผนเร่งรัดงาน">
+                  </div>
+                  <div class="carousel-dots-bar">
+                    <span class="dot active" data-slide-to="0"></span><span class="dot" data-slide-to="1"></span><span class="dot" data-slide-to="2"></span>
                   </div>
                 </div>
-                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">📷 ภาพบรรยากาศการประชุมความก้าวหน้าโครงการประจำสัปดาห์ (Weekly Meeting) และการติดตามแผนงาน S-Curve</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 6px; text-align: center; font-weight: 500;">📷 ภาพบรรยากาศการประชุมความก้าวหน้า Weekly Meeting และติดตามแผนงาน S-Curve</span>
               </div>
 
-              <div class="card">
-                <div class="card-title">🤝 การประชุม Weekly Meeting & การติดตาม S-Curve</div>
-                <ul class="custom-list spec-list" style="font-size: 12px;">
-                  <li><strong>1. การติดตามแผนงาน S-Curve:</strong> เปรียบเทียบแผนงานสะสมตามสัญญา (Planned Value) กับผลงานที่ทำได้จริงสนาม (Actual Progress) และวิเคราะห์ความล่าช้า</li>
-                  <li><strong>2. การประชุม 3 ฝ่ายประจำสัปดาห์:</strong> ประชุมร่วมกันระหว่าง EXAT (เจ้าของโครงการ), ที่ปรึกษาคุมงาน (Consultant), และผู้รับจ้าง (ITD / UN-CC JV) ทุกสัปดาห์</li>
-                  <li><strong>3. การแก้ปัญหาอุปสรรคหน้างาน:</strong> ติดตามงานรื้อย้ายสาธารณูปโภค (ท่อประปา/สายไฟฟ้า) และปรับแผนทำงานรองรับสภาพอากาศฝนตก</li>
-                  <li><strong>4. แผนเร่งรัดงาน (Acceleration Plan):</strong> พิจารณาอนุมัติเพิ่มกะการทำงานกลางคืน เพิ่มจำนวนเครื่องจักร และปรับแผนการขนส่งคาน</li>
-                </ul>
+              <!-- Right Card: 3 Roles + Working Flow (Approve & Not Approve) -->
+              <div class="card" style="padding: 10px 12px; display: flex; flex-direction: column; justify-content: space-between; background: #ffffff;">
+                <div>
+                  
+                  <!-- Section 1: 3 Key Roles Summary (Brief) -->
+                  <div class="card-title" style="font-size: 20px; font-weight: 800; margin-bottom: 10px;">
+                    <div class="card-icon" style="background: rgba(37, 99, 235, 0.1); width: 32px; height: 32px; font-size: 16px;">🤝</div>
+                    <span>บทบาทและหน้าที่หลัก 3 ฝ่าย (Project Stakeholders)</span>
+                  </div>
+
+                  <div style="display: flex; flex-direction: column; gap: 4px; margin-bottom: 8px;">
+                    <div style="background: #f8fafc; border-left: 3.5px solid var(--navy-primary); border: 1px solid var(--border-light); border-left-width: 3.5px; border-radius: 5px; padding: 8px 12px; font-size: 14px; line-height: 1.5;">
+                      <strong>🏛️ 1. เจ้าของโครงการ (Project Owner - EXAT / กทพ.):</strong> บริหารภาพรวมโครงการ อนุมัติสัญญา/งบประมาณ เบิกจ่ายค่างวด (IPC) และอนุมัติการแก้ไขสัญญางาน (Variation Order)
+                    </div>
+                    <div style="background: #f8fafc; border-left: 3.5px solid var(--blue-accent); border: 1px solid var(--border-light); border-left-width: 3.5px; border-radius: 5px; padding: 8px 12px; font-size: 14px; line-height: 1.5;">
+                      <strong>👷‍♂️ 2. ที่ปรึกษาควบคุมงาน (Consultant - CSC):</strong> ตรวจสอบและอนุมัติเอกสารวิศวกรรม (Method Statement & Shop Drawing) ควบคุมคุณภาพงานสนาม ตรวจรับรองผลงาน S-Curve และ Daily Report
+                    </div>
+                    <div style="background: #f8fafc; border-left: 3.5px solid var(--emerald-accent); border: 1px solid var(--border-light); border-left-width: 3.5px; border-radius: 5px; padding: 8px 12px; font-size: 14px; line-height: 1.5;">
+                      <strong>🏗️ 3. ผู้รับจ้างก่อสร้าง (Contractor - ITD / UN-CC JV):</strong> จัดทำเอกสารยื่นขออนุมัติ (Approval Request) ดำเนินการก่อสร้างจริงตามแบบ จัดหาวัสดุ/เครื่องจักร และยื่น Daily Work Request
+                    </div>
+                  </div>
+
+                  <!-- Section 2: Working Flow for Construction Procedure (Approve / Not Approve) -->
+                  <div style="border-top: 1px dashed var(--border-light); padding-top: 6px;">
+                    <div style="font-family: var(--font-heading); font-size: 15px; font-weight: 800; color: var(--navy-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                      <span>🔄 กระบวนการอนุมัติเพื่อเริ่มการก่อสร้าง (Working Flow for Construction)</span>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+                      <!-- Approve Case -->
+                      <div style="background: rgba(16, 185, 129, 0.05); border: 1.5px solid rgba(16, 185, 129, 0.3); border-radius: 6px; padding: 6px 8px;">
+                        <span style="font-size: 13px; font-weight: 800; color: #047857; display: flex; align-items: center; gap: 4px; margin-bottom: 2px;">
+                          ✅ กรณีอนุมัติ (Approve)
+                        </span>
+                        <div style="font-size: 12.5px; color: var(--navy-primary); line-height: 1.45;">
+                          วิศวกรที่ปรึกษาอนุมัติ ➔ ผู้รับจ้างเริ่มงานก่อสร้างในพื้นที่จริง (Construction) ➔ ตรวจสอบคุณภาพระหว่างก่อสร้างร่วมกันอย่างสม่ำเสมอ (Inspection During Work)
+                        </div>
+                      </div>
+
+                      <!-- Not Approve Case -->
+                      <div style="background: rgba(239, 68, 68, 0.05); border: 1.5px solid rgba(239, 68, 68, 0.3); border-radius: 6px; padding: 6px 8px;">
+                        <span style="font-size: 13px; font-weight: 800; color: #b91c1c; display: flex; align-items: center; gap: 4px; margin-bottom: 2px;">
+                          ❌ กรณีไม่อนุมัติ (Not Approve)
+                        </span>
+                        <div style="font-size: 12.5px; color: var(--navy-primary); line-height: 1.45;">
+                          เอกสารถูกตีกลับ ➔ ผู้รับจ้างดำเนินการปรับปรุงแก้ไขข้อบกพร่องตามข้อเสนอแนะ ➔ ยื่นขออนุมัติใหม่อีกครั้ง (Proceed with Corrections & Re-Approval)
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
               </div>
+
             </div>
           </div>
         </section>
 
-        <!-- SLIDE 28: Construction Budget & VO Inspection -->
+        <!-- SLIDE 28: Construction Budget & Payment Inspection -->
         <section class="slide" data-slide-index="27">
           <div class="slide-header">
             <div class="slide-title-group">
-              <span class="category-tag">ส่วนที่ 5: ปัญหาและการประสานงาน</span>
+              <span class="category-tag">ส่วนที่ 5: งานเข้าร่วมการประชุม</span>
               <h2>การตรวจสอบเอกสารเบิกจ่ายค่างวดสัญญาก่อสร้างและงบประมาณ</h2>
-              <p class="slide-subtitle">การควบคุมงบประมาณโครงการ งานเปลี่ยนแปลงสัญญา (Variation Order - VO) และการตรวจสอบสัญญา (ฉลองรัช ตอน 3)</p>
+              <p class="slide-subtitle">การตรวจสอบความถูกต้องของเอกสารเบิกจ่ายค่างวดสัญญาก่อสร้างและงบประมาณตามหลักเกณฑ์ของโครงการ</p>
             </div>
-            <span class="slide-badge-info">BUDGET & CONTRACTS</span>
+            <span class="slide-badge-info">PAYMENT & CONTRACT AUDIT</span>
           </div>
           <div class="slide-content">
-            <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; height: 270px;">
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_จตุโชติตอน3-120626_260727_4.jpg" alt="การตรวจสอบเอกสารสัญญาและรายการ BOQ" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div class="grid-60-40" style="flex: 1; align-items: stretch;">
+              
+              <!-- Left Card: 3 Photo Carousel (Order 2-3-1 preserved) -->
+              <div class="card" style="padding: 10px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; background: #ffffff;">
+                <div class="photo-carousel-wrapper" style="width: 100%; flex: 1; min-height: 280px;">
+                  <div class="photo-carousel-item active">
+                    <img src="Photo/LINE_ALBUM_จตุโชติตอน3-120626_260727_3.jpg" alt="การตรวจรับรายการงานเบิกจ่ายค่างวด">
                   </div>
-                  <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 100%;">
-                    <img src="Photo/LINE_ALBUM_จตุโชติตอน3-120626_260727_3.jpg" alt="การตรวจรับรายการงานเบิกจ่ายค่างวด" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_จตุโชติตอน3-120626_260727_5.jpg" alt="การลงนามตรวจรับเอกสารสัญญาวิศวกรรม">
                   </div>
-                  <div style="grid-column: span 2; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); height: 120px;">
-                    <img src="Photo/LINE_ALBUM_จตุโชติตอน3-120626_260727_5.jpg" alt="การลงนามตรวจรับเอกสารสัญญาวิศวกรรม" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                  <div class="photo-carousel-item">
+                    <img src="Photo/LINE_ALBUM_จตุโชติตอน3-120626_260727_4.jpg" alt="การตรวจสอบเอกสารสัญญาและรายการ BOQ">
+                  </div>
+                  <div class="carousel-dots-bar">
+                    <span class="dot active" data-slide-to="0"></span><span class="dot" data-slide-to="1"></span><span class="dot" data-slide-to="2"></span>
                   </div>
                 </div>
-                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">📷 ภาพบรรยากาศการตรวจสอบเอกสารเบิกจ่ายค่างวด การตรวจสอบ BOQ และสัญญาโครงการฉลองรัช ตอน 3</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 6px; text-align: center; font-weight: 500;">📷 ภาพบรรยากาศการตรวจสอบเอกสารเบิกจ่ายค่างวดและงบประมาณโครงการ</span>
               </div>
 
-              <div class="card">
-                <div class="card-title">💵 การควบคุมงบประมาณ & การตรวจสอบสัญญา</div>
-                <ul class="custom-list spec-list" style="font-size: 12px;">
-                  <li><strong>1. การควบคุมงบประมาณ (Cost Control):</strong> ตรวจสอบรายการปริมาณงานจริงเปรียบเทียบกับบัญชีแสดงปริมาณงานและราคา (BOQ)</li>
-                  <li><strong>2. งานเปลี่ยนแปลงสัญญา (Variation Orders - VO):</strong> ตรวจสอบและอนุมัติรายการงานนอกสัญญาและการปรับแก้แบบวิศวกรรมสนาม</li>
-                  <li><strong>3. การเบิกจ่ายค่างวด (IPC Audit):</strong> ตรวจวัดผลงานรายเดือนและอนุมัติเอกสารโอนเงินงวดอย่างถูกต้องตามระเบียบ EXAT</li>
-                  <li><strong>4. การขอขยายระยะเวลาสัญญา (Extension of Time):</strong> บันทึกสาเหตุความล่าช้า การรื้อย้ายสาธารณูปโภค เพื่อประกอบการพิจารณา EOT</li>
-                </ul>
+              <!-- Right Card: Simplified Payment & Budget Inspection Summary -->
+              <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: space-between; background: #ffffff;">
+                <div>
+                  <div class="card-title" style="font-size: 18px; margin-bottom: 10px;">
+                    <div class="card-icon" style="background: rgba(37, 99, 235, 0.1);">📋</div>
+                    <span>การตรวจสอบเอกสารเบิกจ่ายค่างวดสัญญาก่อสร้าง</span>
+                  </div>
+
+                  
+
+                  <ul class="custom-list spec-list" style="font-size: 16px; gap: 8px;">
+                    <li><strong>1. ตรวจสอบผลงานจริงสนาม:</strong> ตรวจสอบรายการปริมาณงานก่อสร้างที่แล้วเสร็จจริงเปรียบเทียบกับบัญชีแสดงปริมาณงานและราคา (BOQ)</li>
+                    <li><strong>2. ตรวจสอบความถูกต้องของตัวเลขงบประมาณ:</strong> ตรวจคำนวณเงินค่างวด เอกสารรับรองการทดสอบสนาม และเอกสารแนบประกอบการเบิกจ่ายให้ถูกต้องตามข้อกำหนดสัญญา</li>
+                    <li><strong>3. การอนุมัติเบิกจ่ายค่างวด:</strong> ตรวจอนุมัติและรับรองความถูกต้องโดยวิศวกรที่ปรึกษาควบคุมงาน (Consultant) และเจ้าของโครงการ (EXAT)</li>
+                  </ul>
+                </div>
+
               </div>
+
             </div>
           </div>
         </section>
 
-        <!-- SLIDE 29: TBM Tunneling Tech & S. Korea Warning System -->
+        <!-- SLIDE 29: TBM Tunneling Tech & S. Korea/Japan Safety System -->
         <section class="slide" data-slide-index="28">
           <div class="slide-header">
             <div class="slide-title-group">
-              <span class="category-tag">ส่วนที่ 5: ปัญหาและการประสานงาน</span>
-              <h2>องค์ความรู้เทคโนโลยีอุโมงค์ TBM & ระบบแจ้งเตือนฉุกเฉินประเทศเกาหลีใต้</h2>
-              <p class="slide-subtitle">การศึกษาเทคโนโลยีหัวเจาะอุโมงค์ (Tunnel Boring Machine) และระบบแจ้งเตือนภัยพิบัติฉุกเฉิน (K-ALERT)</p>
+              <span class="category-tag">ส่วนที่ 5: งานเข้าร่วมการประชุม</span>
+              <h2>องค์ความรู้เทคโนโลยีอุโมงค์ TBM & ระบบความปลอดภัยต่างประเทศ (ญี่ปุ่น/เกาหลีใต้)</h2>
+              <p class="slide-subtitle">การศึกษาเทคโนโลยีหัวเจาะอุโมงค์ TBM และระบบควบคุมความปลอดภัยฉุกเฉินในอุโมงค์ประเทศญี่ปุ่นและเกาหลีใต้</p>
             </div>
-            <span class="slide-badge-info">TBM & K-ALERT SYSTEM</span>
+            <span class="slide-badge-info">TBM & SAFETY SYSTEM</span>
           </div>
           <div class="slide-content">
-            <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="width: 100%; height: 350px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
-                  <img src="Photo/12.jpg" alt="ภาพศึกษาเทคโนโลยีหัวเจาะอุโมงค์ TBM และระบบแจ้งเตือนฉุกเฉินประเทศเกาหลีใต้" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div class="grid-60-40" style="flex: 1; align-items: stretch;">
+              
+              <!-- Left Card: Field Photo -->
+              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #ffffff;">
+                <div style="width: 100%; flex: 1; min-height: 320px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
+                  <img src="Photo/12.jpg" alt="ภาพศึกษาเทคโนโลยีหัวเจาะอุโมงค์ TBM และระบบความปลอดภัยอุโมงค์ต่างประเทศ" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                 </div>
-                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">📷 ภาพการศึกษาเทคโนโลยีหัวเจาะอุโมงค์ TBM และระบบแจ้งเตือนฉุกเฉินประเทศเกาหลีใต้</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center; font-weight: 500;">📷 ภาพการศึกษาเทคโนโลยีหัวเจาะอุโมงค์ TBM และระบบความปลอดภัยฉุกเฉินในอุโมงค์</span>
               </div>
 
-              <div class="card">
-                <div class="card-title">🚇 องค์ความรู้ TBM & ระบบแจ้งเตือน K-ALERT</div>
-                <ul class="custom-list spec-list" style="font-size: 12px;">
-                  <li><strong>1. เทคโนโลยีหัวเจาะอุโมงค์ TBM:</strong> การขุดเจาะชั้นดินอ่อนพร้อมติดตั้งชิ้นส่วนคอนกรีตสำเร็จรูป (Precast Concrete Segment)</li>
-                  <li><strong>2. การควบคุมแรงดันหน้าหัวเจาะ:</strong> ระบบ Slurry/EPB Shield ป้องกันการทรุดตัวของชั้นดินและอาคารด้านบน</li>
-                  <li><strong>3. ระบบแจ้งเตือนฉุกเฉิน K-ALERT:</strong> ศึกษาระบบ Cell Broadcast สำหรับแจ้งเตือนภัยพิบัติและอุบัติเหตุในอุโมงค์</li>
-                  <li><strong>4. ข้อเสนอแนะเชิงประยุกต์:</strong> แนวทางนำเทคโนโลยีขุดอุโมงค์และระบบแจ้งเตือนภัยฉุกเฉินมาปรับใช้ในโครงการ EXAT</li>
-                </ul>
+              <!-- Right Card: TBM Tech + Interactive Country Safety Switcher -->
+              <div class="card" style="padding: 12px; display: flex; flex-direction: column; justify-content: space-between; background: #ffffff;">
+                <div>
+                  <div class="card-title" style="font-size: 20px; font-weight: 800; margin-bottom: 10px;">
+                    <div class="card-icon" style="background: rgba(37, 99, 235, 0.1);">🚇</div>
+                    <span>องค์ความรู้ TBM & ระบบความปลอดภัยอุโมงค์</span>
+                  </div>
+
+                  <ul class="custom-list spec-list" style="font-size: 16px; margin-bottom: 8px;">
+                    <li><strong>1. เทคโนโลยีหัวเจาะอุโมงค์ TBM:</strong> การขุดเจาะชั้นดินอ่อนพร้อมติดตั้งชิ้นส่วนคอนกรีตสำเร็จรูป (Precast Concrete Segment)</li>
+                  </ul>
+
+                  <!-- Interactive Country Tunnel Safety Switcher (Bottom Right Card) -->
+                  <div style="background: rgba(15, 32, 66, 0.03); border: 1.5px solid var(--border-light); border-radius: 8px; padding: 10px;">
+                    <div style="font-size: 13.5px; font-weight: 700; color: var(--navy-primary); margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between;">
+                      <span>🛡️ เลือกระบบความปลอดภัยอุโมงค์ต่างประเทศ:</span>
+                      <span style="font-size: 10px; color: var(--blue-accent); font-weight: 600;">(กดเลือกเพื่อดูการทำงาน)</span>
+                    </div>
+
+                    <!-- Country Selector Buttons -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px;">
+                      <button class="country-safety-btn active" id="btn-country-japan" onclick="window.switchTunnelSafetyCountry('japan')" style="padding: 7px 6px; border-radius: 6px; border: 1.5px solid var(--blue-accent); background: var(--blue-accent); color: #ffffff; font-family: var(--font-heading); font-size: 11px; font-weight: 700; cursor: pointer; transition: all 0.2s; text-align: center;">
+                        🇯🇵 ประเทศญี่ปุ่น (Japan)
+                      </button>
+                      <button class="country-safety-btn" id="btn-country-korea" onclick="window.switchTunnelSafetyCountry('korea')" style="padding: 7px 6px; border-radius: 6px; border: 1.5px solid var(--border-light); background: #f8fafc; color: var(--navy-primary); font-family: var(--font-heading); font-size: 11px; font-weight: 700; cursor: pointer; transition: all 0.2s; text-align: center;">
+                        🇰🇷 ประเทศเกาหลีใต้ (S. Korea)
+                      </button>
+                    </div>
+
+                    <!-- Country Safety Detail Container -->
+                    <div id="country-safety-display" style="background: #ffffff; border: 1px solid var(--border-light); border-radius: 6px; padding: 8px; min-height: 210px; transition: all 0.3s ease;">
+                      <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <!-- Enlarged 2D Animation Viewport (Japan) -->
+                        <div style="position: relative; height: 145px; background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%); border-radius: 6px; overflow: hidden; border: 1px solid #334155; display: flex; align-items: center; justify-content: center;">
+                          
+                          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-top: 4px solid #64748b; border-bottom: 4px solid #475569;"></div>
+                          
+                          <div style="position: absolute; top: 6px; left: 10px; font-size: 9px; font-weight: 800; color: #10b981; background: rgba(0,0,0,0.7); padding: 3px 8px; border-radius: 4px; border: 1px solid #059669; z-index: 10;">
+                            🎛️ CONTROL ROOM: ACTIVE (ห้องควบคุมศูนย์กลาง)
+                          </div>
+
+                          <!-- Rotating Jet Fan System (Top Ceiling) -->
+                          <div style="position: absolute; top: 12px; left: 28%; display: flex; align-items: center; gap: 6px; z-index: 5;">
+                            <div style="font-size: 22px; animation: fanRotate 0.5s linear infinite; transform-origin: center;">🌀</div>
+                            <span style="font-size: 9px; font-weight: 800; color: #38bdf8; background: rgba(0,0,0,0.6); padding: 2px 6px; border-radius: 4px; border: 1px solid #0284c7;">พัดลม Jet Fan</span>
+                          </div>
+
+                          <!-- Animated Smoke Flow (Pushed to right) -->
+                          <div style="position: absolute; top: 48px; left: 25%; font-size: 18px; animation: smokeFlow 1.6s ease-out infinite; z-index: 4;">
+                            💨 🌫️ 💨
+                          </div>
+
+                          <!-- Sprinkler System Spraying Water Mist -->
+                          <div style="position: absolute; top: 14px; left: 68%; text-align: center; z-index: 5;">
+                            <div style="font-size: 11px; font-weight: 800; color: #38bdf8; animation: warningBlink 1s infinite;">🚿 SPRINKLER</div>
+                            <div style="font-size: 14px; color: #60a5fa; animation: waterSpray 0.7s linear infinite; line-height: 1.1; margin-top: 2px;">💧💧💧<br>💧💧💧</div>
+                          </div>
+
+                          <!-- Burning Car on Tunnel Road -->
+                          <div style="position: absolute; bottom: 12px; left: 58%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; z-index: 5;">
+                            <div style="font-size: 18px; animation: warningBlink 0.5s infinite; margin-bottom: -6px;">🔥</div>
+                            <div style="font-size: 26px;">🚗</div>
+                          </div>
+
+                          <div style="position: absolute; bottom: 6px; left: 0; width: 100%; height: 3px; background: #94a3b8; border-bottom: 1.5px dashed #ffffff;"></div>
+                        </div>
+
+                        <!-- Full Text Specification Description Below (Japan) -->
+                        <div style="font-size: 13.5px; color: var(--navy-primary); line-height: 1.5; background: rgba(239,68,68,0.04); padding: 10px 12px; border-radius: 6px; border-left: 4px solid #ef4444;">
+                          <div style="font-size: 14.5px; font-weight: 800; color: #dc2626; margin-bottom: 6px;">🔥 กรณีเกิดเพลิงไหม้ในอุโมงค์: แสดงระบบควบคุมอัคคีภัย 2 ขั้นตอน</div>
+                          <ul style="margin: 0; padding-left: 16px; list-style-type: disc; font-size: 13px; line-height: 1.55;">
+                            <li style="margin-bottom: 3px;">
+                              <strong>🌬️ พัดลมระบายอากาศขนาดใหญ่ (Jet Fan System):</strong> พัดลมขนาดใหญ่จะพัดควบคุมทิศทางควันไฟ ไม่ให้ควันย้อนกลับมาทางพื้นที่อพยพ
+                            </li>
+                            <li>
+                              <strong>🚿 ระบบสปริงเกอร์ฉีดดับไฟ (Sprinkler System):</strong> ระบบสปริงเกอร์ฉีดดับไฟในอุโมงค์ ซึ่งสามารถสั่งการและควบคุมได้จาก <strong>ห้องควบคุมศูนย์กลาง (Central Control Room)</strong>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
               </div>
+
             </div>
           </div>
         </section>
@@ -1313,40 +1940,78 @@
             <span class="slide-badge-info">SKILLS & EXPERIENCE</span>
           </div>
           <div class="slide-content">
-            <div class="grid-60-40">
-              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div style="width: 100%; height: 380px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
-                  <img src="Photo/S__53157897.jpg" alt="ภาพการปฏิบัติงานสนามและประสบการณ์การเรียนรู้จริงในการฝึกงาน EXAT" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div class="grid-60-40" style="flex: 1; align-items: stretch;">
+              
+              <!-- Left Card: Field Experience Photo -->
+              <div class="card" style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; background: #ffffff;">
+                <div style="width: 100%; flex: 1; min-height: 310px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-light); background: #ffffff;">
+                  <img src="Photo/S__53157897.jpg" alt="ภาพการปฏิบัติงานสนามและประสบการณ์การเรียนรู้จริงระหว่างการฝึกงาน" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                 </div>
-                <span style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">📷 ภาพการปฏิบัติงานสนามและประสบการณ์การเรียนรู้จริงระหว่างการฝึกงาน ณ โครงการการทางพิเศษแห่งประเทศไทย (EXAT)</span>
+                <span style="font-size: 11.5px; color: var(--text-muted); margin-top: 8px; text-align: center; font-weight: 600;">📷 ภาพการปฏิบัติงานสนามและประสบการณ์การเรียนรู้จริงระหว่างการฝึกงาน</span>
               </div>
 
-              <div class="card">
-                <div class="card-title">🎓 ทักษะวิศวกรรม & ประสบการณ์ที่ได้รับ</div>
-                <ul class="custom-list spec-list" style="font-size: 12px;">
-                  <li><strong>1. ทักษะวิศวกรรมสนาม:</strong> เรียนรู้กระบวนการเจาะเสาเข็มระบบเปียก ตรวจสอบคุณภาพ Slurry และการควบคุมการเทคอนกรีตใต้น้ำ</li>
-                  <li><strong>2. การควบคุมคุณภาพวัสดุ (QA/QC):</strong> สุ่มเก็บตัวอย่างเหล็กเส้นเพื่อทดสอบแรงดึง ณ แล็บ มจพ. และตรวจรับคาน Precast Girder</li>
-                  <li><strong>3. การจัดการสัญญาวิศวกรรม:</strong> เรียนรู้การตรวจรับงาน คำนวณเบิกจ่ายค่างวด IPC ตรวจสอบ BOQ และแผนจัดจราจร</li>
-                  <li><strong>4. การเรียนรู้ระบบองค์กร:</strong> พัฒนาทักษะการทำงานร่วมกัน 3 ฝ่าย ระหว่าง EXAT, วิศวกรที่ปรึกษา และผู้รับจ้างชั้นนำ</li>
-                </ul>
+              <!-- Right Card: Skills & Experience Specs (20px Title / 18px List Items) -->
+              <div class="card" style="padding: 16px 18px; display: flex; flex-direction: column; justify-content: flex-start; background: #ffffff;">
+                <div>
+                  <div class="card-title" style="font-size: 18px; font-weight: 800; margin-bottom: 14px;">
+                    <div class="card-icon" style="background: rgba(37, 99, 235, 0.1); width: 34px; height: 34px; font-size: 20px;">🎓</div>
+                    <span>ทักษะวิศวกรรม & ประสบการณ์ที่ได้รับ</span>
+                  </div>
+
+                  <ul class="custom-list spec-list" style="font-size: 16px; line-height: 1.6; gap: 14px;">
+                    <li><strong>1. ทักษะวิศวกรรมสนาม:</strong> เรียนรู้กระบวนการเจาะเสาเข็มระบบเปียก ตรวจสอบคุณภาพ Slurry และการควบคุมการเทคอนกรีตใต้น้ำ</li>
+                    <li><strong>2. การควบคุมคุณภาพวัสดุ (QA/QC):</strong> สุ่มเก็บตัวอย่างเหล็กเส้นเพื่อทดสอบแรงดึง ณ แล็บ มจพ. และตรวจรับคาน Precast Girder</li>
+                    <li><strong>3. การจัดการสัญญาวิศวกรรม:</strong> เรียนรู้การตรวจรับงาน คำนวณเบิกจ่ายค่างวด IPC ตรวจสอบ BOQ และแผนจัดจราจร</li>
+                    <li><strong>4. การเรียนรู้ระบบองค์กร:</strong> พัฒนาทักษะการทำงานร่วมกัน 3 ฝ่าย ระหว่าง EXAT, วิศวกรที่ปรึกษา และผู้รับจ้างชั้นนำ</li>
+                  </ul>
+                </div>
               </div>
+
             </div>
           </div>
         </section>
 
-        <!-- SLIDE 31: Conclusion, Q&A & Thank You -->
-        <section class="slide title-slide" data-slide-index="30" style="justify-content: center; text-align: center; padding: 40px;">
-          <div style="max-width: 850px; margin: 0 auto;">
-            <span class="brand-badge exat" style="font-size: 16px; padding: 6px 20px; margin-bottom: 20px;">EXAT & MAHIDOL UNIVERSITY</span>
-            <h1 style="font-size: 42px; margin-bottom: 20px; color: #ffffff;">บทสรุปการปฏิบัติงาน & การตอบข้อซักถาม (Q&A)</h1>
-            <p style="font-size: 18px; color: #93c5fd; line-height: 1.6; margin-bottom: 30px;">
-              ขอขอบพระคุณคณะกรรมการ ผู้บริหารการทางพิเศษแห่งประเทศไทย (EXAT) วิศวกรพี่เลี้ยง และอาจารย์ประจำภาควิชาวิศวกรรมโยธา มหาวิทยาลัยมหิดล ทุกท่านที่ให้โอกาสและคำแนะนำอันมีค่ายิ่งตลอดระยะเวลาการฝึกงาน
-            </p>
-            <div style="display: flex; justify-content: center; gap: 20px;">
-              <div style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 16px 30px; border-radius: 12px; font-size: 18px; font-weight: bold; color: #ffffff;">
-                ❓ ช่วงถาม-ตอบ (Q&A Session)
-              </div>
+        <!-- SLIDE 31: Premium Q&A & Thank You Session with Custom Background Image -->
+        <section class="slide title-slide" data-slide-index="30" style="justify-content: center; align-items: center; padding: 20px; background: linear-gradient(135deg, rgba(11, 29, 58, 0.82) 0%, rgba(15, 32, 66, 0.88) 100%), url('Photo/LINE_ALBUM_296 safety audit จตุโชติ_260727_3.jpg') center/cover no-repeat;">
+          <div style="width: 100%; max-width: 920px; background: rgba(11, 29, 58, 0.52); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1.5px solid rgba(255, 255, 255, 0.35); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 20px; padding: 32px 36px; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 30px rgba(37, 99, 235, 0.2); display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; overflow: hidden;">
+            
+            <!-- Glow background highlights -->
+            <div style="position: absolute; top: -60px; right: -60px; width: 220px; height: 220px; background: rgba(37, 99, 235, 0.3); filter: blur(60px); border-radius: 50%; pointer-events: none;"></div>
+            <div style="position: absolute; bottom: -60px; left: -60px; width: 220px; height: 220px; background: rgba(16, 185, 129, 0.25); filter: blur(60px); border-radius: 50%; pointer-events: none;"></div>
+
+            <!-- Header Badges -->
+            <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 18px; position: relative; z-index: 2;">
+              <span class="brand-badge exat" style="font-size: 13px; padding: 5px 16px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">EXAT</span>
+              <span class="brand-badge mahidol" style="font-size: 13px; padding: 5px 16px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">EG MAHIDOL</span>
             </div>
+
+            <!-- Main Title -->
+            <h1 style="font-family: var(--font-heading); font-size: 34px; font-weight: 800; color: #ffffff; margin-bottom: 14px; text-shadow: 0 2px 14px rgba(0,0,0,0.6); letter-spacing: -0.5px; position: relative; z-index: 2;">
+              ขอขอบพระคุณคณะกรรมการทุกท่าน🙏
+            </h1>
+
+            <!-- Expressing Appreciation Paragraph -->
+            <p style="font-size: 14px; color: #f1f5f9; line-height: 1.65; max-width: 780px; margin-bottom: 22px; font-weight: 400; text-shadow: 0 1px 4px rgba(0,0,0,0.5); position: relative; z-index: 2;">
+              ขอขอบพระคุณคณะกรรมการ ผู้บริหารการทางพิเศษแห่งประเทศไทย (EXAT) วิศวกรพี่เลี้ยง และอาจารย์ประจำภาควิชาวิศวกรรมโยธาและสิ่งแวดล้อม มหาวิทยาลัยมหิดล ทุกท่านที่ได้กรุณาให้โอกาส คำแนะนำ และถ่ายทอดประสบการณ์อันทรงคุณค่าตลอดระยะเวลาการฝึกงาน
+            </p>
+
+            <!-- Premium Q&A Session Highlight Box -->
+            <div style="width: 100%; max-width: 660px; background: rgba(255, 255, 255, 0.12); border: 1.5px solid rgba(255, 255, 255, 0.3); backdrop-filter: blur(12px); border-radius: 14px; padding: 18px 24px; margin-bottom: 22px; box-shadow: 0 8px 24px rgba(0,0,0,0.3); position: relative; z-index: 2;">
+              <div style="font-size: 22px; font-weight: 800; color: #60a5fa; margin-bottom: 4px; display: flex; align-items: center; justify-content: center; gap: 8px; text-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+                <span>❓</span> <span>ช่วงตอบข้อซักถาม (Q&A Session)</span>
+              </div>
+              <p style="font-size: 13px; color: #ffffff; font-weight: 500; margin: 0; text-shadow: 0 1px 3px rgba(0,0,0,0.4);">
+                ยินดีรับฟังทุกคำแนะนำ ข้อเสนอแนะเชิงวิศวกรรม และพร้อมตอบข้อซักถามจากทุกท่านครับ
+              </p>
+            </div>
+
+            <!-- Presenter Profile Footer Bar -->
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px; border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 14px; width: 100%; position: relative; z-index: 2;">
+              <span style="font-size: 13.5px; font-weight: 700; color: #ffffff; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">👨‍🎓 นายฐิติพงศ์ วิโรจน์ธนกิจ</span>
+              <span style="color: #94a3b8;">|</span>
+              <span style="font-size: 12.5px; color: #93c5fd; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">ภาควิชาวิศวกรรมโยธาและสิ่งแวดล้อม มหาวิทยาลัยมหิดล</span>
+            </div>
+
           </div>
         </section>
 
@@ -1450,7 +2115,17 @@
     </div>
   </div>
 
+  
+  <!-- Universal Image Lightbox Popup Modal -->
+  <div id="image-lightbox-modal" onclick="window.closeImageLightbox(event)" style="display: none; position: fixed; inset: 0; z-index: 999999; background: rgba(0,0,0,0.9); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); align-items: center; justify-content: center; opacity: 0; transition: opacity 0.25s ease;">
+    <button onclick="window.closeImageLightbox(event)" title="ปิดภาพขยาย (Esc)" style="position: absolute; top: 20px; right: 24px; background: #ef4444; border: none; color: #ffffff; font-size: 26px; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 1000000; box-shadow: 0 4px 14px rgba(0,0,0,0.5);">✕</button>
+    <div style="max-width: 94vw; max-height: 92vh; display: flex; flex-direction: column; align-items: center; justify-content: center;" onclick="event.stopPropagation();">
+      <img id="lightbox-img" src="" alt="ภาพขยายเต็มจอ" style="max-width: 92vw; max-height: 84vh; object-fit: contain; border-radius: 8px; box-shadow: 0 16px 40px rgba(0,0,0,0.85); border: 1px solid rgba(255,255,255,0.2);">
+      <div id="lightbox-caption" style="margin-top: 12px; color: #ffffff; font-size: 14px; font-weight: 600; text-align: center; background: rgba(11,29,58,0.9); padding: 6px 18px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2);"></div>
+    </div>
+  </div>
+
   <!-- JavaScript -->
-  <script src="app.js"></script>
+  <script src="app.js?v=1.1.2"></script>
 </body>
 </html>
